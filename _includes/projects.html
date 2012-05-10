@@ -1,0 +1,13 @@
+{% if forloop.index == 3 or forloop.index == 6 %}
+    <li class="last">
+{% else %}
+    <li>
+{% endif %}
+    <a href="javascript:void(0);" rel="{{post.type}}" title="{{post.title}}">
+      <img  src="{{post.image}}" width="70" height="69" alt="{{post.title}}" />
+      <span class="title">{{post.title}}</span>
+      <span>
+        {{post.description}}
+      </span>
+    </a>
+</li>
