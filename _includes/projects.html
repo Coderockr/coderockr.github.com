@@ -10,4 +10,24 @@
         {{post.description}}
       </span>
     </a>
+    <!--start overlay content-->
+    <ul>
+      <li>
+        <div class="inner">
+          <h2><img src="/public/images/content/icon-nossajoinville-small.png" width="39" height="40" alt="" /> {{post.title}}</h2>
+          <p>{{post.content}}</p>
+        </div>
+      </li>
+      {% for i in post.gallery %}
+          <li>
+            {% if post.type == 'iphone' %}
+                <img src="{{i}}" alt="" width="236" height="354" />
+            {% else %}
+                <img src="{{i}}" alt="" width="656" height="492" />
+            {% endif %}
+          </li>
+      {% endfor %}
+      
+    </ul>
+    <!--end overlay content-->
 </li>

@@ -29,4 +29,40 @@ $(document).ready(function() {
 		href = href.replace("#","");
 		$('html, body').animate({scrollTop: $("a[name="+href+"]").offset().top}, 1000);
 	});
+	$("#contact-form")
+		.unbind('submit')
+		.bind('submit', function(){ 
+			var $form = $(this),
+                data = ($form.serializeArray());
+        	if(data[0].value == "" || data[2].value == "") {
+        		alert('Dados inválidos');
+        	}
+        	else {
+	        	$.ajax({
+		            url: 'http://lab.coderockr.com/sendEmail.php',
+		            type: 'POST',
+		            crossDomain: true,
+		            data: data,
+		            dataType: "json",
+		            cache: false,
+		            complete: function(){
+		            	clearForm();
+		            	alert('E-mail enviado. Obrigado pelo contato');
+
+		            }
+	        	});
+	        }
+            return false;
+		});
+
 });
+
+function clearForm()
+{
+	$('#contact-form').each(function () {
+        this.reset();
+    });
+    // Google Chrome isn't resetting the form throug the reset() method,
+    // so we are forcing this here.
+    $('#contact-form .reset').click();
+}

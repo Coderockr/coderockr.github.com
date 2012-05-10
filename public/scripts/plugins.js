@@ -15,12 +15,17 @@
 		}
 		$(this).click(function(){
 			var rel = $(this).attr("rel");
-			var href = $(this).attr("href");
+			//var href = $(this).attr("href");
+			var href = $(this).parent().find("ul:first");
 			if(rel != ""){
 		    	$("#floater").removeClass().addClass(rel);
 		    	$("#floater .frame").html("");
 		    	$("#floater-overlay").fadeIn(300,function(){
 		    		$("#floater").fadeIn(800,function(){
+					    $("#floater .frame").append(href);
+					    $("#floater .frame").fadeIn(300);
+					    $("#floater .frame").slideBanners();
+						  /*
 		  		    	$.ajax({
 						  url: href,
 						  dataType: "html",
@@ -29,7 +34,7 @@
 						    $("#floater .frame").fadeIn(300);
 						    $("#floater .frame").slideBanners();
 						  }
-						});
+						});*/
 		    		});
 		    	});
 			}

@@ -302,13 +302,16 @@ a.anchor{
   width:290px;
   margin:0 50px 20px 0;
 }
+#projects div.wrap nav#slider ul ul li ul{
+  display: none;
+}
 #projects div.wrap nav#slider ul ul li.last{
   margin-right:0;
 }
-#projects div.wrap nav#slider ul ul li a, #home div.wrap nav#slider ul ul li a > span, #home div.wrap nav#slider ul ul li a > img{
+#projects div.wrap nav#slider ul ul li a, #home div.wrap nav#slider ul ul li a span, #home div.wrap nav#slider ul ul li a img{
   display:block;
 }
-#projects div.wrap nav#slider ul ul li a > span{
+#projects div.wrap nav#slider ul ul li a span{
   margin-top:15px;
 }
 #projects div.wrap nav#slider ul ul li a span.title{
@@ -316,7 +319,7 @@ a.anchor{
   font-size:1.8em;
   font-weight:300;
 }
-#projects div.wrap nav#slider ul ul li a > img{
+#projects div.wrap nav#slider ul ul li a img{
   float:left;
   margin-right:15px;
 }
