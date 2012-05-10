@@ -54,7 +54,10 @@ $(document).ready(function() {
 	        }
             return false;
 		});
-
+	$("#contact .map-link").bind("click",function(){
+		$("#contact div.map").slideToggle();
+		$("#contact div.map iframe").focus();
+	});
 });
 
 function clearForm()

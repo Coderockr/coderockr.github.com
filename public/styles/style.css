@@ -486,7 +486,7 @@ a.anchor{
   overflow:hidden;
   width:76px;
   height:36px;
-  margin:0 1px 0 0;
+  margin:0 1px 1px 0;
   padding:0;
 }
 #contact div.wrap div.col1 ul li input[type=submit]:active{
@@ -495,10 +495,14 @@ a.anchor{
 #contact div.wrap div.col2 ul li{
   display:block;
   margin-bottom:11px;
+  position:relative;
 }
 #contact div.wrap div.col2 ul li a{
   font-size:1.2em;
   line-height:135%;
+}
+#contact div.wrap div.col2 ul li a:active{
+  outline:none;
 }
 #contact div.wrap div.col2 ul li span{
   display:block;
@@ -514,7 +518,26 @@ a.anchor{
   float:left;
   margin-right:15px;
 }
-
+#contact div.wrap div.col2 div.map{
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  border:none;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.4);
+  display:none;
+  height:320px;
+  position:absolute;
+  width:305px;
+  top:50px;
+  z-index:100;
+}
+#contact div.wrap div.col2 div.map *{
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+}
 /*footer*/
 #container > footer{
   background:url(/public/images/line.gif) repeat-x 0 0;

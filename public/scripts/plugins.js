@@ -1,7 +1,7 @@
 (function($) {
 	$.fn.modal = function() {
 		if($("#floater-overlay").length == 0){
-		  	$("body").append('<div id="floater-overlay">');//.attr("id","floater-overlay");
+		  	$("body").append('<div id="floater-overlay">');
 		  	$("body").append('<div id="floater">');
 
 		  	$("#floater").append('<a class="left">').append('<a class="right">').append('<div class="reflex">').append('<div class="frame">');
@@ -12,29 +12,25 @@
 		  			$("#floater-overlay").fadeOut(200);
 		  		});
 		  	});
+		  	$(document).keyup(function(e) {
+				if (e.keyCode == 27) {
+			  		$("#floater").fadeOut(300, function(){
+			  			$("#floater-overlay").fadeOut(200);
+			  		});
+				}
+			});
 		}
 		$(this).click(function(){
 			var rel = $(this).attr("rel");
-			//var href = $(this).attr("href");
-			var href = $(this).parent().find("ul:first");
+			var href = $(this).parent().find("ul:first").html();
 			if(rel != ""){
 		    	$("#floater").removeClass().addClass(rel);
 		    	$("#floater .frame").html("");
 		    	$("#floater-overlay").fadeIn(300,function(){
 		    		$("#floater").fadeIn(800,function(){
-					    $("#floater .frame").append(href);
+					    $("#floater .frame").html("<ul>"+href+"</ul>");
 					    $("#floater .frame").fadeIn(300);
 					    $("#floater .frame").slideBanners();
-						  /*
-		  		    	$.ajax({
-						  url: href,
-						  dataType: "html",
-						  success: function(project){
-						    $("#floater .frame").html(project);
-						    $("#floater .frame").fadeIn(300);
-						    $("#floater .frame").slideBanners();
-						  }
-						});*/
 		    		});
 		    	});
 			}
