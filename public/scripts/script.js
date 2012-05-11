@@ -24,7 +24,7 @@ $(document).ready(function() {
 	$("#projects #slider").slideBanners();
 	$("#projects #slider a").modal();
 
-	$("header nav a").click(function(){
+	$("header nav a, footer nav a, #home nav a").click(function(){
 		var href = $(this).attr("href");
 		href = href.replace("#","");
 		$('html, body').animate({scrollTop: $("a[name="+href+"]").offset().top}, 1000);
