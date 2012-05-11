@@ -237,6 +237,7 @@ a.anchor{
   display:block;
 }
 #services ul li{
+  min-height:135px;
   float:left;
   width:37%;
   padding:0 0 30px 50px;
