@@ -520,6 +520,7 @@ a.anchor{
   margin-right:15px;
 }
 #contact div.wrap div.col2 div.map{
+  background-color:#F6F6F6 ;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
@@ -635,7 +636,15 @@ a.anchor{
   position:relative;
   display:none;  
 }
-
+#floater .frame a, #floater .frame a:visited{
+  color:#F90;
+}
+#floater .frame a:hover{
+  color:#FF0;
+}
+#floater .frame a:active{
+  color:#FF0;
+}
 #floater.iphone{
   background:url(/public/images/frame-iphone.png) no-repeat 50% 50%;
   width:301px;

@@ -55,8 +55,11 @@ $(document).ready(function() {
             return false;
 		});
 	$("#contact .map-link").bind("click",function(){
-		$("#contact div.map").slideToggle();
-		$("#contact div.map iframe").focus();
+		$("#contact div.map").slideToggle(function() {
+			window.open($("#contact .map-link").attr("href"),"codemap");
+			$("#contact div.map iframe").focus();
+		});
+		return false;
 	});
 });
 
