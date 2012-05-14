@@ -1,7 +1,7 @@
 (function($) {
 	$.fn.modal = function() {
 		if($("#floater-overlay").length == 0){
-		  	$("body").append('<div id="floater-overlay">');
+		  	$("body").append('<div id="floater-overlay" title="Fechar">');
 		  	$("body").append('<div id="floater">');
 
 		  	$("#floater").append('<a class="left">').append('<a class="right">').append('<div class="reflex">').append('<div class="frame">');
