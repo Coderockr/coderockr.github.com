@@ -134,7 +134,7 @@ header nav ul li a:hover span{
   -ms-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
 }
-header nav ul li a:hover span.hover{
+header nav ul li a:hover span.hover, header nav ul li a.active span.hover{
   opacity:1; filter: alpha(opacity = 100);
   -webkit-transition: opacity 0.2s linear;
   -moz-transition: opacity 0.2s linear;

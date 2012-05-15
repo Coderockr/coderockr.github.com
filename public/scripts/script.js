@@ -29,7 +29,7 @@ $(document).ready(function() {
 		href = href.replace("#","");
 		$('html, body').animate({scrollTop: $("a[name="+href+"]").offset().top}, 1000);
 		$("header nav").find(".active").removeClass("active");
-		console.log($("header nav").find("a[href=#"+href+"]"));
+		$("header nav").find("a[href=#"+href+"]").addClass("active");
 	});
 	$("#contact-form")
 		.unbind('submit')
