@@ -299,6 +299,12 @@ a.anchor{
 #projects > div.wrap.title{
   height:180px;
 }
+#projects > div.wrap.title h2{
+  font-size:4.3em;
+}
+#projects > div.wrap.title h2 span{
+  font-size:1.3em;
+}
 #projects div.wrap nav#slider{
   height:220px;
   overflow:hidden;
