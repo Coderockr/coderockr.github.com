@@ -134,13 +134,16 @@ header nav ul li a:hover span{
   -ms-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
 }
-header nav ul li a:hover span.hover, header nav ul li a.active span.hover{
+header nav ul li a:hover span.hover{
   opacity:1; filter: alpha(opacity = 100);
   -webkit-transition: opacity 0.2s linear;
   -moz-transition: opacity 0.2s linear;
   -o-transition: opacity 0.2s linear;
   -ms-transition: opacity 0.2s linear; 
   transition: opacity 0.2s linear;
+}
+header nav ul li a.active span.hover, header nav ul li a.active:hover span.hover{
+  opacity:1 !important; filter: alpha(opacity = 100) !important;
 }
 #main{
   padding-top:1px;
