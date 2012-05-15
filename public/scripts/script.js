@@ -31,8 +31,11 @@ $(document).ready(function() {
 		$("header nav").find(".active").removeClass("active");
 		$("header nav").find("a[href=#"+href+"]").addClass("active");
 	});
+
+	/*on start page*/
 	var hash = window.location.href.slice(window.location.href.indexOf('#') + 1);
-	console.log(hash);
+	if( hash != "" ) $("header nav").find("a[href=#"+hash+"]").addClass("active");
+
 	$("#contact-form")
 		.unbind('submit')
 		.bind('submit', function(){ 
