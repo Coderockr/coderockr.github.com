@@ -31,6 +31,8 @@ $(document).ready(function() {
 		$("header nav").find(".active").removeClass("active");
 		$("header nav").find("a[href=#"+href+"]").addClass("active");
 	});
+	var hash = window.location.href.slice(window.location.href.indexOf('#') + 1);
+	console.log(hash);
 	$("#contact-form")
 		.unbind('submit')
 		.bind('submit', function(){ 
