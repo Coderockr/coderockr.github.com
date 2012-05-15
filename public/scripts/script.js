@@ -28,6 +28,8 @@ $(document).ready(function() {
 		var href = $(this).attr("href");
 		href = href.replace("#","");
 		$('html, body').animate({scrollTop: $("a[name="+href+"]").offset().top}, 1000);
+		$("header nav").find(".active").removeClass("active");
+		console.log($("header nav").find("a[href=#"+href+"]"));
 	});
 	$("#contact-form")
 		.unbind('submit')
