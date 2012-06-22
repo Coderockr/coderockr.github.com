@@ -14,7 +14,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=0.65, maximum-scale=0.65, user-scalable=0">
 
   <link rel="stylesheet" href="/public/styles/style.css">
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -44,11 +44,11 @@
       <section id="home"><a name="home" class="anchor clearfix"></a>
         <div class="wrap">
           <article>
-            <h2>Programadores são artistas,<br />são Rockstars!</h2>
-            <p>Não desenvolvemos software, desenvolvemos Riffs e Solos com código fonte. Nossos<br />programadores não trabalham em uma empresa, eles fazem parte de uma banda de rock.</p>
+            <h2>Programadores são artistas, são Rockstars!</h2>
+            <p>Não desenvolvemos software, desenvolvemos Riffs e Solos com código fonte. Nossos programadores não trabalham em uma empresa, eles fazem parte de uma banda de rock.</p>
           </article>
         </div>
-        <nav>
+        <nav class="clearfix">
           <div class="wrap">
             <ul>
               {% include destaque_1.html %}
@@ -61,7 +61,7 @@
       <section id="services"><a name="servicos" class="anchor clearfix"></a>
         <article>
           <div class="wrap">
-            <h2>A Coderockr é uma empresa que acredita que<br />o desenvolvimento de aplicativos e sistemas<span> é uma arte,</span><br />que deve ser feita com<span> paixão e dedicação.</span></h2>
+            <h2>A Coderockr é uma empresa que acredita que o desenvolvimento de aplicativos e sistemas <span>é uma arte,</span> que deve ser feita com<span> paixão e dedicação.</span></h2>
           </div>
         </article>
         <div class="wrap">
@@ -98,8 +98,8 @@
         </div>
       </section>
       <section id="projects"><a name="projetos" class="anchor clearfix"></a>
-        <div class="wrap">
-          <h2>É nesse ritmo que fazemos<br />aplicativos <span>Mobile</span> e <span>Web</span>.</h2>
+        <div class="wrap title">
+          <h2>É nesse ritmo que fazemos aplicativos <span>Mobile</span> e <span>Web</span>.</h2>
         </div>
         <nav class="clearfix">
           <div class="wrap">
@@ -141,8 +141,8 @@
       </section>
       <section id="about" class="clearfix"><a name="sobre" class="anchor clearfix"></a>
         <div class="wrap">
-          <h2>Bons programadores são únicos,<br />assim como no mundo do rock.</h2>
-          <h3>Você não conseguiria contar quantos “Ozzys” ou “Slashs” estão disponíveis para um show. Assim como é impossível<br />saber que precisará exatamente de duas horas para compor uma música, e que em um mês ela será um grande<br />sucesso. Para isso, “timing” e “feeling” são mais importantes do que o controle sobre o processo.</h3>
+          <h2>Bons programadores são únicos, assim como no mundo do rock.</h2>
+          <h3>Você não conseguiria contar quantos “Ozzys” ou “Slashs” estão disponíveis para um show. Assim como é impossível saber que precisará exatamente de duas horas para compor uma música, e que em um mês ela será um grande sucesso. Para isso, “timing” e “feeling” são mais importantes do que o controle sobre o processo.</h3>
         </div>
         <div class="line clearfix"></div>        
         <div class="wrap">
@@ -166,6 +166,17 @@
         <h2>A Coderockr está pronta para dar um<br />show, entre em contato!</h2>
         <div class="line clearfix"></div>        
         <div class="wrap">
+          <div class="col2">
+            <ul>
+              <li class="clearfix"><a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Rua+Nove+de+Mar%C3%A7o,+737,+Joinville+-+Santa+Catarina,+Brasil&amp;aq=0&amp;oq=R.+Nove+de+Mar%C3%A7o+737,+joinville&amp;sll=-26.3015,-48.848893&amp;sspn=0.008224,0.016512&amp;g=rua+R.+Nove+de+Mar%C3%A7o+737,+joinville&amp;doflg=ptk&amp;ie=UTF8&amp;hq=&amp;hnear=R.+Nove+de+Mar%C3%A7o,+737+-+Centro,+Joinville+-+Santa+Catarina,+89201-400,+Brazil&amp;ll=-26.3015,-48.848893&amp;spn=0.016447,0.033023&amp;t=m&amp;z=14&amp;output=embed" class="map-link" title="Clique para ver o mapa">
+                  <img src="/public/images/contact-map.jpg" width="39" height="40" alt="" />Rua 9 de março, 737, Sala 502<br />Centro  |  89201-400  |  Joinville  |  SC</a>
+                  <div class="map"><iframe width="100%" height="100%" frameborder="0" scrolling="no" name="codemap" marginheight="0" marginwidth="0"></iframe></div>
+              </li>
+              <li class="clearfix"><img src="/public/images/contact-phone.jpg" width="39" height="40" alt="" /><span>47 3227.6359</span></li>
+              <li class="clearfix"><a href="mailto:contato@coderockr.com" title="contato@coderockr.com"><img src="/public/images/contact-mail.jpg" width="39" height="40" alt="" /><span>contato@coderockr.com</span></a></li>
+              <li class="clearfix"><a href="http://twitter.com/coderockr"><img src="/public/images/contact-twitter.jpg" width="39" height="40" alt="" /><span>@coderockr</span></a></li>
+            </ul>
+          </div>
           <div class="col1">
             <form action="#" method="post" id="contact-form">
               <fieldset>
@@ -176,11 +187,11 @@
                   </li>
                   <li>
                     <label>Telefone</label>
-                    <input type="text" name="contact[phone]" id="contact-name" tabindex="2" />
+                    <input type="tel" name="contact[phone]" id="contact-name" tabindex="2" />
                   </li>
                   <li>
                     <label>E-mail</label>
-                    <input type="text" name="contact[mail]" id="contact-name" tabindex="3" />
+                    <input type="email" name="contact[mail]" id="contact-name" tabindex="3" />
                   </li>
                   <li>
                     <label>Assunto</label>
@@ -196,17 +207,6 @@
                 </ul>
               </fieldset>
             </form>
-          </div>
-          <div class="col2">
-            <ul>
-              <li class="clearfix"><a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Rua+Nove+de+Mar%C3%A7o,+737,+Joinville+-+Santa+Catarina,+Brasil&amp;aq=0&amp;oq=R.+Nove+de+Mar%C3%A7o+737,+joinville&amp;sll=-26.3015,-48.848893&amp;sspn=0.008224,0.016512&amp;g=rua+R.+Nove+de+Mar%C3%A7o+737,+joinville&amp;doflg=ptk&amp;ie=UTF8&amp;hq=&amp;hnear=R.+Nove+de+Mar%C3%A7o,+737+-+Centro,+Joinville+-+Santa+Catarina,+89201-400,+Brazil&amp;ll=-26.3015,-48.848893&amp;spn=0.016447,0.033023&amp;t=m&amp;z=14&amp;output=embed" class="map-link" title="Clique para ver o mapa">
-                  <img src="/public/images/contact-map.jpg" width="39" height="40" alt="" />Rua 9 de março, 737, Sala 502<br />Centro  |  89201-400  |  Joinville  |  SC</a>
-                  <div class="map"><iframe width="100%" height="100%" frameborder="0" scrolling="no" name="codemap" marginheight="0" marginwidth="0"></iframe></div>
-              </li>
-              <li class="clearfix"><img src="/public/images/contact-phone.jpg" width="39" height="40" alt="" /><span>47 3227.6359</span></li>
-              <li class="clearfix"><a href="mailto:contato@coderockr.com" title="contato@coderockr.com"><img src="/public/images/contact-mail.jpg" width="39" height="40" alt="" /><span>contato@coderockr.com</span></a></li>
-              <li class="clearfix"><a href="http://twitter.com/coderockr"><img src="/public/images/contact-twitter.jpg" width="39" height="40" alt="" /><span>@coderockr</span></a></li>
-            </ul>
           </div>
         </div>
       </section>
