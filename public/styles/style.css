@@ -717,6 +717,54 @@ a.anchor{
   height:492px;
   margin:70px 0 0 80px;
 }
+#floater.ipad-portrait{
+  background:url(/public/images/frame-ipad-portrait.png) no-repeat 50% 50%;
+  width:636px;
+  height:820px;
+  top:50%;
+  left:50%;
+  margin-left:-318px;
+  margin-top:-420px;
+}
+#floater.ipad-portrait .reflex{
+  width:232px;
+  height:325px;
+  background:url(/public/images/reflex-ipad-portrait.png) no-repeat 0 0;
+  position:absolute;
+  left:332px;
+  top:79px;
+  z-index:50;
+}
+#floater.ipad-portrait .frame{
+  width:492px;
+  height:656px;
+  margin:79px 0 0 72px;
+}
+
+#floater.android-tablet{
+  background:url(/public/images/frame-android-tablet.png) no-repeat 50% 50%;
+  width:820px;
+  height:542px;
+  top:50%;
+  left:50%;
+  margin-left:-410px;
+  margin-top:-271px;
+}
+#floater.android-tablet .reflex{
+  width:319px;
+  height:390px;
+  background:url(/public/images/reflex-android-tablet.png) no-repeat 0 0;
+  position:absolute;
+  left:417px;
+  top:72px;
+  z-index:50;
+}
+#floater.android-tablet .frame{
+  width:666px;
+  height:390px;
+  margin:72px 0 0 70px;
+}
+
 #floater .frame ul{
   list-style:none;
   margin:0;
@@ -735,13 +783,6 @@ a.anchor{
 #floater .frame ul li h2 img{
   margin-right:5px;
 }
-#floater.ipad .frame ul li{
-  width:656px;
-  height:492px;
-}
-#floater.ipad .frame ul li .inner{
-  padding:20px;
-}
 #floater.iphone .frame ul li{
   width:236px;
   height:354px;
@@ -749,7 +790,21 @@ a.anchor{
 #floater.iphone .frame ul li .inner{
   padding:12px;
 }
-
+#floater.ipad .frame ul li{
+  width:656px;
+  height:492px;
+}
+#floater.ipad .frame ul li .inner, #floater.ipad-portrait .frame ul li .inner{
+  padding:20px;
+}
+#floater.ipad-portrait .frame ul li{
+  width:492px;
+  height:656px;
+}
+#floater.android-tablet .frame ul li{
+  width:666px;
+  height:390px;
+}
 
 /* ==|== non-semantic helper classes ======================================== */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
@@ -906,7 +961,7 @@ a.anchor{
     background:url(/public/images/line.gif) repeat-x 0 100%;
     padding:0 0 1px 0;
     width:100%;
-}
+  }
   #home nav ul li a > img{
     float: left;
     height: 145px;

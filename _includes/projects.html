@@ -22,8 +22,12 @@
           <li>
             {% if post.type == 'iphone' %}
                 <img src="{{i}}" alt="" width="236" height="354" />
-            {% else %}
+            {% endif %}
+            {% if post.type == 'ipad' %}
                 <img src="{{i}}" alt="" width="656" height="492" />
+            {% endif %}
+            {% if post.type == 'ipad-portrait' %}
+                <img src="{{i}}" alt="" width="492" height="656" />
             {% endif %}
           </li>
       {% endfor %}
