@@ -1,4 +1,4 @@
-/* Author: thiago@thiagovieira.com */
+/* Author: thiago@coderockr.com */
 $(document).ready(function() {
 	var interval=self.setInterval(function(){
 		if(window.pageYOffset <= 100)
@@ -37,7 +37,7 @@ $(document).ready(function() {
 
 	/*on start page*/
 	var hash = window.location.href.slice(window.location.href.indexOf('#') + 1);
-	if( hash != "" ) $("header nav").find("a[href=#"+hash+"]").addClass("active");
+	if( ( hash != "" ) && ( hash.indexOf("http://") == -1 ) ) $("header nav").find("a[href=#"+hash+"]").addClass("active");
 
 	$("#contact-form")
 		.unbind('submit')
@@ -65,8 +65,9 @@ $(document).ready(function() {
             return false;
 		});
 	$("#contact .map-link").bind("click",function(){
+		var hrefMap = $(this).attr("href");
 		$("#contact div.map").slideToggle(function() {
-			window.open($("#contact .map-link").attr("href"),"codemap");
+			window.open(hrefMap,"mapa");
 			$("#contact div.map iframe").focus();
 		});
 		return false;
