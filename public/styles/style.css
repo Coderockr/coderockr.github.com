@@ -461,13 +461,13 @@ a.anchor{
   margin-bottom:40px;
 }
 #contact div.wrap div.col1, #contact div.wrap div.col2{
-  width:45%;
-  float:left;
+  /*width:45%;
+  float:left;*/
   margin-right:9%;
 }
 #contact div.wrap div.col2{
   margin-right:0;
-  float:right;
+  /*float:right;*/
 }
 #contact div.wrap div.col1 ul, #contact div.wrap div.col2 ul{
   list-style:none;
