@@ -29,6 +29,9 @@
             {% if post.type == 'ipad-portrait' %}
                 <img src="{{i}}" alt="" width="492" height="656" />
             {% endif %}
+            {% if post.type == 'android-tablet' %}
+                <img src="{{i}}" alt="" width="666" height="390" />
+            {% endif %}
           </li>
       {% endfor %}
       

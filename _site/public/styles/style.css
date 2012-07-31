@@ -7,7 +7,7 @@ audio:not([controls]) { display: none; }
 [hidden] { display: none; }
 
 html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-body { margin: 0; font-size: 0.75em; line-height: 1.231; background: #F6F6F6 url(../images/body-bg.jpg) repeat-x 0 61px; }
+body { margin: 0; font-size: 0.75em; line-height: 1.231; background: #F6F6F6 url(/public/images/body-bg.jpg) repeat-x 0 61px; }
 body, button, input, select, textarea { font-family: 'Open Sans', sans-serif; color: #292929; }
 
 ::-moz-selection { background: #0F1A2B; color: #FFF; text-shadow: none; }
@@ -70,7 +70,7 @@ td { vertical-align: top; }
 }
 
 header{
-  background:#0F1A2B url(../images/header-bg.jpg) no-repeat 50% 100%;
+  background:#0F1A2B url(/public/images/header-bg.jpg) no-repeat 50% 100%;
   height:61px;
   position:fixed;
   top:0;
@@ -101,7 +101,7 @@ header nav ul li a, header nav ul li a:visited, header nav ul li a:active, heade
   position:relative;
 }
 header nav ul li a span{
-  background:url(../images/menu.png) no-repeat;
+  background:url(/public/images/menu.png) no-repeat;
   overflow:hidden;
   display:block;
   text-indent:200px;
@@ -186,7 +186,7 @@ a.anchor{
   width: 680px;
 }
 #home nav{
-  background:url(../images/line.gif) repeat-x 0 281px;
+  background:url(/public/images/line.gif) repeat-x 0 281px;
   height:380px;
   margin-top:40px;
 }
@@ -232,7 +232,7 @@ a.anchor{
   margin-top:61px;
 }
 #services > article{
-  background:url(../images/line.gif) repeat-x 0 100%;
+  background:url(/public/images/line.gif) repeat-x 0 100%;
   padding-bottom:10px;
 }
 #services h2{
@@ -280,7 +280,7 @@ a.anchor{
 
 /*projects section*/
 #projects > nav{
-  background:url(../images/line.gif) repeat-x 0 100%;
+  background:url(/public/images/line.gif) repeat-x 0 100%;
   padding-bottom:10px;
   margin-bottom:10px;
 }
@@ -389,7 +389,7 @@ a.anchor{
   color:#4D4D4D;
 }
 #about div.line{
-  background:url(../images/line.gif) repeat-x 0 100%;
+  background:url(/public/images/line.gif) repeat-x 0 100%;
   height:20px;
   margin-bottom:40px;
 }
@@ -435,7 +435,7 @@ a.anchor{
   height:80px;
   max-height:80px;
   min-height:80px;
-  background:url(../images/avatar-mask.png) no-repeat 0 0;
+  background:url(/public/images/avatar-mask.png) no-repeat 0 0;
 }
 #about div.wrap ul li article h3{
   font-size:1.2em;
@@ -456,7 +456,7 @@ a.anchor{
   font-size:4.4em;
 }
 #contact div.line{
-  background:url(../images/line.gif) repeat-x 0 100%;
+  background:url(/public/images/line.gif) repeat-x 0 100%;
   height:20px;
   margin-bottom:40px;
 }
@@ -510,7 +510,7 @@ a.anchor{
 }
 #contact div.wrap div.col1 ul li input[type=submit]{
   float:right;
-  background:url(../images/bt-send.png);
+  background:url(/public/images/bt-send.png);
   border:none;
   text-indent:200px;
   overflow:hidden;
@@ -572,7 +572,7 @@ a.anchor{
 }
 /*footer*/
 #container > footer{
-  background:url(../images/line.gif) repeat-x 0 0;
+  background:url(/public/images/line.gif) repeat-x 0 0;
   margin-top:30px;
 }
 #container > footer div.wrap{
@@ -620,7 +620,7 @@ a.anchor{
   display:none;
 }
 .ie6 #floater-overlay, .ie7 #floater-overlay, .ie8 #floater-overlay{
-  background:url(../images/ie-overlay.png);
+  background:url(/public/images/ie-overlay.png);
 }
 #floater{
   position:fixed;
@@ -652,12 +652,12 @@ a.anchor{
   transition: opacity 0.5s linear;
 }
 #floater a.left{
-  background:url(../images/arrow-left.png) no-repeat 50% 0;
+  background:url(/public/images/arrow-left.png) no-repeat 50% 0;
   left:-40px;
   outline:none;
 }
 #floater a.right{
-  background:url(../images/arrow-right.png) no-repeat 50% 0;
+  background:url(/public/images/arrow-right.png) no-repeat 50% 0;
   right:-40px;
   outline:none;
 }
@@ -676,7 +676,7 @@ a.anchor{
   color:#FF0;
 }
 #floater.iphone{
-  background:url(../images/frame-iphone.png) no-repeat 50% 50%;
+  background:url(/public/images/frame-iphone.png) no-repeat 50% 50%;
   width:301px;
   height:568px;
   top:50%;
@@ -687,7 +687,7 @@ a.anchor{
 #floater.iphone .reflex{
   width:97px;
   height:238px;
-  background:url(../images/reflex-iphone.png) no-repeat 0 0;
+  background:url(/public/images/reflex-iphone.png) no-repeat 0 0;
   position:absolute;
   left:171px;
   top:106px;
@@ -699,7 +699,7 @@ a.anchor{
   margin:106px 0 0 32px;
 }
 #floater.ipad{
-  background:url(../images/frame-ipad.png) no-repeat 50% 50%;
+  background:url(/public/images/frame-ipad.png) no-repeat 50% 50%;
   width:820px;
   height:636px;
   top:50%;
@@ -710,7 +710,7 @@ a.anchor{
 #floater.ipad .reflex{
   width:245px;
   height:238px;
-  background:url(../images/reflex-ipad.png) no-repeat 0 0;
+  background:url(/public/images/reflex-ipad.png) no-repeat 0 0;
   position:absolute;
   left:491px;
   top:70px;
@@ -722,7 +722,7 @@ a.anchor{
   margin:70px 0 0 80px;
 }
 #floater.ipad-portrait{
-  background:url(../images/frame-ipad-portrait.png) no-repeat 50% 50%;
+  background:url(/public/images/frame-ipad-portrait.png) no-repeat 50% 50%;
   width:636px;
   height:820px;
   top:50%;
@@ -733,7 +733,7 @@ a.anchor{
 #floater.ipad-portrait .reflex{
   width:251px;
   height:325px;
-  background:url(../images/reflex-ipad-portrait.png) no-repeat 0 0;
+  background:url(/public/images/reflex-ipad-portrait.png) no-repeat 0 0;
   position:absolute;
   left:332px;
   top:79px;
@@ -745,7 +745,7 @@ a.anchor{
   margin:79px 0 0 72px;
 }
 #floater.android-tablet{
-  background:url(../images/frame-android-tablet.png) no-repeat 50% 50%;
+  background:url(/public/images/frame-android-tablet.png) no-repeat 50% 50%;
   width:820px;
   height:542px;
   top:50%;
@@ -756,7 +756,7 @@ a.anchor{
 #floater.android-tablet .reflex{
   width:319px;
   height:390px;
-  background:url(../images/reflex-android-tablet.png) no-repeat 0 0;
+  background:url(/public/images/reflex-android-tablet.png) no-repeat 0 0;
   position:absolute;
   left:417px;
   top:72px;
@@ -960,7 +960,7 @@ a.anchor{
     height:inherit;
   }
   #home nav ul li{
-    background:url(../images/line.gif) repeat-x 0 100%;
+    background:url(/public/images/line.gif) repeat-x 0 100%;
     padding:0 0 1px 0;
     width:100%;
 }
@@ -1051,17 +1051,32 @@ a.anchor{
     display:none;
   }
   #floater{
-    background: url(../images/frame-mobile.jpg) 0 50% !important;
+    background: url(/public/images/frame-mobile.jpg) 0 50% !important;
     width:100% !important;
     height:100% !important;
     min-height:100% !important;
     top:0 !important;
     left:0 !important;
+    /*position:inherit;*/
     margin-left:0 !important;
     margin-top:0 !important;
   }
+  #floater a.close{
+    display: block;
+  }
   #floater .reflex{
     display:none;
+  }
+  #floater.iphone #projFrame.frame,
+  #floater.ipad #projFrame.frame,
+  #floater.ipad-portrait #projFrame.frame,
+  #floater.android-tablet #projFrame.frame{
+    margin:0;
+    width:100%;
+    height:100%;
+  }
+  #floater.android-tablet .frame ul li{
+    /*width:480px;*/
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio : 3), only screen and (min-device-pixel-ratio : 3)  {
