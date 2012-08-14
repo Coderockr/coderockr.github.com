@@ -6,15 +6,15 @@ $(document).ready(function() {
 		else if(window.pageYOffset >= 300 && parseInt($(document).width())>640)
 			$("header nav .home").parent().fadeIn(300);
 	},5);
-	$("#projects > nav a").not("#projects > nav.pages a").click(function(){
-		$("#projects > nav a").addClass("nonselect");
+	$("#projetos > nav a").not("#projetos > nav.pages a").click(function(){
+		$("#projetos > nav a").addClass("nonselect");
 		$(this).removeClass("nonselect");
 	});
-	$("#projects > nav.pages ul").css({marginLeft:-(parseInt($("#projects > nav.pages ul").width()/2))});
-	$("#contact label").bind('click',function(){
+	$("#projetos > nav.pages ul").css({marginLeft:-(parseInt($("#projetos > nav.pages ul").width()/2))});
+	$("#contato label").bind('click',function(){
 		$(this).next().focus();
 	});
-	$("#contact input[type=text], #contact input[type=tel], #contact input[type=email], #contact textarea").focus(function(){
+	$("#contato input[type=text], #contato input[type=tel], #contato input[type=email], #contato textarea").focus(function(){
 		if($(this).val() == ""){
 			$(this).parent().find("label").fadeOut(150);
 		}		
@@ -24,22 +24,32 @@ $(document).ready(function() {
 		}		
 	});
 
-	$("#projects #slider").slideBanners();
-	$("#projects #slider a").modal();
+	$("#projetos #slider").slideBanners();
+	$("#projetos #slider a").modal();
 
 	$("header nav a, footer nav a, #home nav a").click(function(){
 		var href = $(this).attr("href");
 		href = href.replace("#","");
-		$('html, body').animate({scrollTop: $("a[name="+href+"]").offset().top}, 1000);
-		$("header nav").find(".active").removeClass("active");
-		$("header nav").find("a[href=#"+href+"]").addClass("active");
+		if(parseInt($(document).width()) < 770){
+			$("#main > section").hide();
+			$("#main > section#" + href).show();
+		} else {
+			$('html, body').animate({scrollTop: $("a[name="+href+"]").offset().top}, 1000);
+			$("header nav").find(".active").removeClass("active");
+			$("header nav").find("a[href=#"+href+"]").addClass("active");
+		}
 	});
 
 	/*on start page*/
 	var hash = window.location.href.slice(window.location.href.indexOf('#') + 1);
-	if( ( hash != "" ) && ( hash.indexOf("http://") == -1 ) ) $("header nav").find("a[href=#"+hash+"]").addClass("active");
+	if( ( parseInt($(document).width()) < 770 ) && ( hash.indexOf("http://") == -1 ) ){
+		$("#main > section").hide();
+		$("#main > section#" + hash).show();
+	} else {
+		if( ( hash != "" ) && ( hash.indexOf("http://") == -1 ) ) $("header nav").find("a[href=#"+hash+"]").addClass("active");
+	}
 
-	$("#contact-form")
+	$("#contato-form")
 		.unbind('submit')
 		.bind('submit', function(){ 
 			var $form = $(this),
@@ -64,11 +74,11 @@ $(document).ready(function() {
 	        }
             return false;
 		});
-	$("#contact .map-link").bind("click",function(){
+	$("#contato .map-link").bind("click",function(){
 		var hrefMap = $(this).attr("href");
-		$("#contact div.map").slideToggle(function() {
+		$("#contato div.map").slideToggle(function() {
 			window.open(hrefMap,"mapa");
-			$("#contact div.map iframe").focus();
+			$("#contato div.map iframe").focus();
 		});
 		return false;
 	});
@@ -76,10 +86,10 @@ $(document).ready(function() {
 
 function clearForm()
 {
-	$('#contact-form').each(function () {
+	$('#contato-form').each(function () {
         this.reset();
     });
     // Google Chrome isn't resetting the form throug the reset() method,
     // so we are forcing this here.
-    $('#contact-form .reset').click();
+    $('#contato-form .reset').click();
 }
