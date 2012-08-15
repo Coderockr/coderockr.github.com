@@ -1,0 +1,11 @@
+<article>
+    <span class="avatar"><img src="https://si0.twimg.com/profile_images/2356276475/oovnlpug3qhhpnqbaixm_reasonably_small.jpeg" width="80" height="80" alt="" /><span></span></span>
+    <h3>Leonardo Rossetto</h3>
+    <p>Já foi graduando em Sistemas de Informação pela Unochapecó, atualmente trabalha com android, mas, conhece também C#, C++ e Zend Framework, fã de Metallica, nas horas vagas é player de FPS na Xbox live.</p>
+    <div class="share">
+        <a href="http://twitter.com/leorosseto_" target="_blank" title="Twitter"><img src="/public/images/share-twitter.gif" width="33" height="33" alt="Twitter" /></a>
+        <a href="http://www.facebook.com/leorossetto1" target="_blank" title="Facebook"><img src="/public/images/share-facebook.gif" width="33" height="33" alt="Facebook" /></a>
+        <a href="http://www.linkedin.com/profile/view?id=172500144&trk=tab_pro" target="_blank" title="Linkedin"><img src="/public/images/share-linkedin.gif" width="33" height="33" alt="Linkedin" /></a>
+        <a href="http://www.github.com/leonardoxh" target="_blank" title="Github"><img src="/public/images/github.gif" width="33" height="33" alt="Github" /></a>
+    </div>
+</article>
