@@ -381,11 +381,11 @@ a.anchor{
 
 /*about section*/
 #sobre div.wrap > h2{
-  font-size:4.4em;
+  font-size:4em;
   width:900px;
 }
 #sobre div.wrap > h2 span{
-  font-size:1.3em;
+  font-size:4.4em;
 }
 #sobre div.wrap h3{
   font-size:1.5em;
