@@ -384,6 +384,9 @@ a.anchor{
   font-size:4.4em;
   width:900px;
 }
+#sobre div.wrap > h2 span{
+  font-size:1.3em;
+}
 #sobre div.wrap h3{
   font-size:1.5em;
   color:#4D4D4D;
