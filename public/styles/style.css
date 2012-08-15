@@ -385,7 +385,7 @@ a.anchor{
   width:900px;
 }
 #sobre div.wrap > h2 span{
-  font-size:1.4em;
+  font-size:1.6em;
   width:900px;
 }
 #sobre div.wrap h3{
@@ -1049,14 +1049,13 @@ a.anchor{
     display:none;
   }
   #sobre div.wrap > h2{
-    font-size:2.8em;
+    font-size:2.3em;
     margin-bottom: 10px;
     width:450px;
   }
-  /*#sobre div.wrap > h2 span{
-    font-size:1.4em;
-    width:450px;
-  }*/
+  #sobre div.wrap > h2 span{
+    font-size:1.3em;
+  }
 
   #sobre div.wrap > h3{
     display:none;
