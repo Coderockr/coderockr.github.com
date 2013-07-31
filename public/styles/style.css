@@ -484,7 +484,6 @@ a.anchor{
 #contato div.wrap div.col1 ul li{
   position:relative;
   width:100%;
-  padding-bottom:14px;
 }
 #contato div.wrap div.col1 ul li label{
   position:absolute;
@@ -529,6 +528,7 @@ a.anchor{
 #contato div.wrap ul li{
   display:block;
   margin-bottom:11px;
+  padding-bottom:14px;
   position:relative;
 }
 #contato div.wrap ul li a{
