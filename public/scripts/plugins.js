@@ -38,7 +38,7 @@
 
 					    $("#floater .frame").fadeIn(300, function(){
 
-							if(parseInt($(document).width()) < 770){
+							if(parseInt($(document).width()) < 768){
 								$("#floater .frame ul li").css({width:parseInt($(document).width())});
 								var imgH = parseInt( (parseInt($("#floater .frame ul li > img").height()) * parseInt($(document).width()) ) / parseInt($("#floater .frame ul li > img").width()) ),
 									imgW = parseInt($(document).width());

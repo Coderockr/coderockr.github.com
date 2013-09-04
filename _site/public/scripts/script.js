@@ -1,11 +1,23 @@
 /* Author: thiago@coderockr.com */
 $(document).ready(function() {
+	orientation();
 	var interval=self.setInterval(function(){
-		if(window.pageYOffset <= 100)
-			$("header nav .home").parent().fadeOut(300);
-		else if(window.pageYOffset >= 300 && parseInt($(document).width())>640)
-			$("header nav .home").parent().fadeIn(300);
+		if(window.pageYOffset <= 100 && !($("body").hasClass("mobile")))
+			$("nav#menu .home").parent().fadeOut(300);
+		else if( (window.pageYOffset >= 300 && parseInt($(document).width())>640) )
+			$("nav#menu .home").parent().fadeIn(300);
+		if(parseInt($(document).width()) < 768)
+			$(".mobile nav#menu").css({minHeight:$(document).height()})
 	},5);
+	$("nav#menu a").click(function(){
+		$(this).parent().parent().find("li a.active").removeClass("active");
+		$(this).addClass("active");
+	});
+
+	$(".mobile nav#menu a").click(function(){
+		$("#openmenu").attr("checked",false);
+	});
+
 	$("#projetos > nav a").not("#projetos > nav.pages a").click(function(){
 		$("#projetos > nav a").addClass("nonselect");
 		$(this).removeClass("nonselect");
@@ -27,14 +39,14 @@ $(document).ready(function() {
 	$("#projetos #slider").slideBanners();
 	$("#projetos #slider a").modal();
 
-	$("header nav a, footer nav a, #home nav a").click(function(){
+	$("nav#menu a, footer nav a, #home nav a").click(function(){
 		var href = $(this).attr("href");
 		href = href.replace("#","");
-		if(parseInt($(document).width()) < 770){
+		if(parseInt($(document).width()) < 768){
 			$("#main > section").hide();
 			$("#main > section#" + href).show();
 		} else {
-			$('html, body').animate({scrollTop: $("a[name="+href+"]").offset().top}, 1000);
+			$("html, body").animate({scrollTop: $("a[name="+href+"]").offset().top}, 1000);
 			$("header nav").find(".active").removeClass("active");
 			$("header nav").find("a[href=#"+href+"]").addClass("active");
 		}
@@ -42,12 +54,21 @@ $(document).ready(function() {
 
 	/*on start page*/
 	var hash = window.location.href.slice(window.location.href.indexOf('#') + 1);
-	if( ( parseInt($(document).width()) < 770 ) && ( hash.indexOf("http://") == -1 ) ){
+	if( ( parseInt($(document).width()) < 768 ) && ( hash.indexOf("http://") == -1 ) ){
 		$("#main > section").hide();
 		$("#main > section#" + hash).show();
-	} else {
-		if( ( hash != "" ) && ( hash.indexOf("http://") == -1 ) ) $("header nav").find("a[href=#"+hash+"]").addClass("active");
+
 	}
+	if( ( hash != "" ) && ( hash.indexOf("http://") == -1 ) ){
+		$("nav#menu").find("a.active").removeClass("active");
+		$("nav#menu").find("a[href=#"+hash+"]").addClass("active");
+	}
+    $(window).resize( function(){
+        if(!$("input, select, textarea").is(":focus")){
+            orientation();
+        }
+    });
+
 
 	$("#contato-form")
 		.unbind('submit')
@@ -76,20 +97,73 @@ $(document).ready(function() {
 		});
 	$("#contato .map-link").bind("click",function(){
 		var hrefMap = $(this).attr("href");
-		$("#contato div.map").slideToggle(function() {
-			window.open(hrefMap,"mapa");
-			$("#contato div.map iframe").focus();
-		});
-		return false;
+		if($("body").hasClass("mobile")){
+			window.open(hrefMap,"_blank");
+		} else {
+			$("#contato div.map").slideToggle(function() {
+				window.open(hrefMap,"mapa");
+				$("#contato div.map iframe").focus();
+			});
+			return false;
+		}
 	});
 });
+function orientation() {
+	var height = $(window).height();
+    var width = $(window).width();
+    if(width < 770) {
+    	$("body").addClass("mobile");
+    	$("nav#menu .home").parent().show();
+    	$("nav#menu .home").css({display:"block"});
 
+        if(width>height) {
+            $("body").addClass("landscape");
+        } else {
+            $("body").removeClass("landscape");
+        }
+    } else {
+    	$("body").removeClass("mobile");
+    }
+}
 function clearForm()
 {
-	$('#contato-form').each(function () {
+	$("#contato-form").each(function () {
         this.reset();
     });
     // Google Chrome isn't resetting the form throug the reset() method,
     // so we are forcing this here.
-    $('#contato-form .reset').click();
+    $("#contato-form .reset").click();
 }
+
+/*! Normalized address bar hiding for iOS & Android (c) @scottjehl MIT License */
+(function( win ){
+   var doc = win.document;
+   // If there's a hash, or addEventListener is undefined, stop here
+   if( !location.hash && win.addEventListener ){
+       //scroll to 1
+       win.scrollTo( 0, 1 );
+       var scrollTop = 1,
+       getScrollTop = function(){
+           return win.pageYOffset || doc.compatMode === "CSS1Compat" && doc.documentElement.scrollTop || doc.body.scrollTop || 0;
+       },
+   
+       //reset to 0 on bodyready, if needed
+       bodycheck = setInterval(function(){
+           if( doc.body ){
+               clearInterval( bodycheck );
+               scrollTop = getScrollTop();
+               win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
+           }
+       }, 15 );
+       
+       win.addEventListener( "load", function(){
+           setTimeout(function(){
+               //at load, if user hasn't scrolled more than 20 or so...
+               if( getScrollTop() < 20 ){
+                   //reset to hide addr bar at onload
+                   win.scrollTo( 0, scrollTop === 1 ? 0 : 1 );
+               }
+           }, 30);
+       }, false );
+   }
+})( this );

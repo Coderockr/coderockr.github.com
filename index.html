@@ -14,39 +14,45 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <meta name="viewport" content="width=device-width, initial-scale=0.65, maximum-scale=0.65, user-scalable=0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
   <link rel="stylesheet" href="/public/styles/style.css">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300|Hammersmith+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
   <script src="/public/scripts/libs/modernizr-2.0.6.min.js"></script>
 </head>
 
 <body>
-  
+  <input type="checkbox" id="openmenu" name="openmenu" value="openmenu" />
   <div id="container">
+    <nav class="wrap" id="menu">
+      <ul>
+        <li><a href="#home" class="home active" title="Topo">Home</a></li>
+        <li><a href="#servicos" class="services" title="Serviços">Serviços</a></li>
+        <li><a href="#projetos" class="projects" title="Projetos">Projetos</a></li>
+        <li><a href="#clientes" class="clients" title="Clientes">Clientes</a></li>
+        <li><a href="#sobre" class="about" title="Sobre">Sobre</a></li>
+        <li><a href="http://blog.coderockr.com" class="blog" title="Blog" target="_blank">Blog</a></li>
+        <li class="last"><a href="#contato" class="contact" title="Contato">Contato</a></li>
+      </ul>
+    </nav>
+    <label class="tapoverlay" for="openmenu"></label>
+
     <header>
       <div class="wrap">
         <h1><a href="/" title="Coderockr"><img src="/public/images/coderockr-logo.png" width="130" height="42" alt="Coderockr" /></a></h1>
-        <nav>
-          <ul>
-            <li><a href="#home" class="home" title="Topo"><span>Topo</span><span class="hover"></span></a></li>
-            <li><a href="#servicos" class="services" title="Serviços"><span>Serviços</span><span class="hover"></span></a></li>
-            <li><a href="#projetos" class="projects" title="Projetos"><span>Projetos</span><span class="hover"></span></a></li>
-            <li><a href="#sobre" class="about" title="Sobre"><span>Sobre</span><span class="hover"></span></a></li>
-            <li><a href="http://blog.coderockr.com" class="blog" title="Blog" target="_blank"><span>Blog</span><span class="hover"></span></a></li>
-            <li class="last"><a href="#contato" class="contact" title="Contato"><span>Contato</span><span class="hover"></span></a></li>
-          </ul>
-        </nav>
+        <label for="openmenu" class="bt-menu">
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+        </label>
       </div>
     </header>
+
     <div id="main" role="main">
       <section id="home"><a name="home" class="anchor clearfix"></a>
         <div class="wrap">
-          <article>
-            <h2>Programadores são artistas, são Rockstars!</h2>
-            <p>Não desenvolvemos software, desenvolvemos Riffs e Solos com código fonte. Nossos programadores não trabalham em uma empresa, eles fazem parte de uma banda de rock.</p>
-          </article>
+          <h2>Creating Apps that Rock</h2>
         </div>
         <nav class="clearfix">
           <div class="wrap">
@@ -59,10 +65,8 @@
         </nav>
       </section>
       <section id="servicos"><a name="servicos" class="anchor clearfix"></a>
-        <article>
-          <div class="wrap">
-            <h2>A Coderockr é uma empresa que acredita que o desenvolvimento de aplicativos e sistemas <span>é uma arte,</span> que deve ser feita com<span> paixão e dedicação.</span></h2>
-          </div>
+        <article class="wrap">
+          <h2>A Coderockr é uma empresa que acredita que o desenvolvimento de aplicativos e sistemas <span>é uma arte,</span> que deve ser feita com<span> paixão e dedicação.</span></h2>
         </article>
         <div class="wrap">
           <ul class="clearfix">
@@ -73,25 +77,18 @@
                 <p>Trabalhamos com PHP e JavaScript, frameworks como Zend Framework, Doctrine, Slim, interfaces em HTML5 e CSS3.</p>
               </article>
             </li>
-            <li class="right">
+            <li>
               <span>2</span>
               <article>
                 <h3>Desenvolvimento mobile</h3>
                 <p>Desenvolvemos aplicativos para iPhone, iPad e dispositivos Android, de celulares a tablets.</p>
               </article>
             </li>
-            <li>
+            <li class="last">
               <span>3</span>
               <article>
                 <h3>Consultoria</h3>
-                <p>Prestamos consultoria em desenvolvimento web e mobile, performance e cloud computing para empresas como Malapronta.com, Unochapecó e Euax.</p>
-              </article>
-            </li>
-            <li class="right">
-              <span>4</span>
-              <article>
-                <h3>Treinamento</h3>
-                <p>Fazemos treinamentos em Zend Framework e desenvolvimento iOS para empresas como Unochapecó, Ativa Informática e Softers.</p>
+                <p>Prestamos consultoria em desenvolvimento web e mobile, performance e cloud computing.</p>
               </article>
             </li>
           </ul>
@@ -101,16 +98,7 @@
         <div class="wrap title">
           <h2>É nesse ritmo que fazemos aplicativos <span>Mobile</span> e <span>Web</span>.</h2>
         </div>
-        <nav class="clearfix">
-          <div class="wrap">
-            <!-- <ul>
-              <li><a href="javascript:void(0);" title="iPhone">iPhone</a></li>
-              <li><a href="javascript:void(0);" title="iPad">iPad</a></li>
-              <li><a href="javascript:void(0);" title="Android">Android</a></li>
-              <li><a href="javascript:void(0);" title="Web">Web</a></li>
-            </ul> -->
-          </div>
-        </nav>
+        <div class="clearfix"></div>
         <div class="wrap">
           <nav id="slider">
             <ul>
@@ -139,10 +127,32 @@
           </ul>
         </nav>
       </section>
+      <section id="clientes" class="clearfix">
+        <div class="wrap">
+          <h2>
+            Clientes que dão um show com a Coderockr!
+          </h2>
+          <ul>
+            <li><img src="/public/images/clientes/logo-arkpad.png" width="100" height="70" alt="Arkpad"></li>
+            <li><img src="/public/images/clientes/logo-rps.png" width="100" height="70" alt="RPS Fácil"></li>
+            <li><img src="/public/images/clientes/logo-icarros.png" width="100" height="70" alt="iCarros"></li>
+            <li><img src="/public/images/clientes/logo-codesquad.png" width="100" height="70" alt="Code Squad"></li>
+            <li><img src="/public/images/clientes/logo-softplan.png" width="100" height="70" alt="Softplan"></li>
+            <li><img src="/public/images/clientes/logo-mih.png" width="100" height="70" alt="MIH Group"></li>
+            <li><img src="/public/images/clientes/logo-sh.png" width="100" height="70" alt="SH"></li>
+            <li><img src="/public/images/clientes/logo-unipay.png" width="100" height="70" alt="Unipay"></li>
+            <li><img src="/public/images/clientes/logo-casabrasil.png" width="100" height="70" alt="Casa Brasil"></li>
+            <li><img src="/public/images/clientes/logo-unochapeco.png" width="100" height="70" alt="Unochapecó"></li>
+            <li><img src="/public/images/clientes/logo-sommaior.png" width="100" height="70" alt="Som Maior"></li>
+            <li><img src="/public/images/clientes/logo-indaia.png" width="100" height="70" alt="Restaurante Indaiá"></li>
+            <li><img src="/public/images/clientes/logo-ng.png" width="100" height="70" alt="NG Informaática"></li>
+            <li><img src="/public/images/clientes/logo-weg.png" width="100" height="70" alt="WEG"></li>
+          </ul>
+        </div>
+      </section>
       <section id="sobre" class="clearfix"><a name="sobre" class="anchor clearfix"></a>
         <div class="wrap">
-          <h2><span>Bons programadores</span> são únicos, assim como <span>músicos no mundo do rock</span>.</h2>
-          <h3>Você não conseguiria contar quantos “Ozzys” ou “Slashs” estão disponíveis para um show. Assim como é impossível saber que precisará exatamente de duas horas para compor uma música, e que em um mês ela será um grande sucesso. Para isso, “timing” e “feeling” são mais importantes do que o controle sobre o processo.</h3>
+          <h2><span>Bons programadores</span> são únicos, assim como <span>estrelas no mundo do rock</span>.</h2>
         </div>
         <div class="line clearfix"></div>        
         <div class="wrap">
@@ -182,53 +192,21 @@
             <ul>
               <li class="clearfix">
                 <a target="mapa" href="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Rua+Ministro+Cal%C3%B3geras,+910,+Joinville+-+Santa+Catarina,+Brasil&amp;aq=0&amp;oq=Rua+Ministro+Calogeras+910&amp;sll=37.0625,-95.677068&amp;sspn=54.665451,96.328125&amp;ie=UTF8&amp;hq=&amp;hnear=R.+Min.+Cal%C3%B3geras,+910+-+Centro,+Joinville+-+Santa+Catarina,+89201-485,+Brazil&amp;t=m&amp;z=14&amp;iwloc=A&amp;ll=-26.307923,-48.84879&amp;output=embed" class="map-link" title="Clique para ver no mapa">
-                  <img src="/public/images/contact-map.jpg" width="39" height="40" alt="" />Rua Ministro Calogeras 910, sobreloja<br />Bairro Atiradores  |  89201-485  |  Joinville  |  SC
+                  <img src="/public/images/contact-map.png" width="40" height="40" alt="" />Rua Ministro Calogeras 910, sobreloja<span class="coma">,</span> <span>Bairro Atiradores  |  89201-485  |  Joinville  |  SC</span>
                 </a>
                 <div class="map"><iframe width="100%" height="100%" frameborder="0" scrolling="no" name="mapa" marginheight="0" marginwidth="0"></iframe></div>
               </li>
-              <li class="clearfix"><img src="/public/images/contact-phone.jpg" width="39" height="40" alt="" /><span>47 3227.6359</span></li>
-              <li class="clearfix"><a href="mailto:contato@coderockr.com?subject=Contato pelo site" title="Envie um e-mail para contato@coderockr.com"><img src="/public/images/contact-mail.jpg" width="39" height="40" alt="" /><span>contato@coderockr.com</span></a></li>
+              <li class="clearfix"><a href="tel:04732276359" class="call"><img src="/public/images/contact-phone.png" width="40" height="40" alt="" /><span>47 3227.6359</span></a></li>
+              <li class="clearfix"><a href="mailto:contato@coderockr.com?subject=Contato pelo site" title="Envie um e-mail para contato@coderockr.com"><img src="/public/images/contact-mail.png" width="40" height="40" alt="" /><span>contato@coderockr.com</span></a></li>
             </ul>
           </div>
           <div class="col2">
             <ul>
-              <li class="clearfix"><a href="http://facebook.com/coderockr" target="_blank" title="Facebook da Coderockr"><img src="/public/images/contact-facebook.jpg" width="39" height="40" alt="" /><span>Facebook</span></a></li>
-              <li class="clearfix"><a href="http://twitter.com/coderockr" target="_blank" title="Twitter da Coderockr"><img src="/public/images/contact-twitter.jpg" width="39" height="40" alt="" /><span>@coderockr</span></a></li>
-              <li class="clearfix"><a href="https://plus.google.com/114839342124659023408" target="_blank" title="Google+ Coderockr" rel="publisher"><img src="/public/images/contact-gplus.jpg" width="39" height="40" alt="" /><span>Google+</span></a></li>
+              <li class="clearfix"><a href="http://facebook.com/coderockr" target="_blank" title="Facebook da Coderockr"><img src="/public/images/contact-facebook.png" width="40" height="40" alt="" /><span>Facebook</span></a></li>
+              <li class="clearfix"><a href="http://twitter.com/coderockr" target="_blank" title="Twitter da Coderockr"><img src="/public/images/contact-twitter.png" width="40" height="40" alt="" /><span>@coderockr</span></a></li>
+              <li class="clearfix"><a href="https://plus.google.com/114839342124659023408" target="_blank" title="Google+ Coderockr" rel="publisher"><img src="/public/images/contact-gplus.png" width="40" height="40" alt="" /><span>Google+</span></a></li>
             </ul>
           </div>
-          <!--div class="col1">
-            <form action="#" method="post" id="contact-form">
-              <fieldset>
-                <ul>
-                  <li>
-                    <label>Nome</label>
-                    <input type="text" name="contact[name]" id="contact-name" tabindex="1" />
-                  </li>
-                  <li>
-                    <label>Telefone</label>
-                    <input type="tel" name="contact[phone]" id="contact-name" tabindex="2" />
-                  </li>
-                  <li>
-                    <label>E-mail</label>
-                    <input type="email" name="contact[mail]" id="contact-name" tabindex="3" />
-                  </li>
-                  <li>
-                    <label>Assunto</label>
-                    <input type="text" name="contact[subject]" id="contact-name" tabindex="4" />
-                  </li>
-                  <li>
-                    <label>Mensagem</label>
-                    <textarea type="text" name="contact[message]" id="contact-name" tabindex="5"></textarea>
-                  </li>
-                  <li>
-                    <input type="submit" value="Enviar" />
-                  </li>
-                </ul>
-              </fieldset>
-            </form>
-          </div>
-        </div-->
       </section>
     </div>
     <footer>
@@ -244,7 +222,8 @@
             <ul>
               <li><a href="#home">Topo</a></li>
               <li><a href="#servicos">Serviços</a></li>
-              <li><a href="#projetos">Projetos </a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#clientes">Clientes</a></li>
               <li><a href="#sobre">Sobre</a></li>
               <li><a href="http://blog.coderockr.com" target="_blank">Blog</a></li>
               <li><a href="#contato">Contato</a></li>
@@ -254,13 +233,6 @@
       </div>
     </footer>
   </div>
-  <!--div id="floater-overlay"></div>
-  <div id="floater" class="ipad">
-    <a href="javascript:void(0);" title="Anterior" class="left">&lt;</a>
-    <a href="javascript:void(0);" title="Próximo" class="right">&gt;</a>
-    <div class="reflex"></div>
-    <div class="frame"></div>
-  </div-->
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="/public/scripts/libs/jquery-1.6.2.min.js"><\/script>')</script>
@@ -274,8 +246,6 @@
       load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
     });
   </script>
-
-
 
   <!--[if lt IE 7 ]>
     <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>

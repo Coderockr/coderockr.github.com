@@ -12,50 +12,56 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <meta name="viewport" content="width=device-width, initial-scale=0.65, maximum-scale=0.65, user-scalable=0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
   <link rel="stylesheet" href="/public/styles/style.css">
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300|Hammersmith+One&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
   <script src="/public/scripts/libs/modernizr-2.0.6.min.js"></script>
 </head>
 
 <body>
-  
+  <input type="checkbox" id="openmenu" name="openmenu" value="openmenu" />
   <div id="container">
+    <nav class="wrap" id="menu">
+      <ul>
+        <li><a href="#home" class="home active" title="Topo">Home</a></li>
+        <li><a href="#servicos" class="services" title="Serviços">Serviços</a></li>
+        <li><a href="#projetos" class="projects" title="Projetos">Projetos</a></li>
+        <li><a href="#clientes" class="clients" title="Clientes">Clientes</a></li>
+        <li><a href="#sobre" class="about" title="Sobre">Sobre</a></li>
+        <li><a href="http://blog.coderockr.com" class="blog" title="Blog" target="_blank">Blog</a></li>
+        <li class="last"><a href="#contato" class="contact" title="Contato">Contato</a></li>
+      </ul>
+    </nav>
+    <label class="tapoverlay" for="openmenu"></label>
+
     <header>
       <div class="wrap">
         <h1><a href="/" title="Coderockr"><img src="/public/images/coderockr-logo.png" width="130" height="42" alt="Coderockr" /></a></h1>
-        <nav>
-          <ul>
-            <li><a href="#home" class="home" title="Topo"><span>Topo</span><span class="hover"></span></a></li>
-            <li><a href="#servicos" class="services" title="Serviços"><span>Serviços</span><span class="hover"></span></a></li>
-            <li><a href="#projetos" class="projects" title="Projetos"><span>Projetos</span><span class="hover"></span></a></li>
-            <li><a href="#sobre" class="about" title="Sobre"><span>Sobre</span><span class="hover"></span></a></li>
-            <li><a href="http://blog.coderockr.com" class="blog" title="Blog" target="_blank"><span>Blog</span><span class="hover"></span></a></li>
-            <li class="last"><a href="#contato" class="contact" title="Contato"><span>Contato</span><span class="hover"></span></a></li>
-          </ul>
-        </nav>
+        <label for="openmenu" class="bt-menu">
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+        </label>
       </div>
     </header>
+
     <div id="main" role="main">
       <section id="home"><a name="home" class="anchor clearfix"></a>
         <div class="wrap">
-          <article>
-            <h2>Programadores são artistas, são Rockstars!</h2>
-            <p>Não desenvolvemos software, desenvolvemos Riffs e Solos com código fonte. Nossos programadores não trabalham em uma empresa, eles fazem parte de uma banda de rock.</p>
-          </article>
+          <h2>Creating Apps that Rock</h2>
         </div>
         <nav class="clearfix">
           <div class="wrap">
             <ul>
               <li>
-    <a href="#projetos" title="SH">
+    <a href="#projetos" title="Som Maior">
       <img src="/public/images/content/home-sommaior.jpg" width="290" height="281" alt="" />
       <span>
-        <img  src="/public/images/content/icon-sommaior.png" width="70" height="69" alt="SH" />
+        <img  src="/public/images/content/icon-sommaior.png" width="70" height="69" alt="Som Maior" />
         <span class="title">Som Maior</span>
-        <span>Agora os representantes da Som Maior contam com um catálogo digital</span>
+        <span>Agora os representantes da Som Maior contam com um catálogo digital.</span>
       </span>
     </a>
 </li>
@@ -65,7 +71,7 @@
       <span>
         <img  src="/public/images/content/icon-uptaxi.png" width="70" height="69" alt="upTaxi" />
         <span class="title">upTaxi</span>
-        <span>O upTaxi é um aplicativo para você pedir um táxi de uma maneira rápida e fácil, sem precisar fazer uma ligação telefônica.</span>
+        <span>O upTaxi é um aplicativo para você pedir um táxi de uma maneira rápida e fácil.</span>
       </span>
     </a>
 </li>
@@ -75,7 +81,7 @@
       <span>
         <img  src="/public/images/content/icon-casabrasil.png" width="70" height="69" alt="Casa Brasil" />
         <span class="title">Casa Brasil</span>
-        <span>Aplicativo oficial da feira Casa Brasil 2013</span>
+        <span>Aplicativo oficial com informações da feira Casa Brasil 2013.</span>
       </span>
     </a>
 </li>
@@ -84,10 +90,8 @@
         </nav>
       </section>
       <section id="servicos"><a name="servicos" class="anchor clearfix"></a>
-        <article>
-          <div class="wrap">
-            <h2>A Coderockr é uma empresa que acredita que o desenvolvimento de aplicativos e sistemas <span>é uma arte,</span> que deve ser feita com<span> paixão e dedicação.</span></h2>
-          </div>
+        <article class="wrap">
+          <h2>A Coderockr é uma empresa que acredita que o desenvolvimento de aplicativos e sistemas <span>é uma arte,</span> que deve ser feita com<span> paixão e dedicação.</span></h2>
         </article>
         <div class="wrap">
           <ul class="clearfix">
@@ -98,25 +102,18 @@
                 <p>Trabalhamos com PHP e JavaScript, frameworks como Zend Framework, Doctrine, Slim, interfaces em HTML5 e CSS3.</p>
               </article>
             </li>
-            <li class="right">
+            <li>
               <span>2</span>
               <article>
                 <h3>Desenvolvimento mobile</h3>
                 <p>Desenvolvemos aplicativos para iPhone, iPad e dispositivos Android, de celulares a tablets.</p>
               </article>
             </li>
-            <li>
+            <li class="last">
               <span>3</span>
               <article>
                 <h3>Consultoria</h3>
-                <p>Prestamos consultoria em desenvolvimento web e mobile, performance e cloud computing para empresas como Malapronta.com, Unochapecó e Euax.</p>
-              </article>
-            </li>
-            <li class="right">
-              <span>4</span>
-              <article>
-                <h3>Treinamento</h3>
-                <p>Fazemos treinamentos em Zend Framework e desenvolvimento iOS para empresas como Unochapecó, Ativa Informática e Softers.</p>
+                <p>Prestamos consultoria em desenvolvimento web e mobile, performance e cloud computing.</p>
               </article>
             </li>
           </ul>
@@ -126,16 +123,7 @@
         <div class="wrap title">
           <h2>É nesse ritmo que fazemos aplicativos <span>Mobile</span> e <span>Web</span>.</h2>
         </div>
-        <nav class="clearfix">
-          <div class="wrap">
-            <!-- <ul>
-              <li><a href="javascript:void(0);" title="iPhone">iPhone</a></li>
-              <li><a href="javascript:void(0);" title="iPad">iPad</a></li>
-              <li><a href="javascript:void(0);" title="Android">Android</a></li>
-              <li><a href="javascript:void(0);" title="Web">Web</a></li>
-            </ul> -->
-          </div>
-        </nav>
+        <div class="clearfix"></div>
         <div class="wrap">
           <nav id="slider">
             <ul>
@@ -146,7 +134,7 @@
     <li>
 
     <a href="javascript:void(0);" rel="iphone" title="upTaxi">
-      <img  src="/public/images/content/icon-uptaxi.png" width="70" height="69" alt="upTaxi" />
+      <img  src="/public/images/content/icon-uptaxi.png" width="70" height="70" alt="upTaxi" />
       <span class="title">upTaxi</span>
       <span>
         O upTaxi é um aplicativo para você pedir um táxi de uma maneira rápida e fácil.
@@ -156,7 +144,7 @@
     <ul>
       <li>
         <div class="inner">
-          <h2><img src="/public/images/content/icon-uptaxi.png" width="39" height="40" alt="" /> upTaxi</h2>
+          <h2><img src="/public/images/content/icon-uptaxi.png" width="40" height="40" alt="upTaxi" /> upTaxi</h2>
           <p>Através do GPS, o upTaxi localiza o veículo mais próximo de você em poucos segundos.
 Ao aceitar o taxista indicado a lhe atender, você pode acompanhar o trajeto do taxi no mapa em tempo real e pode enviar mensagem ou ligar diretamente para o taxista.
 O aplicativo é gratuito para o usuário e está disponível para iPhones, iPads, smartphones e tablets Android
@@ -220,17 +208,17 @@ O aplicativo é gratuito para o usuário e está disponível para iPhones, iPads
     <li>
 
     <a href="javascript:void(0);" rel="iphone" title="Casa Brasil">
-      <img  src="/public/images/content/icon-casabrasil.png" width="70" height="69" alt="Casa Brasil" />
+      <img  src="/public/images/content/icon-casabrasil.png" width="70" height="70" alt="Casa Brasil" />
       <span class="title">Casa Brasil</span>
       <span>
-        Aplicativo oficial da feira Casa Brasil 2013
+        Aplicativo oficial com informações da feira Casa Brasil 2013.
       </span>
     </a>
     <!--start overlay content-->
     <ul>
       <li>
         <div class="inner">
-          <h2><img src="/public/images/content/icon-casabrasil.png" width="39" height="40" alt="" /> Casa Brasil</h2>
+          <h2><img src="/public/images/content/icon-casabrasil.png" width="40" height="40" alt="Casa Brasil" /> Casa Brasil</h2>
           <p>Aplicativo oficial da feira Casa Brasil 2013, que acontecerá entre os dias 13 e 16 de Agosto em Bento Gonçalves-RS. O aplicativo contém todas as informações que o visitante precisa, principalmente sobre as atrações e os expositores.
 <p class="app">
     <a href="https://itunes.apple.com/us/app/casa-brasil/id670248389?l=pt&ls=1&mt=8" title="App Store" target="_blank">
@@ -328,17 +316,17 @@ O aplicativo é gratuito para o usuário e está disponível para iPhones, iPads
     <li class="last">
 
     <a href="javascript:void(0);" rel="ipad" title="Som Maior">
-      <img  src="/public/images/content/icon-sommaior.png" width="70" height="69" alt="Som Maior" />
+      <img  src="/public/images/content/icon-sommaior.png" width="70" height="70" alt="Som Maior" />
       <span class="title">Som Maior</span>
       <span>
-        Aplicativo de catálogo para representantes comerciais da loja Som Maior
+        Aplicativo de catálogo para representantes comerciais da loja Som Maior.
       </span>
     </a>
     <!--start overlay content-->
     <ul>
       <li>
         <div class="inner">
-          <h2><img src="/public/images/content/icon-sommaior.png" width="39" height="40" alt="" /> Som Maior</h2>
+          <h2><img src="/public/images/content/icon-sommaior.png" width="40" height="40" alt="Som Maior" /> Som Maior</h2>
           <p>Aplicativo catálogo para representantes comerciais da loja Som Maior, o catálogo conta com painel de administração on-line, que sincroniza as informações dos catálogos automaticamente. O catálogo conta com marcas, linhas, categorias, produtos com imagens e vídeos, conteúdos HTML para enriquecer os detalhes, além de compartilhamento de produtos.</p>
           <div class="swipe"></div>
         </div>
@@ -407,7 +395,7 @@ O aplicativo é gratuito para o usuário e está disponível para iPhones, iPads
     <li>
 
     <a href="javascript:void(0);" rel="android-tablet" title="Indaiá">
-      <img  src="/public/images/content/icon-indaia.png" width="70" height="69" alt="Indaiá" />
+      <img  src="/public/images/content/icon-indaia.png" width="70" height="70" alt="Indaiá" />
       <span class="title">Indaiá</span>
       <span>
         Solução completa de cardápio, recepção, caixa e garçons para o Restaurante Indaiá.
@@ -417,7 +405,7 @@ O aplicativo é gratuito para o usuário e está disponível para iPhones, iPads
     <ul>
       <li>
         <div class="inner">
-          <h2><img src="/public/images/content/icon-indaia.png" width="39" height="40" alt="" /> Indaiá</h2>
+          <h2><img src="/public/images/content/icon-indaia.png" width="40" height="40" alt="Indaiá" /> Indaiá</h2>
           <p>Para o Restaurante Indaiá em Itapema desenvolvemos uma solução completa de cardápios em tablets Android, com opção para auto-atendimento tanto para a mesa quanto para garçons.
 <br />Além dos tablets, desenvolvemos o sistema para a recepção, gerenciamento e caixa, além dos relatórios diversos.
 </p>
@@ -497,17 +485,17 @@ O aplicativo é gratuito para o usuário e está disponível para iPhones, iPads
     <li>
 
     <a href="javascript:void(0);" rel="ipad-portrait" title="Opentech">
-      <img  src="/public/images/content/icon-opentech.png" width="70" height="69" alt="Opentech" />
+      <img  src="/public/images/content/icon-opentech.png" width="70" height="70" alt="Opentech" />
       <span class="title">Opentech</span>
       <span>
-        O aplicativo da Tel & Com têm foco na leitura dos dados e geração de relatórios financeiros.
+        O aplicativo da Tel & Com tem foco na leitura de dados para relatórios financeiros.
       </span>
     </a>
     <!--start overlay content-->
     <ul>
       <li>
         <div class="inner">
-          <h2><img src="/public/images/content/icon-opentech.png" width="39" height="40" alt="" /> Opentech</h2>
+          <h2><img src="/public/images/content/icon-opentech.png" width="40" height="40" alt="Opentech" /> Opentech</h2>
           <p>Desenvolvemos para a <a href="http://www.telecomvpn.com.br" title="Tel & Com" target="_blank">Tel & Com</a> um aplicativo para iPad com o foco na leitura dos dados gerados pelo sistema de monitoria de Circuitos de Comunicação. O aplicativo também foca na geração de relatórios de disponibilidades e uma variedade de relatórios financeiros.<br />A distribuição do aplicativo é feita internamente via Apple Enterprise Program.
 </p>
           <div class="swipe"></div>
@@ -595,17 +583,17 @@ O aplicativo é gratuito para o usuário e está disponível para iPhones, iPads
     <li class="last">
 
     <a href="javascript:void(0);" rel="iphone" title="Ultimate Fun">
-      <img  src="/public/images/content/icon-ufun.png" width="70" height="69" alt="Ultimate Fun" />
+      <img  src="/public/images/content/icon-ufun.png" width="70" height="70" alt="Ultimate Fun" />
       <span class="title">Ultimate Fun</span>
       <span>
-        O Ultimate Fun (uFun) é a maneira mais divertida de você encontrar e escutar seus sound memes.
+        O uFun é o app mais divertido para se encontrar e ouvir sound memes.
       </span>
     </a>
     <!--start overlay content-->
     <ul>
       <li>
         <div class="inner">
-          <h2><img src="/public/images/content/icon-ufun.png" width="39" height="40" alt="" /> Ultimate Fun</h2>
+          <h2><img src="/public/images/content/icon-ufun.png" width="40" height="40" alt="Ultimate Fun" /> Ultimate Fun</h2>
           <p>O uFun é a maneira mais divertida de você encontrar e escutar seus sound memes favoritos. Baixe agora mesmo o aplicativo para iOS ou Android e divirta-se compartilhando os sons com seus amigos.
 <p class="app">
     <a href="http://itunes.apple.com/us/app/ultimate-fun/id495930258?mt=8" title="App Store" target="_blank">
@@ -682,17 +670,17 @@ O aplicativo é gratuito para o usuário e está disponível para iPhones, iPads
     <li>
 
     <a href="javascript:void(0);" rel="ipad" title="SH">
-      <img  src="/public/images/content/icon-sh.png" width="70" height="69" alt="SH" />
+      <img  src="/public/images/content/icon-sh.png" width="70" height="70" alt="SH" />
       <span class="title">SH</span>
       <span>
-        Aplicativo com informações técnicas de todos os produtos da empresa SH
+        Aplicativo com informações técnicas de todos os produtos da empresa SH.
       </span>
     </a>
     <!--start overlay content-->
     <ul>
       <li>
         <div class="inner">
-          <h2><img src="/public/images/content/icon-sh.png" width="39" height="40" alt="" /> SH</h2>
+          <h2><img src="/public/images/content/icon-sh.png" width="40" height="40" alt="SH" /> SH</h2>
           <p>Aplicativo com informações técnicas de todos os sistemas de fôrmas para concreto, escoramentos metálicos e andaimes da SH, com fotos que demonstram a aplicação real do equipamentos em obra e vídeos 3D que mostram a montagem dos equipamentos passo-a-passo. Através do aplicativo o usuário também poderá solicitar orçamentos.
 
 <p class="app">
@@ -756,17 +744,17 @@ O aplicativo é gratuito para o usuário e está disponível para iPhones, iPads
     <li>
 
     <a href="javascript:void(0);" rel="iphone" title="Love or Hate">
-      <img  src="/public/images/content/icon-loveorhate.png" width="70" height="69" alt="Love or Hate" />
+      <img  src="/public/images/content/icon-loveorhate.png" width="70" height="70" alt="Love or Hate" />
       <span class="title">Love or Hate</span>
       <span>
-        Love or Hate é o primeiro aplicativo de teste de compatibilidade usando impressão digital.
+        Love or Hate é um aplicativo de teste de compatibilidade entre pessoas.
       </span>
     </a>
     <!--start overlay content-->
     <ul>
       <li>
         <div class="inner">
-          <h2><img src="/public/images/content/icon-loveorhate.png" width="39" height="40" alt="" /> Love or Hate</h2>
+          <h2><img src="/public/images/content/icon-loveorhate.png" width="40" height="40" alt="Love or Hate" /> Love or Hate</h2>
           <p>Love or Hate é o primeiro aplicativo de teste de compatibilidade usando impressão digital.Coloque o seu dedo e o da outra pessoa nas áreas indicadas. Depois de calcular, será mostrado o resultado. Este é um aplicativo muito simples, mas divertido de jogar com seus amigos e dar uma boa risada! 
 Desenvolvido em parceria com a <a href="http://www.infotechsolucoes.net/" target="_blank">Infotech</a>
 <p class="app"><a href="http://itunes.apple.com/br/app/love-or-hate/id434214006?mt=8#" title="App Store" target="_blank"><img src="/public/images/appstore.png" width="104" height="30" alt="App Store" /></a>
@@ -829,17 +817,17 @@ Desenvolvido em parceria com a <a href="http://www.infotechsolucoes.net/" target
     <li class="last">
 
     <a href="javascript:void(0);" rel="iphone" title="iCarros">
-      <img  src="/public/images/content/icon-icarros.png" width="70" height="69" alt="iCarros" />
+      <img  src="/public/images/content/icon-icarros.png" width="70" height="70" alt="iCarros" />
       <span class="title">iCarros</span>
       <span>
-        O aplicativo iCarros é a melhor solução para pesquisar carros novos e usados, não importa onde esteja.
+        A melhor solução para pesquisa de carros novos e usados, esse é o iCarros.
       </span>
     </a>
     <!--start overlay content-->
     <ul>
       <li>
         <div class="inner">
-          <h2><img src="/public/images/content/icon-icarros.png" width="39" height="40" alt="" /> iCarros</h2>
+          <h2><img src="/public/images/content/icon-icarros.png" width="40" height="40" alt="iCarros" /> iCarros</h2>
           <p>O aplicativo iCarros é a melhor solução para pesquisar carros novos e usados, não importa onde você esteja.
 Encontre aqui as melhores ofertas na sua região, grave seus anúncios favoritos e consulte preços na tabela FIPE.
 O maior portal automotivo do Brasil agora está em suas mãos!
@@ -907,17 +895,17 @@ O maior portal automotivo do Brasil agora está em suas mãos!
     <li>
 
     <a href="javascript:void(0);" rel="iphone" title="arkpad">
-      <img  src="/public/images/content/icon-arkpad.png" width="70" height="69" alt="arkpad" />
+      <img  src="/public/images/content/icon-arkpad.png" width="70" height="70" alt="arkpad" />
       <span class="title">arkpad</span>
       <span>
-        Tudo que existe de melhor no mercado de arquitetura, decoração e design está disponível no arkpad.
+        O que há de melhor em arquitetura, decoração e design está no arkpad.
       </span>
     </a>
     <!--start overlay content-->
     <ul>
       <li>
         <div class="inner">
-          <h2><img src="/public/images/content/icon-arkpad.png" width="39" height="40" alt="" /> arkpad</h2>
+          <h2><img src="/public/images/content/icon-arkpad.png" width="40" height="40" alt="arkpad" /> arkpad</h2>
           <p>Nele é possível navegar no rico catálogo de produtos (e seus fornecedores) com curadoria do serviço, consultar uma biblioteca visual de ambientes decorados, além de poder organizar suas próprias pastas de projetos com o conteúdo do aplicativo. Tudo sincronizado com o portal, http://arkpad.com.br.
 <p class="app"><a href="http://itunes.apple.com/br/app/arkpad/id403784852?mt=8" title="App Store" target="_blank"><img src="/public/images/appstore.png" width="104" height="30" alt="App Store" /></a>
 </p>
@@ -979,17 +967,39 @@ O maior portal automotivo do Brasil agora está em suas mãos!
           </ul>
         </nav>
       </section>
+      <section id="clientes" class="clearfix">
+        <div class="wrap">
+          <h2>
+            Clientes que dão um show com a Coderockr!
+          </h2>
+          <ul>
+            <li><img src="/public/images/clientes/logo-arkpad.png" width="100" height="70" alt="Arkpad"></li>
+            <li><img src="/public/images/clientes/logo-rps.png" width="100" height="70" alt="RPS Fácil"></li>
+            <li><img src="/public/images/clientes/logo-icarros.png" width="100" height="70" alt="iCarros"></li>
+            <li><img src="/public/images/clientes/logo-codesquad.png" width="100" height="70" alt="Code Squad"></li>
+            <li><img src="/public/images/clientes/logo-softplan.png" width="100" height="70" alt="Softplan"></li>
+            <li><img src="/public/images/clientes/logo-mih.png" width="100" height="70" alt="MIH Group"></li>
+            <li><img src="/public/images/clientes/logo-sh.png" width="100" height="70" alt="SH"></li>
+            <li><img src="/public/images/clientes/logo-unipay.png" width="100" height="70" alt="Unipay"></li>
+            <li><img src="/public/images/clientes/logo-casabrasil.png" width="100" height="70" alt="Casa Brasil"></li>
+            <li><img src="/public/images/clientes/logo-unochapeco.png" width="100" height="70" alt="Unochapecó"></li>
+            <li><img src="/public/images/clientes/logo-sommaior.png" width="100" height="70" alt="Som Maior"></li>
+            <li><img src="/public/images/clientes/logo-indaia.png" width="100" height="70" alt="Restaurante Indaiá"></li>
+            <li><img src="/public/images/clientes/logo-ng.png" width="100" height="70" alt="NG Informaática"></li>
+            <li><img src="/public/images/clientes/logo-weg.png" width="100" height="70" alt="WEG"></li>
+          </ul>
+        </div>
+      </section>
       <section id="sobre" class="clearfix"><a name="sobre" class="anchor clearfix"></a>
         <div class="wrap">
-          <h2><span>Bons programadores</span> são únicos, assim como <span>músicos no mundo do rock</span>.</h2>
-          <h3>Você não conseguiria contar quantos “Ozzys” ou “Slashs” estão disponíveis para um show. Assim como é impossível saber que precisará exatamente de duas horas para compor uma música, e que em um mês ela será um grande sucesso. Para isso, “timing” e “feeling” são mais importantes do que o controle sobre o processo.</h3>
+          <h2><span>Bons programadores</span> são únicos, assim como <span>estrelas no mundo do rock</span>.</h2>
         </div>
         <div class="line clearfix"></div>        
         <div class="wrap">
           <ul>
             <li>
               <article>
-  <span class="avatar"><img src="http://a1.twimg.com/profile_images/1594423760/tFwO.xorna.png" width="80" height="80" alt="" /><span></span></span>
+  <span class="avatar"><img src="/public/images/avatar/xorna.jpg" width="80" height="80" alt="" /><span></span></span>
   <h3>André Espeiorin</h3>
   <p>Já foi graduando em Ciência da Computação e Engenharia da Computação, mas não terminou nenhuma das duas ainda. Mecânico que virou programador, trabalha com desenvolvimento web LAMP desde o inicio de 2006 e desenvolvimento nas plataformas Apple Mac OS X e iOS desde 2010. Usuário Linux desde 2004 e usuário Mac desde 2009. Ex-quase-músico, vocalista da banda Skull Crusher de 2004 até 2008. Leitor aficcionado de Tolkien, Cornwell e similares. Fã do Capitão Caverna, defensor número um da liberação do uso de bermuda em ambientes profissionais.</p>
   <div class="share">
@@ -998,7 +1008,7 @@ O maior portal automotivo do Brasil agora está em suas mãos!
     <a href="http://www.facebook.com/espeiorin" target="_blank" title="Facebook"><img src="/public/images/share-facebook.gif" width="33" height="33" alt="Facebook" /></a>
     <a href="http://www.linkedin.com/in/espeiorin" target="_blank" title="Linkedin"><img src="/public/images/share-linkedin.gif" width="33" height="33" alt="Linkedin" /></a>
     <a href="http://www.last.fm/user/xorna" target="_blank" title="Lastfm"><img src="/public/images/share-lastfm.gif" width="33" height="33" alt="Lastfm" /></a>
-    <a href="http://github.com/xorna" target="_blank" title="Github"><img src="/public/images/github.gif" width="33" height="33" alt="Github" /></a>
+    <a href="http://github.com/xorna" target="_blank" title="Github"><img src="/public/images/share-github.gif" width="33" height="33" alt="Github" /></a>
   </div>
 </article>
             </li>
@@ -1023,11 +1033,11 @@ O maior portal automotivo do Brasil agora está em suas mãos!
   <p>Possui graduação em Ciência de Computação pela Unochapecó e especialização em Ciência da Computação pela UFSC/UNOESC. Trabalha com PHP/MySQL desde 2000, com Linux desde 1997 e com MacOSX desde 2007. É autor do livro Frameworks para Desenvolvimento em PHP, da editora Novatec, co-autor do livro Grid Computing in Research and Education, publicado pela editora IBM/Redbooks, EUA e autor dos e-books Zend Framework na prática e Zend Framework 2 na prática. Grande fã de programação, do bom e velho Rock n’ Roll e Heavy Metal, suas influências envolvem Eric Raymond, Linus Torvalds, Steve Jobs, Ozzy Osbourne e Lemmy Kilmister.</p>
   <div class="share">
     <a href="http://twitter.com/eminetto" target="_blank" title="Twitter"><img src="/public/images/share-twitter.gif" width="33" height="33" alt="Twitter" /></a>
-    <a href="http://eltonminetto.net/" target="_blank" title="Wordpress Blog"><img src="/public/images/personal-link.gif" width="33" height="33" alt="Site" /></a>
+    <a href="http://eltonminetto.net/" target="_blank" title="Wordpress Blog"><img src="/public/images/share-personallink.gif" width="33" height="33" alt="Site" /></a>
     <a href="http://www.linkedin.com/in/eminetto" target="_blank" title="Linkedin"><img src="/public/images/share-linkedin.gif" width="33" height="33" alt="Linkedin" /></a>
     <a href="http://www.last.fm/user/eminetto" target="_blank" title="Lastfm"><img src="/public/images/share-lastfm.gif" width="33" height="33" alt="Lastfm" /></a>
-    <a href="http://speakerdeck.com/u/eminetto" target="_blank" title="Speaker Deck"><img src="/public/images/speakerdeck.gif" width="33" height="33" alt="Speaker Deck" /></a>
-    <a href="http://github.com/eminetto" target="_blank" title="Github"><img src="/public/images/github.gif" width="33" height="33" alt="Github" /></a>
+    <a href="http://speakerdeck.com/u/eminetto" target="_blank" title="Speaker Deck"><img src="/public/images/share-speakerdeck.gif" width="33" height="33" alt="Speaker Deck" /></a>
+    <a href="http://github.com/eminetto" target="_blank" title="Github"><img src="/public/images/share-github.gif" width="33" height="33" alt="Github" /></a>
   </div>
 </article>
 
@@ -1046,14 +1056,15 @@ O maior portal automotivo do Brasil agora está em suas mãos!
             </li>
             <li>
               <article>
-    <span class="avatar"><img src="https://si0.twimg.com/profile_images/2356276475/oovnlpug3qhhpnqbaixm_reasonably_small.jpeg" width="80" height="80" alt="" /><span></span></span>
+    <span class="avatar"><img src="http://www.gravatar.com/avatar/ccc1e09cca35c9e70a1c7e84752fefb1.png" width="80" height="80" alt="" /><span></span></span>
     <h3>Leonardo Rossetto</h3>
     <p>Já foi graduando em Sistemas de Informação pela Unochapecó, atualmente trabalha com android, mas, conhece também C#, C++ e Zend Framework, fã de Metallica, nas horas vagas é player de FPS na Xbox live.</p>
     <div class="share">
-        <a href="http://twitter.com/leorosseto_" target="_blank" title="Twitter"><img src="/public/images/share-twitter.gif" width="33" height="33" alt="Twitter" /></a>
+        <a href="http://twitter.com/leorossetto_" target="_blank" title="Twitter"><img src="/public/images/share-twitter.gif" width="33" height="33" alt="Twitter" /></a>
         <a href="http://www.facebook.com/leorossetto1" target="_blank" title="Facebook"><img src="/public/images/share-facebook.gif" width="33" height="33" alt="Facebook" /></a>
+        <a href="https://plus.google.com/u/0/107219840396006399210/" target="_blank" title="Google+"><img src="/public/images/share-google.gif" width="33" height="33" alt="g+" /></a>
         <a href="http://www.linkedin.com/profile/view?id=172500144&trk=tab_pro" target="_blank" title="Linkedin"><img src="/public/images/share-linkedin.gif" width="33" height="33" alt="Linkedin" /></a>
-        <a href="http://www.github.com/leonardoxh" target="_blank" title="Github"><img src="/public/images/github.gif" width="33" height="33" alt="Github" /></a>
+        <a href="http://www.github.com/leonardoxh" target="_blank" title="Github"><img src="/public/images/share-github.gif" width="33" height="33" alt="Github" /></a>
     </div>
 </article>
 
@@ -1066,7 +1077,7 @@ O maior portal automotivo do Brasil agora está em suas mãos!
     <div class="share">
         <a href="http://twitter.com/mateus__g" target="_blank" title="Twitter"><img src="/public/images/share-twitter.gif" width="33" height="33" alt="Twitter" /></a>
         <a href="http://facebook.com/mateusg" target="_blank" title="Facebook"><img src="/public/images/share-facebook.gif" width="33" height="33" alt="Facebook" /></a>
-        <a href="https://github.com/mateusguerra" target="_blank" title="Github"><img src="/public/images/github.gif" width="33" height="33" alt="Github" /></a>
+        <a href="https://github.com/mateusguerra" target="_blank" title="Github"><img src="/public/images/share-github.gif" width="33" height="33" alt="Github" /></a>
     </div>
 </article>
 
@@ -1075,10 +1086,10 @@ O maior portal automotivo do Brasil agora está em suas mãos!
               <article>
     <span class="avatar"><img src="https://si0.twimg.com/profile_images/2218363885/profile3_reasonably_small.png" width="80" height="80" alt="" /><span></span></span>
     <h3>Thiago Vieira</h3>
-    <p>Possui Graduação em Design Gráfico e já cursou técnico em Processamento de Dados. Trabalha com desenvolvimento gráfico desde 2005, quando tomou gosto pela web. Envolvendo seu conhecimento de tecnologia e design com aplicação em frontend, é detalhista em seus projetos e sua percepção é voltada sempre ao usuário. Fã de AC/DC, curte o bom e velho Rock’n’Roll e tem como hobby a dança de salão.</p>
+    <p>Possui Graduação em Design Gráfico e já cursou técnico em Processamento de Dados. Trabalha com desenvolvimento gráfico desde 2005, quando tomou gosto pela web. Envolvendo seu conhecimento de tecnologia e design com aplicação em frontend, está a dois anos focado em desenvolvimento de interface mobile para várias plataformas, alem de ser detalhista em seus projetos e sua percepção é voltada sempre ao usuário. Fã de AC/DC, curte o bom e velho Rock’n’Roll e tem como hobby seu Xbox e a dança de salão.</p>
     <div class="share">
         <a href="http://twitter.com/thiagovieiracom" target="_blank" title="Twitter"><img src="/public/images/share-twitter.gif" width="33" height="33" alt="Twitter" /></a>
-        <a href="http://thiagovieira.com/" target="_blank" title="Site Pessoal"><img src="/public/images/personal-link.gif" width="33" height="33" alt="Site Pessoal" /></a>
+        <a href="http://thiagovieira.com/" target="_blank" title="Site Pessoal"><img src="/public/images/share-personallink.gif" width="33" height="33" alt="Site Pessoal" /></a>
         <a href="http://www.facebook.com/thiagovieiracom" target="_blank" title="Facebook"><img src="/public/images/share-facebook.gif" width="33" height="33" alt="Facebook" /></a>
         <a href="http://www.linkedin.com/in/thiagovieiracom" target="_blank" title="Linkedin"><img src="/public/images/share-linkedin.gif" width="33" height="33" alt="Linkedin" /></a>
     </div>
@@ -1097,54 +1108,22 @@ O maior portal automotivo do Brasil agora está em suas mãos!
           <div class="col1">
             <ul>
               <li class="clearfix">
-                <a target="mapa" href="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Rua+Ministro+Cal%C3%B3geras,+910,+Joinville+-+Santa+Catarina,+Brasil&amp;aq=0&amp;oq=Rua+Ministro+Calogeras+910&amp;sll=37.0625,-95.677068&amp;sspn=54.665451,96.328125&amp;ie=UTF8&amp;hq=&amp;hnear=R.+Min.+Cal%C3%B3geras,+910+-+Centro,+Joinville+-+Santa+Catarina,+89201-485,+Brazil&amp;t=m&amp;z=14&amp;iwloc=A&amp;ll=-26.307923,-48.84879&amp;output=embed" class="map-link" title="Clique para ver o mapa">
-                  <img src="/public/images/contact-map.jpg" width="39" height="40" alt="" />Rua Ministro Calogeras 910, sobreloja<br />Bairro Atiradores  |  89201-485  |  Joinville  |  SC
+                <a target="mapa" href="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Rua+Ministro+Cal%C3%B3geras,+910,+Joinville+-+Santa+Catarina,+Brasil&amp;aq=0&amp;oq=Rua+Ministro+Calogeras+910&amp;sll=37.0625,-95.677068&amp;sspn=54.665451,96.328125&amp;ie=UTF8&amp;hq=&amp;hnear=R.+Min.+Cal%C3%B3geras,+910+-+Centro,+Joinville+-+Santa+Catarina,+89201-485,+Brazil&amp;t=m&amp;z=14&amp;iwloc=A&amp;ll=-26.307923,-48.84879&amp;output=embed" class="map-link" title="Clique para ver no mapa">
+                  <img src="/public/images/contact-map.png" width="40" height="40" alt="" />Rua Ministro Calogeras 910, sobreloja<span class="coma">,</span> <span>Bairro Atiradores  |  89201-485  |  Joinville  |  SC</span>
                 </a>
                 <div class="map"><iframe width="100%" height="100%" frameborder="0" scrolling="no" name="mapa" marginheight="0" marginwidth="0"></iframe></div>
               </li>
-              <li class="clearfix"><img src="/public/images/contact-phone.jpg" width="39" height="40" alt="" /><span>47 3227.6359</span></li>
-              <li class="clearfix"><a href="mailto:contato@coderockr.com" title="contato@coderockr.com"><img src="/public/images/contact-mail.jpg" width="39" height="40" alt="" /><span>contato@coderockr.com</span></a></li>
+              <li class="clearfix"><a href="tel:04732276359" class="call"><img src="/public/images/contact-phone.png" width="40" height="40" alt="" /><span>47 3227.6359</span></a></li>
+              <li class="clearfix"><a href="mailto:contato@coderockr.com?subject=Contato pelo site" title="Envie um e-mail para contato@coderockr.com"><img src="/public/images/contact-mail.png" width="40" height="40" alt="" /><span>contato@coderockr.com</span></a></li>
             </ul>
           </div>
           <div class="col2">
             <ul>
-              <li class="clearfix"><a href="http://facebook.com/coderockr" target="_blank" title="Facebook da Coderockr"><img src="/public/images/contact-facebook.jpg" width="39" height="40" alt="" /><span>Facebook</span></a></li>
-              <li class="clearfix"><a href="http://twitter.com/coderockr" target="_blank" title="Twitter da Coderockr"><img src="/public/images/contact-twitter.jpg" width="39" height="40" alt="" /><span>@coderockr</span></a></li>
-              <li class="clearfix"><a href="https://plus.google.com/114839342124659023408" target="_blank" title="Google+ Coderockr" rel="publisher"><img src="/public/images/contact-gplus.jpg" width="39" height="40" alt="" /><span>Google+</span></a></li>
+              <li class="clearfix"><a href="http://facebook.com/coderockr" target="_blank" title="Facebook da Coderockr"><img src="/public/images/contact-facebook.png" width="40" height="40" alt="" /><span>Facebook</span></a></li>
+              <li class="clearfix"><a href="http://twitter.com/coderockr" target="_blank" title="Twitter da Coderockr"><img src="/public/images/contact-twitter.png" width="40" height="40" alt="" /><span>@coderockr</span></a></li>
+              <li class="clearfix"><a href="https://plus.google.com/114839342124659023408" target="_blank" title="Google+ Coderockr" rel="publisher"><img src="/public/images/contact-gplus.png" width="40" height="40" alt="" /><span>Google+</span></a></li>
             </ul>
           </div>
-          <!--div class="col1">
-            <form action="#" method="post" id="contact-form">
-              <fieldset>
-                <ul>
-                  <li>
-                    <label>Nome</label>
-                    <input type="text" name="contact[name]" id="contact-name" tabindex="1" />
-                  </li>
-                  <li>
-                    <label>Telefone</label>
-                    <input type="tel" name="contact[phone]" id="contact-name" tabindex="2" />
-                  </li>
-                  <li>
-                    <label>E-mail</label>
-                    <input type="email" name="contact[mail]" id="contact-name" tabindex="3" />
-                  </li>
-                  <li>
-                    <label>Assunto</label>
-                    <input type="text" name="contact[subject]" id="contact-name" tabindex="4" />
-                  </li>
-                  <li>
-                    <label>Mensagem</label>
-                    <textarea type="text" name="contact[message]" id="contact-name" tabindex="5"></textarea>
-                  </li>
-                  <li>
-                    <input type="submit" value="Enviar" />
-                  </li>
-                </ul>
-              </fieldset>
-            </form>
-          </div>
-        </div-->
       </section>
     </div>
     <footer>
@@ -1160,7 +1139,8 @@ O maior portal automotivo do Brasil agora está em suas mãos!
             <ul>
               <li><a href="#home">Topo</a></li>
               <li><a href="#servicos">Serviços</a></li>
-              <li><a href="#projetos">Projetos </a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#clientes">Clientes</a></li>
               <li><a href="#sobre">Sobre</a></li>
               <li><a href="http://blog.coderockr.com" target="_blank">Blog</a></li>
               <li><a href="#contato">Contato</a></li>
@@ -1170,13 +1150,6 @@ O maior portal automotivo do Brasil agora está em suas mãos!
       </div>
     </footer>
   </div>
-  <!--div id="floater-overlay"></div>
-  <div id="floater" class="ipad">
-    <a href="javascript:void(0);" title="Anterior" class="left">&lt;</a>
-    <a href="javascript:void(0);" title="Próximo" class="right">&gt;</a>
-    <div class="reflex"></div>
-    <div class="frame"></div>
-  </div-->
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="/public/scripts/libs/jquery-1.6.2.min.js"><\/script>')</script>
@@ -1190,8 +1163,6 @@ O maior portal automotivo do Brasil agora está em suas mãos!
       load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
     });
   </script>
-
-
 
   <!--[if lt IE 7 ]>
     <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
