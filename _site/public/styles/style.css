@@ -153,7 +153,8 @@ a.anchor{
 
 /*home section*/
 #home h2{
-  margin-bottom: 55px;
+  margin-bottom: 85px;
+  margin-top: 130px;
 }
 #home p{
   margin-left: auto;
@@ -345,7 +346,12 @@ a.anchor{
 
 /*clients section*/
 #clientes h2 {
+  font-size: 4.5em;
   margin-top:80px;
+}
+#clientes h2 span {
+  font-size: 1.3em;
+  line-height: 1;
 }
 #clientes ul {
   list-style: none;
@@ -442,8 +448,12 @@ a.anchor{
 }
 
 /*contact section*/
-#contato h2{
-  font-size:4.4em;
+#contato h2 {
+  font-size:4.2em;
+}
+#contato h2 span {
+  font-size: 1.8em;
+  line-height: 0.8;
 }
 #contato div.line{
   background:url(/public/images/line.gif) repeat-x 0 100%;
@@ -1140,7 +1150,8 @@ header, nav, label[for="openmenu"], #main {
 
   #home h2{
     font-size: 2.8em;
-    margin-bottom: 0;
+    margin-bottom: 20px;
+    margin-top: 35px;
   }
   #home nav{
     background:none;
@@ -1231,7 +1242,7 @@ header, nav, label[for="openmenu"], #main {
   }
 
   #clientes h2 {
-    font-size: 1.6em;
+    font-size: 1.5em;
     margin-top: 40px;
   }
   #clientes ul {
@@ -1271,10 +1282,13 @@ header, nav, label[for="openmenu"], #main {
   #contato{
     margin-bottom:30px;
   }
-  #contato h2{
-    font-size: 2.2em;
+  #contato h2 {
+    font-size: 2.3em;
     margin-bottom:10px;
   }
+  #contato h2 span {
+    font-size: 1.4em;
+  } 
   #contato div.wrap {
     margin: 0 auto;
   }
