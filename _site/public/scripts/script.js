@@ -16,6 +16,7 @@ $(document).ready(function() {
 
 	$(".mobile nav#menu a").click(function(){
 		$("#openmenu").attr("checked",false);
+		$("html, body").animate({scrollTop: 0}, 1000);
 	});
 
 	$("#projetos > nav a").not("#projetos > nav.pages a").click(function(){
