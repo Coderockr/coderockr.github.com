@@ -115,11 +115,44 @@ nav#menu ul li a{
   text-transform: uppercase;
   text-shadow: none;
 }
-
 nav#menu ul li a:hover, nav#menu ul li a.active {
   color: #FFBC00;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
 }
+input[name="language"] {
+  display: none;
+}
+header div[class^="language"] > div {
+  background: #F8F8F8;
+  -webkit-box-shadow: 1px 2px 4px rgba(0,0,0,0.15);
+     -moz-box-shadow: 1px 2px 4px rgba(0,0,0,0.15);
+          box-shadow: 1px 2px 4px rgba(0,0,0,0.15);
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  top: 130px;
+}
+label[for="language"] {
+  display: none;
+}
+header div[class^="language"] a {
+  color: #21508B;
+  display: block;
+  padding: 6px 4px;
+  text-align: center;
+}
+header div[class^="language"] a:first-child {
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+header div[class^="language"] a:hover {
+  color: #CDA827;
+}
+header div[class="language-pt"] a:first-child, header div[class="language-en"] a:last-child {
+  cursor: default;
+  color: #CDA827;
+  font-weight: 700;
+}
+
 .tapoverlay {
   display: none;
 }
@@ -874,7 +907,8 @@ nav#menu ul li a, nav#menu ul li a:hover,
   -ms-transition: all 0.3s linear; 
   transition: all 0.3s linear;
 }
-header, nav, label[for="openmenu"], #main {
+header, nav, label[for="openmenu"], #main,
+header div[class^="language"] > div {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -911,6 +945,7 @@ header, nav, label[for="openmenu"], #main {
   header h1{
     margin-left: 15px;
   }
+
   #home nav {
     background-position: 0 194px;
     height: inherit;
@@ -1062,6 +1097,58 @@ header, nav, label[for="openmenu"], #main {
   header .bt-menu span.line3 {
     top: 29px;
   }
+
+  header div[class^="language"] {
+    height: 120px;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 61px;
+    width: 78px;
+  }
+  header div[class^="language"] > div {
+    background: #20477E;
+    -webkit-box-shadow: 1px 2px 4px rgba(0,0,0,0.45);
+       -moz-box-shadow: 1px 2px 4px rgba(0,0,0,0.45);
+            box-shadow: 1px 2px 4px rgba(0,0,0,0.45);
+    padding: 0;
+    right: 5px;
+    top: -120px;
+  }
+  header input[name="language"]:checked + div[class^="language"] > div {
+    top: 0;
+  }
+  label[for="language"] {
+    display: block;
+    position: absolute;
+    right: 6px;
+    top: 1px;
+  }
+  label[for="language"] span {
+    background: url("../images/languages.png") 50% 50% no-repeat;
+    background-size: 40px 40px;
+    display: block;
+    height: 58px;
+    width: 54px;
+  }
+  header div[class^="language"] a {
+    color: #FFF;
+    font-size: 1.4em;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  header div[class^="language"] a:first-child {
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+  }
+  header div[class^="language"] a:hover {
+    color: #CDA827;
+  }
+  header div[class="language-pt"] a:first-child, header div[class="language-en"] a:last-child {
+    cursor: default;
+    color: #CDA827;
+    font-weight: 700;
+  }
+
   nav#menu {
     background: #0F1A2B;
     bottom: 0;

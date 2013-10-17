@@ -18,10 +18,14 @@ $(document).ready(function() {
 		$("#openmenu").attr("checked",false);
 		$("html, body").animate({scrollTop: 0}, 1000);
 	});
+	$("#main, .bt-menu").click(function(){
+		hideLanguage();
+	});
 
 	$("#projetos > nav a").not("#projetos > nav.pages a").click(function(){
 		$("#projetos > nav a").addClass("nonselect");
 		$(this).removeClass("nonselect");
+		hideLanguage();
 	});
 	$("#projetos > nav.pages ul").css({marginLeft:-(parseInt($("#projetos > nav.pages ul").width()/2))});
 	$("#contato label").bind('click',function(){
@@ -109,6 +113,9 @@ $(document).ready(function() {
 		}
 	});
 });
+function hideLanguage() {
+	$('input[name="language"]').attr('checked', false);
+}
 function orientation() {
 	var height = $(window).height();
     var width = $(window).width();
