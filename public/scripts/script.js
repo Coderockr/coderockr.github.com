@@ -112,11 +112,12 @@ $(document).ready(function() {
 			return false;
 		}
 	});
-	$('div[class=^"language-"] a').bind("click", function(){
+	/*$('div[class=^"language-"] a').bind("click", function(){
 		var langValue = $(this).attr("rel");
 		createCookie("idioma", langValue, 60);
-	});
+	});*/
 });
+/*
 function createCookie(name, value, days) {
     if (days) {
         var date = new Date();
@@ -126,7 +127,7 @@ function createCookie(name, value, days) {
     else var expires = "";
     document.cookie = name + "=" + value + expires + "; path=/";
 }
-function getCookie() {
+function getCookie(c_name) {
     if (document.cookie.length > 0) {
         c_start = document.cookie.indexOf(c_name + "=");
         if (c_start != -1) {
@@ -139,7 +140,7 @@ function getCookie() {
         }
     }
     return "";
-}
+}*/
 function hideLanguage() {
 	$('input[name="language"]').attr('checked', false);
 }

@@ -252,20 +252,17 @@
   <script defer src="/public/scripts/plugins.js"></script>
   <script defer src="/public/scripts/script.js"></script>
 
-  <script type="text/javascript">
+  <script>
     window._gaq = [['_setAccount','UA-584603-6'],['_trackPageview'],['_trackPageLoadTime']];
     Modernizr.load({
       load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
     });
   </script>
   <script>
-    console.log(getCookie());
-    if(getCookie("idioma") == "") {
       var language = window.navigator.userLanguage || window.navigator.language;
       if(language.toLowerCase() != 'pt-br') {
         window.location.href='http://en.coderockr.com';
       }
-    }
   </script>
 
   <!--[if lt IE 7 ]>
