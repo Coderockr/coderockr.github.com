@@ -126,7 +126,7 @@ function createCookie(name, value, days) {
     else var expires = "";
     document.cookie = name + "=" + value + expires + "; path=/";
 }
-var getCookie = function(c_name) {
+function getCookie() {
     if (document.cookie.length > 0) {
         c_start = document.cookie.indexOf(c_name + "=");
         if (c_start != -1) {
