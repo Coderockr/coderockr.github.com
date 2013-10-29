@@ -56,8 +56,8 @@
       <input type="checkbox" name="language" id="language" />
       <div class="language-pt">
         <div>
-          <a href="http://coderockr.com" title="Acesse nosso site em Português" target="_top">PT</a>
-          <a href="http://en.coderockr.com" title="Visit our site in English." target="_top">EN</a>
+          <a href="http://coderockr.com" title="Acesse nosso site em Português" rel="pt-br" target="_top">PT</a>
+          <a href="http://en.coderockr.com" title="Visit our site in English." rel="en" target="_top">EN</a>
         </div>
       </div>
     </header>
@@ -259,10 +259,12 @@
     });
   </script>
   <script>
-	var language = window.navigator.userLanguage || window.navigator.language;
-	if(language.toLowerCase() != 'pt-br') {
-		window.location.href='http://en.coderockr.com';
-	}
+    if(getCookie("idioma") == "") {
+      var language = window.navigator.userLanguage || window.navigator.language;
+      if(language.toLowerCase() != 'pt-br') {
+        window.location.href='http://en.coderockr.com';
+      }
+    }
   </script>
 
   <!--[if lt IE 7 ]>
