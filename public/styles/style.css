@@ -483,6 +483,9 @@ a.anchor {
   float:left;
   margin-right:4px;
 }
+#sobre div.wrap ul li article div.share a:hover {
+  opacity: 0.85;
+}
 
 /*contact section*/
 #contato h2 {
