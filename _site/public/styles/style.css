@@ -62,14 +62,14 @@ td { vertical-align: top; }
 /* ==|== primary styles =====================================================
    Author: thiago@thiagovieira.com
    ========================================================================== */
-.wrap{
+.wrap {
   width:980px;
   margin:0 auto;
 }
 #openmenu {
   display: none;
 }
-header{
+header {
   background: #0F1A2B url(/public/images/header-bg.jpg) no-repeat 50% 100%;
   height:61px;
   position:fixed;
@@ -77,11 +77,11 @@ header{
   width:100%;
   z-index:997;
 }
-header h1{
+header h1 {
   float:left;
   margin:10px 0 9px;
 }
-header h1 a, header h1 a img{
+header h1 a, header h1 a img {
   display:block;
 }
 header .bt-menu {
@@ -95,17 +95,17 @@ nav#menu {
   width: 830px;
   z-index: 998;
 }
-nav#menu ul{
+nav#menu ul {
   float:right;
 }
-nav#menu ul li{
+nav#menu ul li {
   float:left;
   border-right:1px solid rgba(255,255,255,0.2);
 }
-nav#menu ul li.last{
+nav#menu ul li.last {
   border-right:none;
 }
-nav#menu ul li a{
+nav#menu ul li a {
   color:#FFF;
   display:block;
   font-family: 'Hammersmith One', sans-serif;;
@@ -157,66 +157,66 @@ header div[class="language-pt"] a:first-child, header div[class="language-en"] a
   display: none;
 }
 
-#main{
+#main {
   padding-top:1px;
 }
-#main h2, #main h3{
+#main h2, #main h3 {
   text-align:center;
   font-family: 'Open Sans', sans-serif;
 }
-#main h2{
+#main h2 {
   font-size:5em;
   font-weight:300;
   margin:30px auto;
 }
-#main h3{
+#main h3 {
   font-size:2em;
   font-weight:400;
 }
-#main p{
+#main p {
   font-family: 'Open Sans', sans-serif;
   font-size:1.2em;
   font-weight:400;
 }
-a.anchor{
+a.anchor {
   margin-bottom:100px;
   display:block;
   z-index:-1;
 }
 
 /*home section*/
-#home h2{
+#home h2 {
   margin-bottom: 85px;
   margin-top: 130px;
 }
-#home p{
+#home p {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   width: 680px;
 }
-#home nav{
+#home nav {
   background:url(/public/images/line.gif) repeat-x 0 281px;
   height:380px;
   margin-top:40px;
 }
-#home nav ul li{
+#home nav ul li {
   float:left;
   width:290px;
   padding:0 18px;
 }
-#home nav ul li a, #home nav ul li a > span, #home nav ul li a > img{
+#home nav ul li a, #home nav ul li a > span, #home nav ul li a > img {
   display:block;
 }
-#home nav ul li a > span{
+#home nav ul li a > span {
   margin-top:15px;
 }
-#home nav ul li a span.title{
+#home nav ul li a span.title {
   display:block;
   font-size:1.8em;
   font-weight:300;
 }
-#home nav ul li a > span img, #projetos div.wrap nav#slider ul ul li a img{
+#home nav ul li a > span img, #projetos div.wrap nav#slider ul ul li a img {
   -webkit-border-radius: 12px;
      -moz-border-radius: 12px;
           border-radius: 12px;
@@ -226,37 +226,37 @@ a.anchor{
   float:left;
   margin-right:12px;
 }
-#home nav ul li a img{
+#home nav ul li a img {
   opacity:1; filter: alpha(opacity = 100);
 }
-#home nav ul li a:hover img{
+#home nav ul li a:hover img {
   opacity:0.75; filter: alpha(opacity = 75);
 }
 
 /*services section*/
-#servicos{
+#servicos {
   margin-top:61px;
 }
-#servicos > article{
+#servicos > article {
   background:url(/public/images/line.gif) repeat-x 0 100%;
   padding-bottom:10px;
 }
-#servicos h2{
+#servicos h2 {
   font-size:2.8em;
   font-weight:200;
   width:930px;
 }
-#servicos h2 span{
+#servicos h2 span {
   font-size:1.5em;
   font-weight:200;
 }
-#servicos ul{
+#servicos ul {
   list-style:none;
   margin:35px 0 0 0;
   padding:0;
   display:block;
 }
-#servicos ul li{
+#servicos ul li {
   min-height:135px;
   float:left;
   font-size:1.1em;
@@ -265,10 +265,10 @@ a.anchor{
   position:relative;
   width:24%;
 }
-#servicos ul li.last{
+#servicos ul li.last {
   margin-right: 0;
 }
-#servicos ul li > span{
+#servicos ul li > span {
   font-size:5.5em;
   font-weight:100;
   color:#255B98;
@@ -276,97 +276,97 @@ a.anchor{
   top:0;
   left:0;
 }
-#servicos ul li h3{
+#servicos ul li h3 {
   font-size:1em;
   font-weight:700;
   text-align:left;
 }
-#servicos ul li p{
+#servicos ul li p {
   font-size:1em;
 }
 
 /*projects section*/
-#projetos > nav{
+#projetos > nav {
   background:url(/public/images/line.gif) repeat-x 0 100%;
   padding-bottom:10px;
   margin-bottom:10px;
 }
 
-#projetos > nav ul li{
+#projetos > nav ul li {
   float:left;
 }
-#projetos > nav ul li a{
+#projetos > nav ul li a {
   display:block;
   padding:4px 8px;
   font-size:1.1em;
 }
-#projetos > nav ul li a.nonselect{
+#projetos > nav ul li a.nonselect {
   opacity:0.6; filter: alpha(opacity = 60);
 }
-#projetos > div.wrap{
+#projetos > div.wrap {
   height:240px;
 }
-#projetos > div.wrap.title{
+#projetos > div.wrap.title {
   height:180px;
 }
-#projetos > div.wrap.title h2{
+#projetos > div.wrap.title h2 {
   font-size:4.3em;
 }
-#projetos > div.wrap.title h2 span{
+#projetos > div.wrap.title h2 span {
   font-size:1.3em;
 }
-#projetos div.wrap nav#slider{
+#projetos div.wrap nav#slider {
   height:220px;
   overflow:hidden;
   position:relative;
 }
-#projetos div.wrap nav#slider > ul > li{
+#projetos div.wrap nav#slider > ul > li {
   float:left;
 }
-#projetos div.wrap nav#slider ul ul li{
+#projetos div.wrap nav#slider ul ul li {
   float:left;
   width:290px;
   margin:0 50px 20px 0;
 }
-#projetos div.wrap nav#slider ul ul li ul{
+#projetos div.wrap nav#slider ul ul li ul {
   display: none;
 }
-#projetos div.wrap nav#slider ul ul li.last{
+#projetos div.wrap nav#slider ul ul li.last {
   margin-right:0;
 }
-#projetos div.wrap nav#slider ul ul li a, #home div.wrap nav#slider ul ul li a span, #home div.wrap nav#slider ul ul li a img{
+#projetos div.wrap nav#slider ul ul li a, #home div.wrap nav#slider ul ul li a span, #home div.wrap nav#slider ul ul li a img {
   display:block;
 }
-#projetos div.wrap nav#slider ul ul li a span{
+#projetos div.wrap nav#slider ul ul li a span {
   display: block;
 }
-#projetos div.wrap nav#slider ul ul li a span + span {
+#projetos div.wrap nav#slider ul ul li a span + span  {
   margin-top: 5px;
   min-height: 48px;
 }
-#projetos div.wrap nav#slider ul ul li a span.title{
+#projetos div.wrap nav#slider ul ul li a span.title {
   margin-top:15px;
   font-size:1.8em;
   font-weight:300;
 }
-#projetos nav.pages{
+#projetos nav.pages {
   position:relative;
   background:none;
 }
-#projetos nav.pages ul{
+#projetos nav.pages ul {
   position:absolute;
   left:50%;
 }
-#projetos nav.pages ul li{
+#projetos nav.pages ul li {
   float:left;
   margin:0 8px;  
 }
-#projetos nav.pages ul li a{
+#projetos nav.pages ul li a {
   display:block;
   padding:8px;
   outline:none;
 }
-#projetos nav.pages ul li a span{
+#projetos nav.pages ul li a span {
   display:block;
   background-color:#C3C3C3;
   -webkit-border-radius: 10px;
@@ -377,7 +377,7 @@ a.anchor{
   overflow:hidden;
   text-indent:50px;
 }
-#projetos nav.pages ul li a:hover span, #projetos nav.pages ul li.active a span{
+#projetos nav.pages ul li a:hover span, #projetos nav.pages ul li.active a span {
   background-color:#4D4D4D;
 }
 
@@ -408,41 +408,41 @@ a.anchor{
 }
 
 /*about section*/
-#sobre div.wrap > h2{
+#sobre div.wrap > h2 {
   font-size:4.4em;
   width:900px;
 }
-#sobre div.wrap > h2 span{
+#sobre div.wrap > h2 span {
   font-size:1.6em;
   width:900px;
 }
-#sobre div.wrap h3{
+#sobre div.wrap h3 {
   font-size:1.5em;
   color:#4D4D4D;
 }
-#sobre div.line{
+#sobre div.line {
   background:url(/public/images/line.gif) repeat-x 0 100%;
   height:20px;
   margin-bottom:40px;
 }
-#sobre div.wrap ul{
+#sobre div.wrap ul {
   list-style:none;
   margin:0;
   padding:0;
 }
-#sobre div.wrap ul li{
+#sobre div.wrap ul li {
   float:left;
   width:45%;
   margin:0 9% 60px 0;
   position:relative;
 }
-#sobre div.wrap ul li.last{
+#sobre div.wrap ul li.last {
   margin-right:0;
 }
-#sobre div.wrap ul li article{
+#sobre div.wrap ul li article {
   padding-left:100px;
 }
-#sobre div.wrap ul li article > span.avatar{
+#sobre div.wrap ul li article > span.avatar {
   position:absolute;
   top:0;
   left:0;
@@ -456,7 +456,7 @@ a.anchor{
   overflow:hidden;
   background:#CCD7E3;
 }
-#sobre div.wrap ul li article > span.avatar span{
+#sobre div.wrap ul li article > span.avatar span {
   position:absolute;
   top:0;
   left:0;
@@ -470,18 +470,21 @@ a.anchor{
   background:url(/public/images/avatar-mask.png) no-repeat 0 0;
   background-size: 80px 80px;
 }
-#sobre div.wrap ul li article h3{
+#sobre div.wrap ul li article h3 {
   font-size:1.2em;
   font-weight:700;
   text-align:left;
   margin:0;
 }
-#sobre div.wrap ul li article p{
+#sobre div.wrap ul li article p {
   font-size:1.1em;
 }
-#sobre div.wrap ul li article div.share a{
+#sobre div.wrap ul li article div.share a {
   float:left;
   margin-right:4px;
+}
+#sobre div.wrap ul li article div.share a:hover {
+  opacity: 0.85;
 }
 
 /*contact section*/
@@ -492,40 +495,40 @@ a.anchor{
   font-size: 1.8em;
   line-height: 0.8;
 }
-#contato div.line{
+#contato div.line {
   background:url(/public/images/line.gif) repeat-x 0 100%;
   height:20px;
   margin-bottom:40px;
 }
-#contato div.wrap div.col1, #contato div.wrap div.col2{
+#contato div.wrap div.col1, #contato div.wrap div.col2 {
   width:45%;
   float:left;
   margin-right:9%;
 }
-#contato div.wrap div.col1{
+#contato div.wrap div.col1 {
   /*display:none;*/
 }
-#contato div.wrap div.col2{
+#contato div.wrap div.col2 {
   margin-right:0;
   float:right;
 }
-#contato div.wrap div.col1 ul, #contato div.wrap div.col2 ul{
+#contato div.wrap div.col1 ul, #contato div.wrap div.col2 ul {
   list-style:none;
   margin:0;
   padding:0;
 }
-#contato div.wrap div.col1 ul li{
+#contato div.wrap div.col1 ul li {
   position:relative;
   width:100%;
 }
-#contato div.wrap div.col1 ul li label{
+#contato div.wrap div.col1 ul li label {
   position:absolute;
   top:10px;
   left:12px;
   color:#C0C0C0;
   cursor:text;
 }
-#contato div.wrap div.col1 ul li input[type=text], #contato div.wrap div.col1 ul li input[type=tel], #contato div.wrap div.col1 ul li input[type=email], #contato div.wrap div.col1 ul li textarea{
+#contato div.wrap div.col1 ul li input[type=text], #contato div.wrap div.col1 ul li input[type=tel], #contato div.wrap div.col1 ul li input[type=email], #contato div.wrap div.col1 ul li textarea {
   background-color:#4D4D4D;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -538,13 +541,13 @@ a.anchor{
   padding:10px;
   width:95%;
 }
-#contato div.wrap div.col1 ul li textarea{
+#contato div.wrap div.col1 ul li textarea {
   max-width:95%;
   height:100px;
   max-height:100px;
   min-height:100px;
 }
-#contato div.wrap div.col1 ul li input[type=submit]{
+#contato div.wrap div.col1 ul li input[type=submit] {
   float:right;
   background:url(/public/images/bt-send.png);
   border:none;
@@ -555,23 +558,23 @@ a.anchor{
   margin:0 1px 1px 0;
   padding:0;
 }
-#contato div.wrap div.col1 ul li input[type=submit]:active{
+#contato div.wrap div.col1 ul li input[type=submit]:active {
   margin:1px 0 0 1px;
 }
-#contato div.wrap ul li{
+#contato div.wrap ul li {
   display:block;
   margin-bottom:11px;
   padding-bottom:14px;
   position:relative;
 }
-#contato div.wrap ul li a{
+#contato div.wrap ul li a {
   font-size:1.2em;
   line-height:135%;
 }
-#contato div.wrap ul li a:active{
+#contato div.wrap ul li a:active {
   outline:none;
 }
-#contato div.wrap ul li span{
+#contato div.wrap ul li span {
   display:block;
   float:left;
   font-size:1.2em;
@@ -600,7 +603,7 @@ a.anchor{
   float:left;
   margin-right:15px;
 }
-#contato div.wrap div.map{
+#contato div.wrap div.map {
   background-color:#F6F6F6 ;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
@@ -617,53 +620,53 @@ a.anchor{
   top:-70px;
   z-index:100;
 }
-#contato div.wrap div.map *{
+#contato div.wrap div.map * {
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
 }
 /*footer*/
-#container > footer{
+#container > footer {
   background:url(/public/images/line.gif) repeat-x 0 0;
   margin-top:30px;
 }
-#container > footer div.wrap{
+#container > footer div.wrap {
   border-top:3px solid #DFDFDF;
   padding:15px 0 20px;
 }
-#container > footer div.wrap div.col1, #container > footer div.wrap div.col2{
+#container > footer div.wrap div.col1, #container > footer div.wrap div.col2 {
   width:45%;
   float:left;
   margin-right:9%;
 }
-#container > footer div.wrap div.col1{
+#container > footer div.wrap div.col1 {
   width: 36%;
 }
-#container > footer div.wrap div.col2{
+#container > footer div.wrap div.col2 {
   width: 55%;
   margin-right:0;
 }
-#container > footer div.wrap div.col1 p{
+#container > footer div.wrap div.col1 p {
   line-height:145%;
 }
-#container > footer div.wrap div.col1 img{
+#container > footer div.wrap div.col1 img {
   float:left;
   display:block;
   margin-right:15px;
 }
-#container > footer div.wrap div.col2 ul{
+#container > footer div.wrap div.col2 ul {
   float:right;
 }
-#container > footer div.wrap div.col2 ul li{
+#container > footer div.wrap div.col2 ul li {
   float:left;
   margin:0 10px;
 }
-#container > footer div.wrap div.col2 ul li a{
+#container > footer div.wrap div.col2 ul li a {
   padding:3px;
 }
 
 /*floater*/
-#floater-overlay{
+#floater-overlay {
   position:fixed;
   z-index:9999;
   background:rgba(246,246,246,0.75);
@@ -675,15 +678,15 @@ a.anchor{
   min-height:100%;
   display:none;
 }
-.ie6 #floater-overlay, .ie7 #floater-overlay, .ie8 #floater-overlay{
+.ie6 #floater-overlay, .ie7 #floater-overlay, .ie8 #floater-overlay {
   background:url(/public/images/ie-overlay.png);
 }
-#floater{
+#floater {
   position:fixed;
   z-index:99999;
   display:none;
 }
-#floater > a{
+#floater > a {
   background-size: 16px 46px !important;
   display:block;
   position:absolute;
@@ -695,25 +698,25 @@ a.anchor{
   text-indent:80px;
   opacity:0.8; filter: alpha(opacity = 80);
 }
-#floater > a:hover{
+#floater > a:hover {
   opacity:1; filter: alpha(opacity = 100);
 }
-#floater a.left{
+#floater a.left {
   background:url(/public/images/arrow-left.png) no-repeat 50% 0;
   left:-40px;
   outline:none;
 }
-#floater a.right{
+#floater a.right {
   background:url(/public/images/arrow-right.png) no-repeat 50% 0;
   right:-40px;
   outline:none;
 }
-#floater .frame{
+#floater .frame {
   overflow:hidden;
   position:relative;
   display:none;  
 }
-#floater a.close{
+#floater a.close {
   background: rgba(0,0,0,0.6);
   color:#FFF;
   font-family: Arial, sans-serif;
@@ -730,16 +733,16 @@ a.anchor{
   width:30px;
   z-index: 300;
 }
-#floater .frame a, #floater .frame a:visited{
+#floater .frame a, #floater .frame a:visited {
   color:#F90;
 }
-#floater .frame a:hover{
+#floater .frame a:hover {
   color:#FF0;
 }
-#floater .frame a:active{
+#floater .frame a:active {
   color:#FF0;
 }
-#floater.iphone{
+#floater.iphone {
   background:url(/public/images/frame-iphone.png) no-repeat 50% 50%;
   width:301px;
   height:568px;
@@ -748,7 +751,7 @@ a.anchor{
   margin-left:-150px;
   margin-top:-284px;
 }
-#floater.iphone .reflex{
+#floater.iphone .reflex {
   width:97px;
   height:238px;
   background:url(/public/images/reflex-iphone.png) no-repeat 0 0;
@@ -757,12 +760,12 @@ a.anchor{
   top:106px;
   z-index:50;
 }
-#floater.iphone .frame{
+#floater.iphone .frame {
   width:236px;
   height:354px;
   margin:106px 0 0 32px;
 }
-#floater.ipad{
+#floater.ipad {
   background:url(/public/images/frame-ipad.png) no-repeat 50% 50%;
   width:820px;
   height:636px;
@@ -771,7 +774,7 @@ a.anchor{
   margin-left:-410px;
   margin-top:-318px;
 }
-#floater.ipad .reflex{
+#floater.ipad .reflex {
   width:245px;
   height:238px;
   background:url(/public/images/reflex-ipad.png) no-repeat 0 0;
@@ -780,12 +783,12 @@ a.anchor{
   top:70px;
   z-index:50;
 }
-#floater.ipad .frame{
+#floater.ipad .frame {
   width:656px;
   height:492px;
   margin:70px 0 0 80px;
 }
-#floater.ipad-portrait{
+#floater.ipad-portrait {
   background:url(/public/images/frame-ipad-portrait.png) no-repeat 50% 50%;
   width:636px;
   height:820px;
@@ -794,7 +797,7 @@ a.anchor{
   margin-left:-318px;
   margin-top:-420px;
 }
-#floater.ipad-portrait .reflex{
+#floater.ipad-portrait .reflex {
   width:251px;
   height:325px;
   background:url(/public/images/reflex-ipad-portrait.png) no-repeat 0 0;
@@ -803,12 +806,12 @@ a.anchor{
   top:79px;
   z-index:50;
 }
-#floater.ipad-portrait .frame{
+#floater.ipad-portrait .frame {
   width:492px;
   height:656px;
   margin:79px 0 0 72px;
 }
-#floater.android-tablet{
+#floater.android-tablet {
   background:url(/public/images/frame-android-tablet.png) no-repeat 50% 50%;
   width:820px;
   height:542px;
@@ -817,7 +820,7 @@ a.anchor{
   margin-left:-410px;
   margin-top:-271px;
 }
-#floater.android-tablet .reflex{
+#floater.android-tablet .reflex {
   width:319px;
   height:390px;
   background:url(/public/images/reflex-android-tablet.png) no-repeat 0 0;
@@ -826,28 +829,28 @@ a.anchor{
   top:72px;
   z-index:50;
 }
-#floater.android-tablet .frame{
+#floater.android-tablet .frame {
   width:666px;
   height:390px;
   margin:72px 0 0 70px;
 }
 
-#floater .frame ul{
+#floater .frame ul {
   list-style:none;
   margin:0;
   padding:0;
   display:block;
 }
-#floater .frame ul li{
+#floater .frame ul li {
   float:left;
   color:#FAFAFA;
 }
-#floater .frame ul li h2{
+#floater .frame ul li h2 {
   font-size: 1.8em;
   font-weight: 300;
   margin-top: 0;
 }
-#floater .frame ul li h2 img{
+#floater .frame ul li h2 img {
   -webkit-border-radius: 8px 8px 8px 8px;
      -moz-border-radius: 8px 8px 8px 8px;
           border-radius: 8px 8px 8px 8px;
@@ -856,34 +859,34 @@ a.anchor{
           box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   margin-right:5px;
 }
-#floater .frame .swipe{
+#floater .frame .swipe {
   display:none;
 }
-#floater.iphone .frame ul li{
+#floater.iphone .frame ul li {
   width:236px;
   height:354px;
 }
-#floater.iphone .frame ul li .inner{
+#floater.iphone .frame ul li .inner {
   padding:12px;
 }
-#floater.ipad .frame ul li{
+#floater.ipad .frame ul li {
   width:656px;
   height:492px;
 }
-#floater.ipad .frame ul li .inner, #floater.ipad-portrait .frame ul li .inner, #floater.android-tablet .frame ul li .inner{
+#floater.ipad .frame ul li .inner, #floater.ipad-portrait .frame ul li .inner, #floater.android-tablet .frame ul li .inner {
   padding:20px;
 }
-#floater.ipad-portrait .frame ul li{
+#floater.ipad-portrait .frame ul li {
   width:492px;
   height:656px;
 }
-#floater.android-tablet .frame ul li{
+#floater.android-tablet .frame ul li {
   width:666px;
   height:390px;
 }
 
 /*exeptions*/
-#projetos div.wrap nav#slider ul ul li a img[alt="Indaiá"], #floater .frame ul li h2 img[alt="Indaiá"]{
+#projetos div.wrap nav#slider ul ul li a img[alt="Indaiá"], #floater .frame ul li h2 img[alt="Indaiá"] {
   -webkit-border-radius: 0;
      -moz-border-radius: 0;
           border-radius: 0;
