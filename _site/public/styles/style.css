@@ -1039,7 +1039,8 @@ header div[class^="language"] > div {
   }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-width: 375px) and (max-width: 385px), only screen and (min-width: 680px) and (max-width: 690px), only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px), only screen and (min-device-width : 320px) and (max-device-width : 480px), only screen and (min-width: 375px) and (max-width: 385px), only screen and (min-width: 680px) and (max-width: 690px) {
+/*, only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) */
   body, button, input, select, textarea{
     font-size:0.9em;
   }
