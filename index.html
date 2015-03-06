@@ -32,9 +32,8 @@
   <div id="container">
     <nav class="wrap" id="menu">
       <ul>
-        <li><a href="#home" class="home active" title="Topo">Home</a></li>
+        <li><a href="#home" class="home" title="Topo">Home</a></li>
         <li><a href="#servicos" class="services" title="Serviços">Serviços</a></li>
-        <li><a href="#projetos" class="projects" title="Projetos">Projetos</a></li>
         <li><a href="#clientes" class="clients" title="Clientes">Clientes</a></li>
         <li><a href="#sobre" class="about" title="Sobre">Sobre</a></li>
         <li><a href="http://blog.coderockr.com" class="blog" title="Blog" target="_blank">Blog</a></li>
@@ -63,23 +62,9 @@
     </header>
 
     <div id="main" role="main">
-      <section id="home"><a name="home" class="anchor clearfix"></a>
-        <div class="wrap">
-          <h2>Creating Apps that Rock</h2>
-        </div>
-        <nav class="clearfix">
-          <div class="wrap">
-            <ul>
-              {% include destaque_1.html %}
-              {% include destaque_2.html %}
-              {% include destaque_3.html %}
-            </ul>
-          </div>
-        </nav>
-      </section>
       <section id="servicos"><a name="servicos" class="anchor clearfix"></a>
         <article class="wrap">
-          <h2>A Coderockr é uma empresa que acredita que o desenvolvimento de aplicativos e sistemas <span>é uma arte,</span> que deve ser feita com<span> paixão e dedicação.</span></h2>
+          <h2>A Coderockr é uma empresa que acredita que o desenvolvimento de software <span>é uma arte,</span> que deve ser feita com<span> paixão e dedicação.</span></h2>
         </article>
         <div class="wrap">
           <ul class="clearfix">
@@ -87,78 +72,35 @@
               <span>1</span>
               <article>
                 <h3>Desenvolvimento Web</h3>
-                <p>Trabalhamos com PHP e JavaScript, frameworks como Zend Framework, Doctrine, Slim, interfaces em HTML5 e CSS3.</p>
+                <p>Trabalhamos com PHP e JavaScript, frameworks como Zend Framework, Doctrine, Silex, testes unitários, interfaces em HTML5 e CSS3, AngularJS.</p>
               </article>
-            </li>
-            <li>
+            </li>            
+            <li class="last">
               <span>2</span>
               <article>
-                <h3>Desenvolvimento mobile</h3>
-                <p>Desenvolvemos aplicativos para iPhone, iPad e dispositivos Android, de celulares a tablets.</p>
-              </article>
-            </li>
-            <li class="last">
-              <span>3</span>
-              <article>
                 <h3>Consultoria</h3>
-                <p>Prestamos consultoria em desenvolvimento web e mobile, performance e cloud computing.</p>
+                <p>Prestamos consultoria em desenvolvimento web, performance e cloud computing.</p>
               </article>
             </li>
           </ul>
         </div>
-      </section>
-      <section id="projetos"><a name="projetos" class="anchor clearfix"></a>
-        <div class="wrap title">
-          <h2>É nesse ritmo que fazemos aplicativos <span>Mobile</span> e <span>Web</span>.</h2>
-        </div>
-        <div class="clearfix"></div>
-        <div class="wrap">
-          <nav id="slider">
-            <ul>
-              <li class="wrap">
-                <ul>
-                  {% for post in site.posts limit:6 offset:0 %}
-                    {% include projects.html %}   
-                  {% endfor %}
-                </ul>
-              </li>
-              <li class="wrap">
-                <ul>
-                  {% for post in site.posts limit:6 offset:6 %}
-                    {% include projects.html %}   
-                  {% endfor %}
-                </ul>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <nav class="pages wrap">
-          <ul>
-            <li id="p1"><a href="javascript:void(0);"><span>1</span></a></li>
-            <li id="p2"><a href="javascript:void(0);"><span>2</span></a></li>
-            <!--li id="p3"><a href="javascript:void(0);"><span>3</span></a></li-->
-          </ul>
-        </nav>
       </section>
       <section id="clientes" class="clearfix"><a name="clientes" class="anchor clearfix"></a>
         <div class="wrap">
           <h2>
-            <span>Clientes</span> que dão um <span>show</span><br /> com a <span>Coderockr!</span>
+            Alguns <span>clientes</span> que dão um <span>show</span><br /> com a <span>Coderockr!</span>
           </h2>
           <ul>
-            <li><img src="/public/images/clientes/logo-arkpad.png" width="100" height="70" alt="Arkpad"></li>
-            <li><img src="/public/images/clientes/logo-rps.png" width="100" height="70" alt="RPS Fácil"></li>
             <li><img src="/public/images/clientes/logo-icarros.png" width="100" height="70" alt="iCarros"></li>
             <li><img src="/public/images/clientes/logo-codesquad.png" width="100" height="70" alt="Code Squad"></li>
             <li><img src="/public/images/clientes/logo-softplan.png" width="100" height="70" alt="Softplan"></li>
             <li><img src="/public/images/clientes/logo-mih.png" width="100" height="70" alt="MIH Group"></li>
-            <li><img src="/public/images/clientes/logo-sh.png" width="100" height="70" alt="SH"></li>
-            <li><img src="/public/images/clientes/logo-unipay.png" width="100" height="70" alt="Unipay"></li>
             <li><img src="/public/images/clientes/logo-casabrasil.png" width="100" height="70" alt="Casa Brasil"></li>
             <li><img src="/public/images/clientes/logo-unochapeco.png" width="100" height="70" alt="Unochapecó"></li>
-            <li><img src="/public/images/clientes/logo-sommaior.png" width="100" height="70" alt="Som Maior"></li>
-            <li><img src="/public/images/clientes/logo-indaia.png" width="100" height="70" alt="Restaurante Indaiá"></li>
             <li><img src="/public/images/clientes/logo-weg.png" width="100" height="70" alt="WEG"></li>
+            <!-- <li><img src="/public/images/clientes/logo-empregoligado.png" width="100" height="70" alt="Emprego Ligado"></li>
+            <li><img src="/public/images/clientes/logo-compufour.png" width="100" height="70" alt="Compufour"></li>
+            <li><img src="/public/images/clientes/logo-neogrid.png" width="100" height="70" alt="Neogrid"></li> -->
           </ul>
         </div>
       </section>
@@ -166,20 +108,52 @@
         <div class="wrap">
           <h2><span>Bons programadores</span> são únicos, assim como <span>estrelas no mundo do rock</span>.</h2>
         </div>
+        
         <div class="line clearfix"></div>        
+        <div class="wrap">
+          <h2>Equipe</h2>
+        </div>
         <div class="wrap">
           <ul>
             <li>
               {% include elton.html %}
             </li>
             <li class="last">
-              {% include guilherme.html %}
+              {% include jesus.html %}
             </li>
             <li>
               {% include julia.html %}
             </li>
             <li class="last">
+              {% include leandro.html %}
+            </li>
+            <li>
+              {% include raony.html %}
+            </li>
+            <li class="last">
+              {% include vinicius.html %}
+            </li>
+            <li>
               {% include voce.html %}
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="parceiros" class="clearfix">
+        <div class="line clearfix"></div>
+        <div class="wrap">
+          <h2>Parceiros</h2>
+        </div>
+        <div class="wrap">
+          <ul>
+            <li>
+              {% include adler.html %}
+            </li>
+            <li class="last">
+              {% include jean.html %}
+            </li>
+            <li>
+              {% include matheus.html %}
             </li>
           </ul>
         </div>
@@ -220,7 +194,6 @@
             <ul>
               <li><a href="#home" title="Home">Home</a></li>
               <li><a href="#servicos" title="Serviços">Serviços</a></li>
-              <li><a href="#projetos" title="Projetos">Projetos</a></li>
               <li><a href="#clientes" title="Clientes">Clientes</a></li>
               <li><a href="#sobre" title="Sobre">Sobre</a></li>
               <li><a href="http://blog.coderockr.com" target="_blank" title="Blog">Blog</a></li>

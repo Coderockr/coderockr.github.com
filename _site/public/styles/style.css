@@ -263,7 +263,7 @@ a.anchor {
   margin-right: 6%;
   padding:0 0 30px 50px;
   position:relative;
-  width:24%;
+  width:40%;
 }
 #servicos ul li.last {
   margin-right: 0;
@@ -484,6 +484,85 @@ a.anchor {
   margin-right:4px;
 }
 #sobre div.wrap ul li article div.share a:hover {
+  opacity: 0.85;
+}
+
+#parceiros div.wrap > h2 {
+  font-size:4.4em;
+  width:900px;
+}
+#parceiros div.wrap > h2 span {
+  font-size:1.6em;
+  width:900px;
+}
+#parceiros div.wrap h3 {
+  font-size:1.5em;
+  color:#4D4D4D;
+}
+#parceiros div.line {
+  background:url(/public/images/line.gif) repeat-x 0 100%;
+  height:20px;
+  margin-bottom:40px;
+}
+#parceiros div.wrap ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+#parceiros div.wrap ul li {
+  float:left;
+  width:45%;
+  margin:0 9% 60px 0;
+  position:relative;
+}
+#parceiros div.wrap ul li.last {
+  margin-right:0;
+}
+#parceiros div.wrap ul li article {
+  padding-left:100px;
+}
+#parceiros div.wrap ul li article > span.avatar {
+  position:absolute;
+  top:0;
+  left:0;
+  display:block;
+  width:80px;
+  max-width:80px;
+  min-width:80px;
+  height:80px;
+  max-height:80px;
+  min-height:80px;
+  overflow:hidden;
+  background:#CCD7E3;
+}
+#parceiros div.wrap ul li article > span.avatar span {
+  position:absolute;
+  top:0;
+  left:0;
+  display:block;
+  width:80px;
+  max-width:80px;
+  min-width:80px;
+  height:80px;
+  max-height:80px;
+  min-height:80px;
+  background:url(/public/images/avatar-mask.png) no-repeat 0 0;
+  background-size: 80px 80px;
+}
+#parceiros div.wrap ul li article h3 {
+  font-size:1.5em;
+  font-weight:700;
+  text-align:left;
+  margin:0;
+}
+#parceiros div.wrap ul li article p {
+  font-size:1.1em;
+}
+#parceiros div.wrap ul li article div.share a {
+  float:left;
+  margin-right:4px;
+}
+#parceiros div.wrap ul li article div.share a:hover {
   opacity: 0.85;
 }
 
@@ -974,7 +1053,7 @@ header div[class^="language"] > div {
   }
   #servicos ul li {
     margin-right: 2%;
-    width: 25%;
+    width: 50%;
   }
   #servicos ul li > span {
     font-size: 4.5em;
