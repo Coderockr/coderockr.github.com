@@ -1,0 +1,27 @@
+/* TEAM */
+    CTO: Elton Luís Minetto
+    Contact: eminetto@coderockr.com
+    Twitter: @eminetto
+
+    CEO: Julia Possamai
+    Contact: jpossamai@coderockr.com
+    Facebook: fb.me/juls.possamai
+
+    Front-end Developer: Raony Marcondes
+    Contact: raony@coderockr.com
+    Facebook: fb.me/raonymarcondes
+
+    Front-end Developer: Vinicius Dacal Lopes
+    Contact: vinicius@coderockr.com
+    Twitter: @vinicius_dacal
+
+    Back-end Developer: Leandro Lugaresi
+    Contact: leandro@coderockr.com
+    Twitter: @leandrolugaresi
+
+
+/* SITE */
+    Last update: 2016/08/15
+    Language: Portuguese
+    Doctype: HTML5
+    IDE: Sublime Text
