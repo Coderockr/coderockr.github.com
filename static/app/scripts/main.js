@@ -53,32 +53,94 @@ Main = {
         }
     });
 
-    var $fotoramaDiv = $('.fotorama').fotorama({
-      autoplay: false,
-      shadows: false,
-      width: '100%',
-      arrows: 'always',
-      height: $('.testimonial').height(),
-      keyboard: true,
-      loop: true,
-      click: true,
-      preload: 3
+    // open mobile menu
+    $('.menu-trigger').on('click', function (event) {
+      event.preventDefault();
+      $('#main-content').addClass('move-out');
+      $('#menu-mobile').addClass('is-visible');
+      $('.shadow-layer').addClass('is-visible');
     });
 
-    var fotorama = $fotoramaDiv.data('fotorama');
-
-    Main.positioningFotoramaNav(fotorama);
-
-    $(window).resize(function() {
-      Main.resizeFotorama(fotorama);
+    // close mobile menu
+    $('.close-menu').on('click', function (event) {
+      event.preventDefault();
+      $('#main-content').removeClass('move-out');
+      $('#menu-mobile').removeClass('is-visible');
+      $('.shadow-layer').removeClass('is-visible');
     });
 
-    $('.fotorama').on('fotorama:showend ', function (e, fotorama, extra) {
-      Main.resizeFotorama(fotorama);
-    });
-    $('.fotorama').on('fotorama:show ', function (e, fotorama, extra) {
+    if ($('.fotorama').length) {
+      var $fotoramaDiv = $('.fotorama').fotorama({
+        autoplay: false,
+        shadows: false,
+        width: '100%',
+        arrows: 'always',
+        height: $('.testimonial').height(),
+        keyboard: true,
+        loop: true,
+        click: true,
+        preload: 3
+      });
+
+      var fotorama = $fotoramaDiv.data('fotorama');
+
       Main.positioningFotoramaNav(fotorama);
+
+      $(window).resize(function() {
+        Main.resizeFotorama(fotorama);
+        map.setCenter(center);
+      });
+
+      $('.fotorama').on('fotorama:showend ', function (e, fotorama, extra) {
+        Main.resizeFotorama(fotorama);
+      });
+      $('.fotorama').on('fotorama:show ', function (e, fotorama, extra) {
+        Main.positioningFotoramaNav(fotorama);
+      });
+    }
+
+
+    var html5Slider = document.getElementById('teste');
+
+    noUiSlider.create(html5Slider, {
+      start: [ 10, 30 ],
+      connect: true,
+      range: {
+        'min': -20,
+        'max': 40
+      }
     });
+
+
+    var rangeSlider = document.getElementById('slider-range');
+
+    noUiSlider.create(rangeSlider, {
+      start: [ 4000 ],
+      connect: [true, false],
+      range: {
+        'min': [  2000 ],
+        'max': [ 10000 ]
+      }
+    });
+
+    Main.initMap();
+
+  },
+
+  initMap: function(){
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 16,
+      center: new google.maps.LatLng(-26.3009, -48.8463),
+      mapTypeId: 'roadmap'
+    });
+
+    (function () {
+      var marker = new google.maps.Marker({
+        position: new google.maps.LatLng(-26.3007, -48.8510),
+        icon: '../images/pin.svg',
+        map: map
+      });
+    })();
   },
 
   resizeFotorama: function(fotorama){
