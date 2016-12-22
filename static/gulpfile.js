@@ -98,6 +98,10 @@ gulp.task('serve', () => {
       port: 9000,
       server: {
         baseDir: ['.tmp', 'app'],
+        middleware: function (req, res, next) {
+            res.setHeader('Access-Control-Allow-Origin', '*');
+            next();
+        },
         routes: {
           '/bower_components': 'bower_components'
         }
@@ -122,6 +126,10 @@ gulp.task('serve:dist', () => {
     notify: false,
     port: 9000,
     server: {
+      middleware: function (req, res, next) {
+          res.setHeader('Access-Control-Allow-Origin', '*');
+          next();
+      },
       baseDir: ['dist']
     }
   });
@@ -134,6 +142,10 @@ gulp.task('serve:test', ['scripts'], () => {
     ui: false,
     server: {
       baseDir: 'test',
+      middleware: function (req, res, next) {
+          res.setHeader('Access-Control-Allow-Origin', '*');
+          next();
+      },
       routes: {
         '/scripts': '.tmp/scripts',
         '/bower_components': 'bower_components'

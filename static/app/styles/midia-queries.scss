@@ -1,6 +1,13 @@
 @import 'variables';
 @import 'partials';
 
+@media only screen and (max-width : 1480px) {
+  #about .photos .row {
+    .pic-3, .pic-4,
+    .pic-9, .pic-0 { display: none; }
+  }
+}
+
 /*==========  Non-Mobile First Method  ==========*/
 
 /* Large Devices, Wide Screens */
@@ -14,8 +21,17 @@
     h1 {
       font-size: 3.8rem;
       line-height: 7.5rem;
-      margin-top: 90px;
+      margin-top: 56px;
     }
+  }
+
+  #contact > .banner {
+    width: 100%;
+    max-height: 500px;
+    height: 500px;
+    background: url('../images/mic-lg.jpg') bottom center;
+
+    h1 { margin: 105px 0 0 100px; }
   }
 
   .what-we-do {
@@ -25,22 +41,64 @@
 
     h2 { letter-spacing: normal; }
   }
+
+  .team header { margin-top: -356px !important; }
+}
+
+@media only screen and (max-width : 1010px) {
+  #about .photos {
+    .row {
+      padding: 0 15px;
+
+      .pic-2, .pic-3, .pic-4,
+      .pic-8, .pic-9, .pic-0 { display: none; }
+    }
+  }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
   .group { margin: 60px 0 30px 0 !important; }
 
+  #about .coderockr .cross-title h2 {
+    padding: 0 !important;
+    text-align: center;
+
+    &:after { left: 470px !important; }
+  }
+
+  #about .coderockr .history {
+    padding-bottom: 45px;
+  }
+
+  #about .coderockr .history .logo img {
+    max-width: 100px;
+    margin: 75px 0 60px 0;
+  }
+
+  #about .coderockr .history p { text-align: center; }
+
+  #about .coderockr .principles { padding-top: 58px; }
+
+  #about .team .container .row > .subtitle {
+    text-align: center;
+    margin: 85px 0 45px 0;
+  }
+
+  #about .team .container .row > ul li .stars { padding: 45px 0 60px 0; }
+
+  #about .coderockr .principles .container ul li { margin-bottom: 58px; }
+
+  #about .team .container .row h3 { margin: 80px 0; }
+
+  .team header { margin-top: -112px !important; }
+
   #header nav { display: none; }
 
-  #home > .banner {
-    background: url('../images/crowd-md.jpg') bottom center;
+  #home > .banner { background: url('../images/crowd-md.jpg') bottom center; }
 
-    h1 {
-      font-size: 3.8rem;
-      line-height: 7rem;
-      margin-top: 63px;
-    }
+  #contact > .banner {
+    background: url('../images/mic-md.jpg') bottom center;
   }
 
   .what-we-do {
@@ -50,11 +108,15 @@
       h3 { font-size: 2.8rem; }
     }
 
+    .title { margin-bottom: 0; }
+
     .wrapper:after { display: none !important; }
 
-    .service { padding: 0 !important; }
-    .development h2 { margin-right: -.4rem; }
-    .consulting { margin-top: 30px; }
+    .service {
+      padding: 0 !important;
+      margin: 30px 0 !important;
+    }
+    .left h2 { margin-right: -.4rem !important; }
   }
 
   .title { margin: 80px 0 60px 0; }
@@ -96,13 +158,53 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+  #about .photos .row {
+    .img-responsive { display: inline-block; }
+    .pic-1, .pic-2, .pic-3, .pic-4,
+    .pic-7, .pic-8, .pic-9, .pic-0 { display: none; }
+  }
+
+  #about .principles header span {
+    font-size: 3.5rem !important;
+    line-height: 7rem !important;
+    width: 330px !important;
+    margin: 62px 0 0 40px !important;
+  }
+
+  #about .person {
+    flex-direction: column !important;
+    text-align: center;
+
+    .profile .subtitle{
+      text-align: center !important;
+      margin-top: 30px !important;
+    }
+  }
+
   #home > .banner {
     width: 100%;
     max-height: 450px;
     height: 450px;
     background: url('../images/crowd-sm.jpg') bottom center;
 
-    h1 { margin: 48px 60px 0 60px; }
+    h1 {
+      font-size: 3rem;
+      line-height: 7.5rem;
+      margin-top: 72px;
+    }
+  }
+
+   #contact > .banner {
+    width: 100%;
+    max-height: 450px;
+    height: 450px;
+    background: url('../images/mic-sm.jpg') bottom center;
+
+    h1 {
+      max-width: 380px;
+      font-size: 4rem;
+      margin: 85px auto 0 auto;
+    }
   }
 
   .what-we-do .blurred,
@@ -145,15 +247,10 @@
   }
 }
 
-@media only screen and (max-width : 730px) {
-  #home > .banner h1 { margin: 48px 40px 0 40px; }
-}
-
-@media only screen and (max-width : 690px) {
+@media only screen and (max-width : 608px) {
   #home > .banner h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     line-height: 6rem;
-    margin: 43px 70px 0 70px;
   }
 }
 
@@ -164,10 +261,17 @@
     height: 400px;
 
     h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       line-height: 5.5rem;
-      margin: 35px 60px 0 60px;
+      margin: 34px 30px 0 30px;
     }
+  }
+}
+
+@media only screen and (max-width : 550px) and (-webkit-min-device-pixel-ratio: 2) {
+  #home > .banner {
+    max-height: 355px;
+    height: 355px;
   }
 }
 
@@ -175,17 +279,41 @@
 @media only screen and (max-width : 480px) {
   #home > .banner { background: url('../images/crowd-xs.jpg') bottom center; }
 
+  #contact > .banner {
+    background: url('../images/mic-xs.jpg') bottom center;
+
+    h1 {
+      margin: 55px auto 0 auto;
+      max-width: 260px;
+      line-height: 8.5rem;
+      text-align: center;
+    }
+  }
+
   .title { font-size: 3.8rem; }
 
   .subtitle h2 { font-size: 2.5rem; }
 
   .what-we-do {
-    h4 { margin-top: 55px; }
+    h4 { margin-top: 30px !important; }
+
+    .service {
+      margin: 18px 0 !important;
+    }
+
+    .service:nth-child(1n) { margin-top: 0px !important; }
 
     .btn {
       font-size: 1.6rem !important;
       padding: 13px 15px !important;
     }
+  }
+
+  #about .principles header span {
+    font-size: 3.5rem !important;
+    line-height: 7rem !important;
+    width: 330px !important;
+    margin: 62px 0 0 40px !important;
   }
 
   .products {
@@ -200,9 +328,7 @@
       }
     }
 
-    .estimeoprazo {
-      margin-top: 55px !important;
-    }
+    .estimeoprazo { margin-top: 55px !important; }
 
     .coderockrway {
       padding-bottom: 80px;
@@ -211,9 +337,7 @@
         font-size: 2rem !important;
 
         &:before,
-        &:after {
-          top: 1.2rem !important;
-        }
+        &:after { top: 1.2rem !important; }
       }
     }
 
@@ -233,15 +357,17 @@
 @media only screen and (max-width : 465px) {
   .title { margin: 60px 0 40px 0; }
 
-  #home > .banner h1 {
-    font-size: 2.5rem;
-    line-height: 5.5rem;
-    margin: 34px 30px 0 30px;
+  #home > .banner {
+    h1 {
+      font-size: 2.2rem;
+      line-height: 5.2rem;
+      margin: 43px 0;
+    }
   }
 
   .what-we-do section { padding-bottom: 76px; }
 
-  .cross-title {
+  #contact .cross-title {
     h2 {
       .number {
         bottom: -24px !important;
@@ -272,19 +398,40 @@
   }
 }
 
-@media only screen and (max-width : 365px) {
-  #home > .banner h1 {
-    font-size: 2rem;
-    line-height: 4.5rem;
-    margin: 63px 25px 0 25px;
+@media only screen and (max-width : 368px) {
+  #home > .banner {
+    h1 {
+      font-size: 2rem;
+      line-height: 5rem;
+      margin: 43px 0;
+    }
+  }
+
+  #about .photos { margin: -345px 0 65px 0; }
+
+  #about .principles header span {
+    font-size: 3rem !important;
+    line-height: 7rem !important;
+    width: 280px !important;
+    margin: 62px 0 0 18px !important;
+  }
+}
+
+@media only screen and (max-width : 346px) {
+  #home > .banner {
+    h1 { margin: 24px 0; }
   }
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
-  #home > .banner h1 {
-    font-size: 2rem;
-    line-height: 4.5rem;
-    margin: 63px 25px 0 25px;
+  #home > .banner {
+    h1 {
+      font-size: 1.8rem;
+      line-height: 4.75rem;
+      margin: 35px 0;
+    }
   }
+
+  #about .photos { margin: -345px 0 90px 0; }
 }

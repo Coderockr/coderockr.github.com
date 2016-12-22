@@ -1,16 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="35px" height="56px" viewBox="0 0 35 56" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 40.1 (33804) - http://www.bohemiancoding.com/sketch -->
-    <title>pin</title>
+<svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
+    <defs>
+        <radialGradient cx="50%" cy="150%" fx="50%" fy="150%" r="100%" id="radialGradient-1">
+            <stop stop-color="#F1A10A" offset="100%"></stop>
+            <stop stop-color="#F5B911" offset="0%"></stop>
+        </radialGradient>
+        <circle id="path-2" cx="29" cy="29" r="9"></circle>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.294117647   0 0 0 0 0.184313725   0 0 0 0 0  0 0 0 0.18 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="pin">
-            <g id="Group">
-                <path d="M15.7625284,26.1591744 L15.7625284,54.0623203 C15.7625284,55.0266762 16.540483,55.8062918 17.5027841,55.8062918 C18.4650852,55.8062918 19.2430398,55.0266762 19.2430398,54.0623203 L19.2430398,26.1591744 L15.7625284,26.1591744 L15.7625284,26.1591744 Z" id="Shape" fill="#324D5B"></path>
-                <path d="M17.5027841,0 C27.1140625,0 34.905142,7.80930961 34.905142,17.439516 C34.905142,27.0697224 27.1140625,34.8806263 17.5027841,34.8806263 C7.89329545,34.8824199 0.100426136,27.0695231 0.100426136,17.439516 C0.100426136,7.8095089 7.89309659,0 17.5027841,0 L17.5027841,0 Z" id="Shape" fill="#E2574C"></path>
-                <path d="M22.7233523,8.72145196 C25.606875,8.72145196 27.9441193,11.0618932 27.9441193,13.951573 C27.9441193,16.8412527 25.6070739,19.1834875 22.7233523,19.1834875 C19.8416193,19.1834875 17.5025852,16.841452 17.5025852,13.951573 C17.5027841,11.0634875 19.8416193,8.72145196 22.7233523,8.72145196 L22.7233523,8.72145196 Z" id="Shape" fill="#E87970"></path>
-                <path d="M19.2430398,33.1384484 C9.63534091,33.1384484 1.84068182,25.3255516 1.84068182,15.6955445 C1.84068182,11.3235587 3.45744318,7.33859075 6.10948864,4.27792171 C2.43409091,7.47809253 0.100426136,12.1814947 0.100426136,17.439516 C0.100426136,27.0695231 7.89309659,34.8806263 17.5027841,34.8806263 C22.751392,34.8806263 27.4447727,32.5401851 30.6363352,28.8587331 C27.5821875,31.5200285 23.6057102,33.1384484 19.2430398,33.1384484 L19.2430398,33.1384484 Z" id="Shape" fill="#CB4E44"></path>
+        <g id="Group">
+            <circle id="Oval" fill-opacity="0.349999994" fill="#F1A10A" cx="29" cy="29" r="29"></circle>
+            <g id="Oval">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use fill="url(#radialGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
             </g>
         </g>
     </g>

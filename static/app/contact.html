@@ -3,26 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Coderockr - Creating Projects that Rock!</title>
+    <title>Coderockr - Contato</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
 
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="A Coderockr acredita que o desenvolvimento de software é uma arte, que deve ser feita com paixão e dedicação.">
+    <meta name="keywords" content="Coderockr, Desenvilvimento, Sistemas Web, Aplicativos Mobile, Big Data, Planrockr, Elton Minetto, Joinville.">
 
     <link type="text/plain" rel="author" href="humans.txt" />
-
     <link href="images/favicon.png" rel="shortcut icon">
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!-- build:css styles/main.css -->
-      <link href="/bower_components/fotorama/fotorama.css" rel="stylesheet">
-      <link href="/bower_components/material-design-lite/material.css" rel="stylesheet">
-      <link href="/bower_components/nouislider/distribute/nouislider.css" rel="stylesheet">
-      <link href="styles/main.css" rel="stylesheet">
+    <link href="/bower_components/fotorama/fotorama.css" rel="stylesheet">
+    <link href="/bower_components/material-design-lite/material.css" rel="stylesheet">
+    <link href="/bower_components/nouislider/distribute/nouislider.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -39,17 +37,17 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12 flex-row">
-              <a href="http://www.coderockr.com" class="logo">
+              <a href="index.html" title="Coderockr" class="logo">
                 <img src="images/coderockr.svg" alt="Coderockr Logo">
               </a>
 
               <nav>
                 <ul>
-                  <li><a href="" title="O que fazemos">O Que Fazemos</a></li>
-                  <li><a href="" title="Quem somos">Quem Somos</a></li>
-                  <li><a href="" title="Produtos">Produtos</a></li>
-                  <li><a href="" title="Blog">Blog</a></li>
-                  <li><a href="" title="Contato">Contato</a></li>
+                  <li><a href="index.html" title="O que fazemos">O Que Fazemos</a></li>
+                  <li><a href="about.html" title="Quem somos">Quem Somos</a></li>
+                  <li><a href="index.html#products" title="Nossos Produtos" data-autoscroll="true">Produtos</a></li>
+                  <li><a href="https://blog.coderockr.com" title="Blog Coderockr" target="_blank">Blog</a></li>
+                  <li><a href="contact.html" title="Contato">Contato</a></li>
                 </ul>
               </nav>
 
@@ -65,9 +63,9 @@
         <section class="banner">
           <div class="container">
             <div class="row">
-             <!--  <h1 class="col-md-10 col-md-offset-1">
-                A Coderockr está pronta para dar um show!
-              </h1> -->
+              <div class="col-md-12">
+                <h1 class="">A CODEROCKR ESTÁ PRONTA PARA DAR UM SHOW!</h1>
+              </div>
             </div>
           </div>
         </section>
@@ -82,147 +80,198 @@
                 </h1>
 
                 <p>
-                  Adoramos trabalhar com pessoas motivadas por ideias inovadoras.
+                  Adoramos trabalhar com pessoas motivadas que possuem ideias inovadoras.
                   <span>Conte-nos um pouco sobre o seu projeto.</span>
                 </p>
               </header>
 
-              <div class="about-you">
-                <div class="col-md-12 cross-title left">
-                  <h2>
-                    <span class="number">01</span>
-                    <span class="title">SOBRE VOCÊ</span>
-                  </h2>
-                </div>
+              <div class="clearfix"></div>
 
-                <div class="col-md-6">
-                  <div class="group">
-                    <input type="text" required>
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label>Seu Nome</label>
+              <form name="contactForm">
+                <div class="about-you">
+                  <div class="col-md-12 cross-title left">
+                    <h2>
+                      <span class="number">01</span>
+                      <span class="title">SOBRE VOCÊ</span>
+                    </h2>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="group">
+                      <input type="text" name="name" required>
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label>Seu Nome</label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="group">
+                      <input type="text" name="email" required>
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label>Seu Email</label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="group">
+                      <input type="text" name="phone" required>
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label>Telefone</label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="group">
+                      <input type="text" name="company" required>
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label>Empresa</label>
+                    </div>
                   </div>
                 </div>
 
-                <div class="col-md-6">
-                  <div class="group">
-                    <input type="text" required>
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label>Seu Email</label>
+                <div class="clearfix"></div>
+
+                <div class="about-project">
+                  <div class="col-md-12 cross-title right">
+                    <h2>
+                      <span class="title">SOBRE O PROJETO</span>
+                      <span class="number">02</span>
+                    </h2>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <div class="list">
+                      <h3>Em que fase se encontra o projeto?</h3>
+                      <ul>
+                        <li>
+                          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="ideia">
+                            <input type="radio" id="ideia" class="mdl-radio__button" name="phase">
+                            <span class="mdl-radio__label">Ideia</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="requisitos-definidos">
+                            <input type="radio" id="requisitos-definidos" class="mdl-radio__button" name="phase" checked>
+                            <span class="mdl-radio__label">Requisitos Definidos</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="prototipacao">
+                            <input type="radio" id="prototipacao" class="mdl-radio__button" name="phase">
+                            <span class="mdl-radio__label">Em Prototipação</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="desenvolvimento">
+                            <input type="radio" id="desenvolvimento" class="mdl-radio__button" name="phase">
+                            <span class="mdl-radio__label">Em Desenvolvimento</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="novas-funcionalidades">
+                            <input type="radio" id="novas-funcionalidades" class="mdl-radio__button" name="phase">
+                            <span class="mdl-radio__label">Requer Novas Funcionalidades</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="correcoes">
+                            <input type="radio" id="correcoes" class="mdl-radio__button" name="phase" value="correcoes">
+                            <span class="mdl-radio__label">Requer Correções</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6">
+                    <div class="list">
+                      <h3>Quais as necessidades do projeto?</h3>
+                      <ul>
+                        <li>
+                          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="consultoria">
+                            <input type="checkbox" id="consultoria" name="needs[]" class="mdl-checkbox__input">
+                            <span class="mdl-checkbox__label">Consultoria</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="design">
+                            <input type="checkbox" id="design" name="needs[]" class="mdl-checkbox__input">
+                            <span class="mdl-checkbox__label">Design</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="api">
+                            <input type="checkbox" id="api" name="needs[]" class="mdl-checkbox__input">
+                            <span class="mdl-checkbox__label">Desenvolvimento de API</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="web">
+                            <input type="checkbox" id="web" name="needs[]" class="mdl-checkbox__input">
+                            <span class="mdl-checkbox__label">Desenvolvimento Web</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="mobile">
+                            <input type="checkbox" id="mobile" name="needs[]" class="mdl-checkbox__input">
+                            <span class="mdl-checkbox__label">Desenvolvimento Mobile</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="others">
+                            <input type="checkbox" id="others"  class="mdl-checkbox__input">
+                            <span class="mdl-checkbox__label">Outros</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-md-offset-3 features">
+                    <h3 class="text-center">Breve descrição:</h3>
+                    <div class="group">
+                      <input type="text" name="features" required>
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label>Quais <span class="hidden-md hidden-sm hidden-xs">são</span> as <span class="hidden-md hidden-sm hidden-xs"> principais </span> funcionalidades <span class="hidden-md hidden-sm hidden-xs"> do projeto</span>?</label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-8 col-md-offset-2 deadline">
+                    <h3 class="text-center">Qual é a expectativa de lançamento?</h3>
+                    <div class="slider">
+                      <label></label>
+                      <div class="input"><div id="deadline"></div></div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-8 col-md-offset-2 budget">
+                    <h3 class="text-center">Qual é o orçamento disponível?</h3>
+                    <div class="slider">
+                      <label></label>
+                      <div class="input"><div id="budget"></div></div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6 col-md-offset-3 details">
+                    <h3 class="text-center">Observações gerais:</h3>
+                    <div class="group">
+                      <input type="text" name="details">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label>Algum detalhe adicional<span class="hidden-md hidden-sm hidden-xs"> que gostaria de nos contar</span>?</label>
+                    </div>
+                  </div>
+
+                  <div class="col-md-12 text-center">
+                    <button class="btn" title="Saiba Mais">ENVIAR</button>
                   </div>
                 </div>
-
-                <div class="col-md-6">
-                  <div class="group">
-                    <input type="text" required>
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label>Telefone</label>
-                  </div>
-                </div>
-
-                <div class="col-md-6">
-                  <div class="group">
-                    <input type="text" required>
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label>Empresa</label>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="about-project">
-                <div class="col-md-12 cross-title right">
-                  <h2>
-                    <span class="title">SOBRE O PROJETO</span>
-                    <span class="number">02</span>
-                  </h2>
-                </div>
-
-                <div class="col-sm-6 type">
-                  <div class="list">
-                    <h3>O seu projeto:</h3>
-                    <ul>
-                      <li>
-                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="new-project">
-                          <input type="radio" id="new-project" class="mdl-radio__button" name="project-type" value="new-project" checked>
-                          <span class="mdl-radio__label">É um novo projeto</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="maintenance">
-                          <input type="radio" id="maintenance" class="mdl-radio__button" name="project-type" value="maintenance">
-                          <span class="mdl-radio__label">Requer manutenção</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="consulting">
-                          <input type="radio" id="consulting" class="mdl-radio__button" name="project-type" value="consulting">
-                          <span class="mdl-radio__label">Requer consultoria</span>
-                        </label>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 needs">
-                  <div class="list">
-                    <h3>Ele envolve:</h3>
-                    <ul>
-                      <li>
-                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="web-app">
-                          <input type="checkbox" id="web-app" class="mdl-checkbox__input" checked>
-                          <span class="mdl-checkbox__label">Aplicações web / site</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="mobile-app">
-                          <input type="checkbox" id="mobile-app" class="mdl-checkbox__input">
-                          <span class="mdl-checkbox__label">Aplicativos mobile</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="others">
-                          <input type="checkbox" id="others" class="mdl-checkbox__input">
-                          <span class="mdl-checkbox__label">Outros</span>
-                        </label>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="col-md-8 col-md-offset-2 deadline">
-                  <h3 class="text-center">Deverá ser lancado em:</h3>
-                  <div class="slider">
-                    <label>6 meses</label>
-                    <div class="input"><div id="slider-range"></div></div>
-                  </div>
-                </div>
-
-                <div class="col-md-8 col-md-offset-2 budget">
-                  <h3 class="text-center">E tem o orçamento entre:</h3>
-                  <div class="slider">
-                    <label>R$ 30 a  60 mil</label>
-                    <div class="input"><div id="teste"></div></div>
-                  </div>
-                </div>
-
-                <div class="col-md-6 col-md-offset-3 details">
-                  <h3 class="text-center">Observações gerais:</h3>
-                  <div class="group">
-                    <input type="text" required>
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label>Algum detalhe adicional<span class="hidden-md hidden-sm hidden-xs"> que gostaria de nos contar</span>?</label>
-                  </div>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <button class="btn" title="Saiba Mais">ENVIAR</button>
-                </div>
-              </div>
+              </form>
             </div>
           </div>
         </section>
@@ -232,26 +281,23 @@
         <div id="map" ></div>
         <div class="container">
           <div class="row">
-            <div class="col-md-4 col-md-offset-6 card">
+            <div class="col-md-4 col-md-offset-6 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 card">
               <h1 class="title">
                 ONDE ESTAMOS
                 <span></span>
               </h1>
               <p class="strong">Rua Henrrique Mayer, 40,</p>
-              <p>sala 1, centro. CEP 89201-405</p>
+              <p>Sala 1, Centro. CEP 89201-405</p>
               <p>Joinville - SC</p>
 
-              <p class="strong">Fone: +55 47 3227.6359</p>
+              <p class="strong">Fone: +55 47 3227-6359</p>
               <p class="strong">contato@coderockr.com</p>
             </div>
           </div>
         </div>
       </div>
 
-    <!-- https://maps.googleapis.com/maps/api/staticmap?key=YOUR_API_KEY&center=-26.29676780400352,-48.852933501837185&zoom=16&format=png&maptype=roadmap&style=feature:administrative%7Celement:geometry%7Cvisibility:off&style=feature:poi%7Cvisibility:off&style=feature:road%7Celement:labels.icon%7Cvisibility:off&style=feature:transit%7Cvisibility:off&size=480x360 -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlXreDCGCFsGRMWteNqmZ_Ai5qFjohDEE"
-    async defer></script>
-
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlXreDCGCFsGRMWteNqmZ_Ai5qFjohDEE" async defer></script>
 
       <footer id="footer">
         <div class="container">
@@ -287,12 +333,12 @@
       <div class="container">
         <div class="row">
           <ul>
-            <li><a href="#0">Home</a></li>
-            <li><a href="#0">O Que Fazemos</a></li>
-            <li><a href="#0">Quem Somos</a></li>
-            <li><a href="#0">Produtos</a></li>
-            <li><a href="#0">Blog</a></li>
-            <li><a href="#0">Contato</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#what-we-do" data-autoscroll="true">O Que Fazemos</a></li>
+            <li><a href="about.html">Quem Somos</a></li>
+            <li><a href="index.html#products" title="Nossos Produtos" data-autoscroll="true">Produtos</a></li>
+            <li><a href="https://blog.coderockr.com" title="Blog Coderockr" target="_blank">Blog</a></li>
+            <li><a href="contact.html">Contato</a></li>
           </ul>
 
           <a href="#0" class="close-menu">
@@ -311,12 +357,16 @@
     <script src="/bower_components/fotorama/fotorama.js"></script>
     <script src="/bower_components/material-design-lite/material.min.js"></script>
     <script src="/bower_components/nouislider/distribute/nouislider.js"></script>
+    <script src="/bower_components/jquery.maskedinput/dist/jquery.maskedinput.js"></script>
+    <script src="/bower_components/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="/bower_components/es6-promise/es6-promise.js"></script>
+    <script src="/bower_components/sweetalert2/dist/sweetalert2.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <script>plyr.setup();</script>
+    <script src="scripts/main.js">Main.init('home')</script>
     <!-- endbuild -->
+    <script>Main.init('contact')</script>
   </body>
 </html>

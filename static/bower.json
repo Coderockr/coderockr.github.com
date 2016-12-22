@@ -7,7 +7,10 @@
     "plyr": "^2.0.7",
     "fotorama": "^4.6.4",
     "material-design-lite": "^1.2.1",
-    "nouislider": "^9.0.0"
+    "nouislider": "^9.0.0",
+    "jquery.maskedinput": "^1.4.1",
+    "jquery-validation": "^1.16.0",
+    "sweetalert2": "^6.2.3"
   },
   "overrides": {
     "bootstrap-sass": {
