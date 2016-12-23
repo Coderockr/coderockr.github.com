@@ -1,43 +1,30 @@
-/* the humans responsible & colophon */
-/* humanstxt.org */
-
-
 /* TEAM */
-  <your title>: <your name>
-  Site: 
-  Twitter: 
-  Location: 
+    CTO: Elton Luís Minetto
+    Contact: eminetto@coderockr.com
+    Twitter: @eminetto
 
-/* THANKS */
-  Names (& URL): 
+    CEO: Julia Possamai
+    Contact: jpossamai@coderockr.com
+    Facebook: fb.me/juls.possamai
+
+    Front-end Developer: Raony Marcondes
+    Contact: raony@coderockr.com
+    Facebook: fb.me/raonymarcondes
+
+    Front-end Developer: Vinicius Dacal Lopes
+    Contact: vinicius@coderockr.com
+    Twitter: @vinicius_dacal
+
+    Back-end Developer: Leandro Lugaresi
+    Contact: leandro@coderockr.com
+    Twitter: @leandrolugaresi
+
+    Back-end Developer: Lucas Abreu
+    Contact: lucas@coderockr.com
+    Twitter: @LucasSantAbreu
 
 /* SITE */
-  Standards: HTML5, CSS3
-  Components: Modernizr, jQuery
-  Software:
-  
-
-                                    
-                               -o/-                       
-                               +oo//-                     
-                              :ooo+//:                    
-                             -ooooo///-                   
-                             /oooooo//:                   
-                            :ooooooo+//-                  
-                           -+oooooooo///-                 
-           -://////////////+oooooooooo++////////////::    
-            :+ooooooooooooooooooooooooooooooooooooo+:::-  
-              -/+ooooooooooooooooooooooooooooooo+/::////:-
-                -:+oooooooooooooooooooooooooooo/::///////:-
-                  --/+ooooooooooooooooooooo+::://////:-   
-                     -:+ooooooooooooooooo+:://////:--     
-                       /ooooooooooooooooo+//////:-        
-                      -ooooooooooooooooooo////-           
-                      /ooooooooo+oooooooooo//:            
-                     :ooooooo+/::/+oooooooo+//-           
-                    -oooooo/::///////+oooooo///-          
-                    /ooo+::://////:---:/+oooo//:          
-                   -o+/::///////:-      -:/+o+//-         
-                   :-:///////:-            -:/://         
-                     -////:-                 --//:        
-                       --                       -:        
+    Last update: 2016/12/22
+    Language: Portuguese
+    Doctype: HTML5
+    IDE: Sublime Text
