@@ -318,7 +318,7 @@ p { font: 300 1.8rem/3.20rem $primary-font; }
     background-color: $yellow-6;
     max-height: 550px;
     height: 550px;
-    background: url('../images/crowd-bg.jpg') bottom center;
+    background: url('../images/crowd-bg.jpg') bottom center $yellow-6;
     box-shadow: inset 0px -3px 5px 0px rgba(0,0,0,0.2);
 
     h1 {

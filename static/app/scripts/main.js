@@ -273,7 +273,113 @@ Main = {
       streetViewControl: false,
       overviewMapControl: true,
       mapTypeId: 'roadmap',
-      styles: [{'featureType':'administrative','elementType':'labels.text.fill','stylers':[{'color':'#444444'}]},{'featureType':'landscape','stylers':[{'color':'#f2f2f2'}]},{'featureType':'landscape.man_made','stylers':[{'visibility':'off'}]},{'featureType':'poi','stylers':[{'visibility':'simplified'}]},{'featureType':'poi','elementType':'labels','stylers':[{'visibility':'off'}]},{'featureType':'poi.attraction','stylers':[{'visibility':'off'}]},{'featureType':'poi.business','stylers':[{'visibility':'off'}]},{'featureType':'road','stylers':[{'saturation':-100},{'lightness':45}]},{'featureType':'road.arterial','elementType':'labels.icon','stylers':[{'visibility':'off'}]},{'featureType':'road.highway','stylers':[{'visibility':'simplified'}]},{'featureType':'transit','stylers':[{'visibility':'off'}]},{'featureType':'water','stylers':[{'color':'#46bcec'},{'visibility':'on'}]}]
+      styles: [
+        {
+          'elementType': 'labels.text.fill',
+          'featureType': 'administrative',
+          'stylers': [
+            {
+              'color': '#444444'
+            }
+          ]
+        },
+        {
+          'featureType': 'landscape',
+          'stylers': [
+            {
+              'color': '#f2f2f2'
+            }
+          ]
+        },
+        {
+          'featureType': 'landscape.man_made',
+          'stylers': [
+            {
+              'visibility': 'off'
+            }
+          ]
+        },
+        {
+          'featureType': 'poi',
+          'stylers': [
+            {
+              'visibility': 'simplified'
+            }
+          ]
+        },
+        {
+          'elementType': 'labels',
+          'featureType': 'poi',
+          'stylers': [
+            {
+              'visibility': 'off'
+            }
+          ]
+        },
+        {
+          'featureType': 'poi.attraction',
+          'stylers': [
+            {
+              'visibility': 'off'
+            }
+          ]
+        },
+        {
+          'featureType': 'poi.business',
+          'stylers': [
+            {
+              'visibility': 'off'
+            }
+          ]
+        },
+        {
+          'featureType': 'road',
+          'stylers': [
+            {
+              'saturation': -100
+            },
+            {
+              'lightness': 45
+            }
+          ]
+        },
+        {
+          'elementType': 'labels.icon',
+          'featureType': 'road.arterial',
+          'stylers': [
+            {
+              'visibility': 'off'
+            }
+          ]
+        },
+        {
+          'featureType': 'road.highway',
+          'stylers': [
+            {
+              'visibility': 'simplified'
+            }
+          ]
+        },
+        {
+          'featureType': 'transit',
+          'stylers': [
+            {
+              'visibility': 'off'
+            }
+          ]
+        },
+        {
+          'featureType': 'water',
+          'stylers': [
+            {
+              'color': '#46bcec'
+            },
+            {
+              'visibility': 'on'
+            }
+          ]
+        }
+      ]
     });
 
     (function () {
