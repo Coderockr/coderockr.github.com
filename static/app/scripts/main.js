@@ -232,7 +232,7 @@ Main = {
 
         xhrRunning = $.ajax({
           type: 'POST',
-          url: 'http://mansanofotografia.com.br/proxy',
+          url: 'https://e5kp5ek8ni.execute-api.us-east-1.amazonaws.com/prod/contact',
           data: {
             'name': $('[name=name]').val(),
             'email': $('[name=email]').val(),
