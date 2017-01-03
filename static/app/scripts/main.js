@@ -232,21 +232,23 @@ Main = {
 
         xhrRunning = $.ajax({
           type: 'POST',
-          url: 'https://e5kp5ek8ni.execute-api.us-east-1.amazonaws.com/prod/contact',
-          data: {
-            'name': $('[name=name]').val(),
-            'email': $('[name=email]').val(),
-            'company': $('[name=company]').val(),
-            'phone': $('[name=phone]').val(),
-            'phase': $('[name=phase]:checked').next().html(),
-            'needs': needs.join(', '),
-            'features_description': $('[name=features]').val(),
-            'deadline': $('.deadline .slider label').html(),
-            'budget': $('.budget .slider label').html(),
-            'description': $('[name=details]').val()
-          },
+          dataType: 'json',
+          url: 'https://e5kp5ek8ni.execute-api.us-east-1.amazonaws.com/prod/contato',
+          contentType: 'application/json',
+          data: JSON.stringify({
+            name: $('[name=name]').val(),
+            email: $('[name=email]').val(),
+            company: $('[name=company]').val(),
+            phone: $('[name=phone]').val(),
+            phase: $('[name=phase]:checked').next().html(),
+            needs: needs.join(', '),
+            features_description: $('[name=features]').val(),
+            deadline: $('.deadline .slider label').html(),
+            budget: $('.budget .slider label').html(),
+            description: $('[name=details]').val()
+          }),
           success: function (data) {
-            if (data.length) {
+            if (data) {
               Main.sweetAlert(message.success);
             } else {
               Main.sweetAlert(message.error);
