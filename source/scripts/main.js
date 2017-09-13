@@ -1,20 +1,26 @@
 'use strict';
 
-import $ from 'jquery';
-// import fotorama from 'fotorama/fotorama.js'
+window.$ = window.jQuery = require('jquery');
+// $.fotorama = require('fotorama/fotorama.js');
+
+// import { $, jquery } from 'jquery';
+// window.$ = $;
+// window.jquery = jquery;
+import fotorama from 'fotorama/fotorama.js'
 import plyr from 'plyr'
 import noUiSlider from 'nouislider'
 import material from 'material-design-lite'
-import 'jquery.maskedinput/src/jquery.maskedinput.js'
+import mask from 'jquery.maskedinput/src/jquery.maskedinput.js'
 import 'jquery-validation'
 
 var Main = {
   init: function(){
+
     var page = $('.wrap').attr('id');
     switch(page) {
       case 'home':
         Main.initVideo();
-        // Main.initTestimonials();
+        Main.initTestimonials();
         break;
       case 'contact':
         Main.initForm();

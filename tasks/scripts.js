@@ -6,6 +6,7 @@ import browserify from 'browserify';
 import watchify from 'watchify';
 import source from 'vinyl-source-stream';
 import buffer from 'vinyl-buffer';
+import browserifyGlobal from 'browserify-global-shim';
 import { join } from 'path';
 
 import browserSync from './connect';
@@ -13,6 +14,9 @@ import { libraries, server, browserify as blabla } from '../config';
 
 const { dest } = server
 const config = Object.assign({}, watchify.args, blabla);
+const globalShim = browserifyGlobal.configure({
+  'jQuery': '$'
+})
 const bundler = watchify(browserify(config));
 const buildBundler = browserify(config);
 
