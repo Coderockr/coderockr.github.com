@@ -300,7 +300,9 @@
         margin-top: 50px;
         padding: 12px 40px 11px 40px;
         outline: none;
-
+        transition-property: background-color,border-color,color;
+        transition-duration: .12s;
+        transition-timing-function: ease-in;
         &:active {
           box-shadow: none;
         }
