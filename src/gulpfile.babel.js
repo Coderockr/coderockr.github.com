@@ -1,5 +1,3 @@
-// Kreativgebiet GmbH
-//
 // Require all gulp tasks from the subfolder
 // and let them call themselves
 

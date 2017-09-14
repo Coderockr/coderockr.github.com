@@ -1,17 +1,10 @@
 'use strict';
-
-window.$ = window.jQuery = require('jquery');
-// $.fotorama = require('fotorama/fotorama.js');
-
-// import { $, jquery } from 'jquery';
-// window.$ = $;
-// window.jquery = jquery;
 import fotorama from 'fotorama/fotorama.js'
 import plyr from 'plyr'
 import noUiSlider from 'nouislider'
 import material from 'material-design-lite'
 import mask from 'jquery.maskedinput/src/jquery.maskedinput.js'
-import 'jquery-validation'
+import validation from 'jquery-validation'
 
 var Main = {
   init: function(){
@@ -428,7 +421,7 @@ var Main = {
   }
 }
 
-$(document).ready(function() {
+$(document).ready(function($) {
   Main.init();
   Main.common();
 });
