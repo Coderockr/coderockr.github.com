@@ -1,10 +1,13 @@
 'use strict';
-import fotorama from 'fotorama/fotorama.js'
-import plyr from 'plyr'
-import noUiSlider from 'nouislider'
-import material from 'material-design-lite'
-import mask from 'jquery.maskedinput/src/jquery.maskedinput.js'
-import validation from 'jquery-validation'
+
+import $ from 'jquery';
+import jQb from 'jquery-browserify';
+import fotorama from 'fotorama/fotorama.js';
+import plyr from 'plyr';
+import noUiSlider from 'nouislider';
+import material from 'material-design-lite';
+import mask from 'jquery.maskedinput/src/jquery.maskedinput.js';
+import validation from 'jquery-validation';
 
 var Main = {
   init: function(){
@@ -78,7 +81,7 @@ var Main = {
   },
 
   initTestimonials: function(){
-    var $fotoramaDiv = $('.fotorama').fotorama({
+    var $fotoramaDiv = jQb('.fotorama').fotorama({
       autoplay: false,
       shadows: false,
       width: '100%',
