@@ -6,7 +6,7 @@ coderockr
 
 Node `"V7.10.1"` (use nvm [here](https://github.com/creationix/nvm)
 
-### Install dependencies
+### Structure folder
 
 ```
 coderockr
