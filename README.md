@@ -1,13 +1,50 @@
-## Requirements
+coderockr
+====================
 
-- Working personal computer
-- Node.js
+## Setup
+### Requirements
 
-## Getting Started
-
-You can also `git clone`.
+Node `"V7.10.1"` (use nvm [here](https://github.com/creationix/nvm)
 
 ### Install dependencies
+
+```
+coderockr
+├── README.md
+├── CNAME
+├── crossdomain.xml
+├── humans.txt
+├── Makefile
+├── robots.txt
+├── .gitignore
+├── dist
+│   └── index.html
+│   └── about.html
+│   └── contact.html
+│   └── bundle.min.js
+│   └── fonts
+│   └── images
+│   └── lib
+│   └── styles
+└── src
+    └── .babelrc
+    └── .editorconfig
+    └── .eslintrc
+    └── config.js
+    └── gulpfile.babel.js
+    └── node_modules
+    └── package-lock.json
+    └── package.json
+    └── site
+    └── tasks
+    └── yarn.lock
+```
+
+### Install dependencies
+
+```bash
+cd src
+```
 
 ```bash
 yarn install
@@ -19,9 +56,9 @@ yarn install
 gulp
 ```
 
-## What's included?
+## Features
 
-### Technology
+### tecnlogias
 
 - [Gulp.js](http://gulpjs.com/) – Automate and enhance your workflow.
 - [BrowserSync](https://www.browsersync.io/) – Time-saving synchronised browser testing.
