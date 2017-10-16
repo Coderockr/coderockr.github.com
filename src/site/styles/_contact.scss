@@ -1,0 +1,351 @@
+@import 'variables';
+@import 'partials';
+
+#contact {
+  > .banner {
+    width: 100%;
+    background-color: $gray-9;
+    max-height: 550px;
+    height: 550px;
+    background: url('../images/mic-bg.jpg') bottom center;
+    box-shadow: inset 0px -3px 5px 0px rgba(0,0,0,0.2);
+
+    h1 {
+      width: 100%;
+      max-width: 450px;
+      font: 5rem/9.5rem $secundary-font;
+      letter-spacing: .4rem;
+      color: $white;
+      margin: 132px 0 0 160px;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+    }
+  }
+
+  .lets-talk {
+    padding-bottom: 100px;
+
+    header {
+      text-align: center;
+
+      .title {
+        margin-bottom: 25px;
+
+        span {
+          display: block;
+          width: 200px;
+          border-top: 4px solid $yellow-6;
+          margin: 19px auto 0 auto;
+        }
+      }
+
+      p span {
+        display: block;
+        clear: both;
+        font-weight: 400;
+        -webkit-font-smoothing: auto;
+      }
+    }
+
+    .cross-title {
+      position: initial;
+      letter-spacing: .2rem;
+      margin-bottom: 50px;
+
+      &:after {
+        @extend .pseudo;
+        width: 50%;
+        border-bottom: 4px solid $yellow-6;
+      }
+
+      h2 {
+        position: relative;
+        top: 10px;
+
+        &:after {
+          @extend .pseudo;
+          z-index: 2;
+          right: 0;
+          left: 240px;
+          border-bottom: 4px solid $white;
+        }
+
+        .number {
+          position: absolute;
+          bottom: -30px;
+          z-index: -1;
+          font: 8rem $secundary-font;
+          color: $gray-3;
+        }
+
+        .title {
+          position: relative;
+          font: 3.5rem/5.2rem $secundary-font;
+        }
+      }
+
+      &.left {
+        &:after {
+          left: 0;
+          min-width: 255px;
+        }
+
+        h2 {
+          &:after { }
+
+          .number { }
+
+          .title { left: 41px; }
+        }
+
+      }
+
+      &.right {
+        &:after {
+          right: 0;
+          min-width: 355px;
+        }
+
+        h2 {
+          right: 0;
+          text-align: right;
+
+          &:after {
+            left: 0;
+            right: 338px;
+          }
+
+          .number { right: 0; }
+
+          .title { right: 39px }
+        }
+      }
+    }
+
+    .about-you {
+      width: 100%;
+      margin: 45px 0;
+    }
+
+    .about-project {
+      width: 100%;
+      margin-top: 40px;
+
+      h3 {
+        font: 3rem $primary-font;
+      }
+
+      .list {
+        display: table;
+        margin: 0 auto;
+
+        ul {
+          margin: 0;
+          padding: 0;
+
+          li { list-style: none; }
+        }
+      }
+
+      .mdl-radio {
+        padding-left: 50px;
+        margin: 12px 0;
+        line-height: 37px;
+        height: auto;
+
+        input {
+          display: block !important;
+          &:focus ~ .mdl-radio__label {
+            color: $yellow-6;
+          }
+        }
+
+        .mdl-radio__ripple-container .mdl-ripple { background: $yellow-6 }
+
+        .mdl-radio__label { font: 300 2.2rem $primary-font; }
+
+        .mdl-radio__outer-circle {
+          width: 26px;
+          height: 26px;
+          border-color: $yellow-6;
+        }
+
+        .mdl-radio__inner-circle {
+          width: 16px;
+          height: 16px;
+          top: 9px;
+          left: 5px;
+          background-color: $yellow-6;
+        }
+
+        .mdl-radio__ripple-container {
+          width: 61px;
+          height: 61px;
+          top: -14px;
+          left: -18px;
+        }
+      }
+
+      .mdl-checkbox {
+        @extend .mdl-radio;
+        top: 1px;
+
+        &.is-upgraded {
+          padding-left: 50px;
+        }
+
+        &.is-focused {
+          .mdl-checkbox__label { color: $yellow-6; }
+        }
+
+        .mdl-checkbox__ripple-container .mdl-ripple { background: $yellow-6; }
+
+        .mdl-checkbox__label { font: 300 2.2rem $primary-font; }
+
+        .mdl-checkbox__box-outline {
+          @extend .mdl-radio__outer-circle;
+          border-radius: 0;
+        }
+
+        &.is-checked {
+          .mdl-checkbox__box-outline {
+            border-color: $yellow-6;
+          }
+          .mdl-checkbox__tick-outline {
+            background-color: $yellow-6;
+          }
+        }
+
+        .mdl-checkbox__focus-helper {
+          display: none !important;
+        }
+
+        .mdl-checkbox__ripple-container {
+          @extend .mdl-radio__ripple-container;
+        }
+      }
+
+      .slider {
+        position: relative;
+        width: 100%;
+        margin: 50px 0 40px 0;
+
+        label {
+          float: right;
+          font: 1.85rem $primary-font;
+          margin-top: -11px;
+        }
+
+        .input {
+          position: relative;
+          padding-right: 113px;
+          margin-top: 40px;
+        }
+
+        .noUi-target {
+          background: $black;
+          border-radius: 0;
+          border: 0;
+          box-shadow: none;
+
+          &.noUi-horizontal { height: 2px; }
+
+          .noUi-handle {
+            width: 23px;
+            height: 23px;
+            left: -13px;
+            top: -11px;
+            border-radius: 50%;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, .4);
+            background-color: $yellow-6;
+            border: 0;
+            transition-property: width, height, top;
+            transition-duration:.04s;
+            transition-timing-function: linear;
+
+
+            &.noUi-active {
+              width: 27px;
+              height: 27px;
+              top: -13px;
+            }
+
+            &:after,
+            &:before { display: none; }
+          }
+
+          .noUi-connect {
+            background: $yellow-6;
+            box-shadow: none;
+          }
+        }
+      }
+
+      .deadline {
+        margin-top: 30px;
+        margin-bottom: 30px
+      }
+
+      .budget .input { padding-right: 159px; }
+
+      .description {
+        margin-top: 45px;
+        margin-bottom: 10px;
+        clear: both;
+      }
+
+      .details { margin-top: 30px; }
+
+      .btn {
+        font-size: 2.4rem;
+        margin-top: 50px;
+        padding: 12px 40px 11px 40px;
+        outline: none;
+        transition-property: background-color,border-color,color;
+        transition-duration: .12s;
+        transition-timing-function: ease-in;
+        &:active {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+}
+
+#address {
+  width: 100%;
+  height: 600px;
+  border-top: 1px solid $gray-2;
+  text-align: center;
+
+  #map {
+    width: 100%;
+    height: 100%;
+    background: url('../images/map-bg.jpg') top center no-repeat;
+  }
+
+  .card {
+    background: $white;
+    margin-top: -472px;
+    padding: 20px 0;
+    box-shadow: 1px 1px 3px 0px rgba(175, 175, 175, 0.35);
+
+    .title {
+      font: 3.5rem/5.2rem $secundary-font;
+      margin: 12px 0 22px 0 !important;
+
+      span {
+        display: block;
+        width: 160px;
+        border-top: 4px solid $yellow-6;
+        margin: 20px auto 0 auto;
+      }
+    }
+
+    p {
+      font-size: 2.2rem;
+
+      &.strong { font: 400 2.2rem $primary-font; }
+    }
+  }
+}
+
