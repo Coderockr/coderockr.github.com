@@ -50,6 +50,12 @@ cd src
 yarn install
 ```
 
+### Rebuild node-sass
+
+```bash
+npm rebuild node-sass
+```
+
 ### Run
 
 ```bash
