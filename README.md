@@ -53,10 +53,10 @@ yarn start
 ### Build
 
 ```bash
-yarn build
+./build.sh
 ```
 
 ### Deploy to Github Pages (https://github.com/Coderockr/coderockr.github.com)
 ```bash
-./gh-pages.sh
+./deploy.sh
 ```
