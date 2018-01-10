@@ -54,7 +54,6 @@
   },
   "pre-commit": [
     "lint",
-    "validate",
     "test"
   ],
   "dependencies": {

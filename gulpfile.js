@@ -178,7 +178,7 @@ gulp.task('fonts', () =>
 
 // data
 gulp.task('data', () =>
-  gulp.src(config.data.src))
+  gulp.src(config.data.src));
 
 // server
 gulp.task('serve', () => {
