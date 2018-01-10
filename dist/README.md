@@ -35,7 +35,7 @@ coderockr
     └── templates
         └── components
         └── layouts
-        └── pages.html
+        └── page.html
 ```
 
 ### Install dependencies
