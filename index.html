@@ -1,11 +1,57 @@
----
-title: Coderockr - Creating Projects that Rock!
----
+<!doctype html>
+<html class="no-js" lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Coderockr - Creating Projects that Rock!</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    <meta name="description" content="A Coderockr acredita que o desenvolvimento de software é uma arte, que deve ser feita com paixão e dedicação.">
+    <meta name="keywords" content="Coderockr, Desenvilvimento, Sistemas Web, Aplicativos Mobile, Big Data, Planrockr, Elton Minetto, Joinville.">
+
+    <link type="text/plain" rel="author" href="humans.txt" />
+    <link href="assets/images/favicon.png" rel="shortcut icon">
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/styles/main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 10]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		
 <main id="main-content">
 
-  {{> header}}
-
+  <header id="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 flex-row">
+          <a href="index.html" title="Coderockr" class="logo">
+            <img src="assets/images/coderockr.svg" alt="Coderockr Logo">
+          </a>
+          <nav>
+            <ul>
+              <li><a href="index.html" title="O que fazemos" data-autoscroll="true">O Que Fazemos</a></li>
+              <li><a href="about.html" title="Quem somos">Quem Somos</a></li>
+              <li><a href="index.html#products" title="Nossos Produtos" data-autoscroll="true">Produtos</a></li>
+              <li><a href="https://blog.coderockr.com" title="Blog Coderockr" target="_blank">Blog</a></li>
+              <li><a href="contact.html" title="Contato">Contato</a></li>
+            </ul>
+          </nav>
+          <a class="mobile hidden-md hidden-lg menu-trigger" href="#menu-mobile" title="Menu">
+            <img src="assets/images/menu.svg" alt="Menu icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
   <div id="home" class="wrap">
     <section class="banner">
       <div class="container">
@@ -270,6 +316,50 @@ title: Coderockr - Creating Projects that Rock!
   </section>
   </div>
 
-  {{> footer}}
-
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <ul class="social">
+            <li><a href="https://www.facebook.com/coderockr" title="Curta a Coderockr no Facebook"><span class="icon-facebook"></span></a></li>
+            <li><a href="https://twitter.com/coderockr" title="Siga a Coderockr no Twitter" target="_blank"><span class="icon-twitter"></span></a></li>
+            <li><a href="https://www.youtube.com/user/coderockr" title="Acompahe a Coderockr no YouTube" target="_blank"><span class="icon-youtube"></span></a></li>
+            <li><a href="https://blog.coderockr.com" title="Leia sore a Coderockr no Medium" target="_blank"><span class="icon-medium"></span></a></li>
+            <li><a href="https://plus.google.com/+Coderockr" title="Acompahe a Coderockr no Google+" target="_blank"><span class="icon-google-plus"></span></a></li>
+            <li><a href="https://github.com/Coderockr" title="Acompahe a Coderockr no Github" target="_blank"><span class="icon-github"></span></a></li>
+          </ul>
+          <img src="assets/images/hand-white.svg" alt="Coderockr Logo" title="You Rock!" class="pull-right">
+          <div class="text">
+            <p>
+              +55 47 3227-6359 &nbsp;&nbsp;&nbsp;
+              contato@coderockr.com
+            </p>
+            <p class="copyright">© 2016 Coderockr. Todos os direitos reservados. &nbsp; Joinville - SC</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </main>
+
+		<div class="shadow-layer"></div>
+
+    <nav id="menu-mobile">
+      <div class="container">
+        <div class="row">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#what-we-do" data-autoscroll="true">O Que Fazemos</a></li>
+            <li><a href="about.html">Quem Somos</a></li>
+            <li><a href="index.html#products" title="Nossos Produtos" data-autoscroll="true">Produtos</a></li>
+            <li><a href="https://blog.coderockr.com" title="Blog Coderockr" target="_blank">Blog</a></li>
+            <li><a href="contact.html">Contato</a></li>
+          </ul>
+          <a href="#0" class="close-menu"><img src="assets/images/close.svg" alt="Close icon"></a>
+        </div>
+      </div>
+    </nav>
+
+    <script src="assets/scripts/main.js" async defer></script>
+  </body>
+</html>
