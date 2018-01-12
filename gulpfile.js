@@ -56,6 +56,9 @@ const config = {
 // clean
 gulp.task('clean', del.bind(null, ['dist']));
 
+// postclean
+gulp.task('postclean', del.bind(null, ['dist/components']));
+
 // templates
 gulp.task('templates', (done) => {
   assemble({
@@ -213,6 +216,7 @@ gulp.task('default', ['clean'], () => {
     'images',
     'fonts',
     'data',
+    'postclean',
   ];
 
   // run build
