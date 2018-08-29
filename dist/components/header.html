@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title>{{title}}</title>
+		<title></title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="format-detection" content="telephone=no">
@@ -35,7 +35,29 @@
 			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
-		{% body %}
+		<header id="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 flex-row">
+        <a href="index.html" title="Coderockr" class="logo">
+          <img src="assets/images/coderockr.svg" alt="Coderockr Logo">
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html" title="O que fazemos" data-autoscroll="true">O Que Fazemos</a></li>
+            <li><a href="about.html" title="Quem somos">Quem Somos</a></li>
+            <li><a href="index.html#products" title="Nossos Produtos" data-autoscroll="true">Produtos</a></li>
+            <li><a href="https://blog.coderockr.com" title="Blog Coderockr" target="_blank">Blog</a></li>
+            <li><a href="contact.html" title="Contato">Contato</a></li>
+          </ul>
+        </nav>
+        <a class="mobile hidden-md hidden-lg menu-trigger" href="#menu-mobile" title="Menu">
+          <img src="assets/images/menu.svg" alt="Menu icon">
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
 
 		<div class="shadow-layer"></div>
 
