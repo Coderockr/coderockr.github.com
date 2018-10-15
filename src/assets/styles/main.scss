@@ -143,17 +143,18 @@ $image_path: "../images" !default;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-linkedin:before { content: "\e904"; }
-.icon-coderockr:before { content: "\e903"; }
-.icon-earth:before { content: "\e905"; }
-.icon-star:before { content: "\e902"; }
-.icon-youtube-custom:before { content: "\e901"; }
-.icon-medium:before { content: "\e900"; }
+.icon-linkedin:before { content: "\e905"; }
+.icon-coderockr:before { content: "\e904"; }
+.icon-earth:before { content: "\e906"; }
+.icon-star:before { content: "\e903"; }
+.icon-youtube-custom:before { content: "\e902"; }
+.icon-medium:before { content: "\e901"; }
 .icon-google-plus:before { content: "\ea8d"; }
 .icon-facebook:before { content: "\ea90"; }
 .icon-twitter:before { content: "\ea96"; }
 .icon-youtube:before { content: "\ea9d"; }
 .icon-github:before { content: "\eab0"; }
+.icon-instagram:before { content: "\e900"; }
 
 .browserupgrade {
   margin: 0.2em 0;
