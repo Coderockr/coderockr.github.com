@@ -269,12 +269,8 @@ var Main = {
             budget: $('.budget .slider label').html(),
             description: $('[name=details]').val()
           }),
-          success: function (data) {
-            if (data) {
-              Main.sweetAlert(message.success);
-            } else {
-              Main.sweetAlert(message.error);
-            }
+          success: function () {
+            Main.sweetAlert(message.success);
           },
           error: function (xhr, textStatus, thrownError) {
             Main.sweetAlert(message.error);
