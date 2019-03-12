@@ -255,7 +255,7 @@ var Main = {
         xhrRunning = $.ajax({
           type: 'POST',
           dataType: 'json',
-          url: 'https://e5kp5ek8ni.execute-api.us-east-1.amazonaws.com/prod/contato',
+          url: 'https://sfqs5tuvzd.execute-api.us-east-1.amazonaws.com/prod/contato/v2',
           contentType: 'application/json',
           data: JSON.stringify({
             name: $('[name=name]').val(),
