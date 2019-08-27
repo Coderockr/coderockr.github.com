@@ -2,7 +2,7 @@
 @import 'partials';
 
 // Colors
-$plyr-color-main: $yellow-6;
+$plyr-color-main: $blue-7;
 
 $image_path: "../images" !default;
 
@@ -558,12 +558,12 @@ p { font: 300 1.8rem/3.20rem $primary-font; }
     .subtitle {
       h2 {
         @extend .title;
-        color: $gray-10;
+        color: $white;
         margin: 110px auto 0 auto;
       }
 
       h3 {
-        color: $yellow-6;
+        color: $blue-7;
         font: 3.2rem $secundary-font;
         letter-spacing: .2rem;
         text-align: center;
@@ -578,7 +578,7 @@ p { font: 300 1.8rem/3.20rem $primary-font; }
           flex-grow: 1;
           height: 4px;
           content: '';
-          background-color: $yellow-6;
+          background-color: $blue-7;
           top: 2rem;
           max-width: 80px;
         }
@@ -588,16 +588,29 @@ p { font: 300 1.8rem/3.20rem $primary-font; }
       }
     }
 
-    .plyr { margin-right: 35px; }
-
     .plyr__controls,
     .plyr__play-large { z-index: 0; }
 
-    video { width: 100% !important; }
+    .plyr__video-wrapper {
+      margin-bottom: 40px;
+    }
+
+    video {
+      width: 100% !important;
+    }
 
     .text {
-      margin-left: 35px;
+      text-align: center;
       .btn { margin-top: 23px; }
+    }
+
+    .btn {
+      color: $blue-7;
+      border-color: $blue-7;
+      &:hover, &:focus {
+        color: $white;
+        background-color: $blue-7;
+      }
     }
   }
 }
